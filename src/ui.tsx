@@ -7,7 +7,7 @@ import { formatMinutes } from './engine/format';
 import { alwaysHave } from './engine/pantry';
 import { searchProducts } from './engine/search';
 import { L, getLang, t, tn } from './i18n';
-import { promptInstall, useCanInstall, useToast } from './pwa';
+import { dismissUpdate, installUpdate, promptInstall, useCanInstall, useToast, useUpdateReady } from './pwa';
 import { setFilters, toggle, toggleFavorite, update, useStore } from './store';
 import { formatLeft, stopTimer, useTimers } from './timers';
 import type { Product, Recipe } from './types';
@@ -313,13 +313,27 @@ export function BottomNav({ active }: { active: string }) {
   );
 }
 
-// ---------- таймеры поверх экрана ----------
+// ---------- таймеры и плашка обновления поверх экрана ----------
+/** Плашка «Доступна новая версия». Живёт в стеке TimerBar, поэтому не показывается в режиме «Готовлю». */
+function UpdateBanner() {
+  return (
+    <div className="update-pill" role="status">
+      <Icon name="refresh" size={18} />
+      <span className="grow">{t('pwa.updateAvailable')}</span>
+      <button className="btn primary small" onClick={installUpdate}>{t('pwa.update')}</button>
+      <button className="icon-btn small" onClick={dismissUpdate} aria-label={t('common.close')}><Icon name="x" size={16} /></button>
+    </div>
+  );
+}
+
 export function TimerBar({ withNav }: { withNav: boolean }) {
   const { timers, now } = useTimers();
   const { byId } = useDb();
-  if (!timers.length) return null;
+  const updateReady = useUpdateReady();
+  if (!timers.length && !updateReady) return null;
   return (
     <div className={`timerbar${withNav ? ' above-nav' : ''}`}>
+      {updateReady && <UpdateBanner />}
       {timers.map((tm) => (
         <div key={tm.key} className={`timer-pill${tm.done ? ' done' : ''}`}>
           <a href={`#/cook/${tm.recipeId}/${tm.step}`}>

@@ -194,6 +194,9 @@ button { border: 0; background: none; padding: 0; cursor: pointer; }
 .timer-pill a { display: flex; align-items: center; gap: 8px; min-width: 0; min-height: 40px; }
 .timer-pill b { font-variant-numeric: tabular-nums; }
 .timer-pill span { font-size: .82rem; opacity: .8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.update-pill { pointer-events: auto; display: flex; align-items: center; gap: 10px; width: 100%; max-width: 520px; padding: 6px 6px 6px 14px; border-radius: var(--radius); background: var(--surface); color: var(--text); border: 1.5px solid var(--accent-soft); box-shadow: var(--shadow); font-size: .9rem; font-weight: 600; animation: update-in .25s ease-out; }
+@keyframes update-in { from { opacity: 0; transform: translateY(12px); } }
+.update-pill > .icon { color: var(--accent-text); }
 .timer-pill.done { background: var(--accent); color: var(--accent-ink); animation: pulse 1s infinite; }
 @keyframes pulse { 50% { transform: scale(1.04); } }
 .toast { position: fixed; left: 50%; bottom: calc(var(--nav-h) + var(--safe-b) + 70px); transform: translateX(-50%); z-index: 60; max-width: calc(100% - 32px); padding: 12px 18px; border-radius: 14px; background: var(--text); color: var(--bg); font-weight: 550; font-size: .93rem; box-shadow: var(--shadow); animation: toast-in .25s; text-align: center; }

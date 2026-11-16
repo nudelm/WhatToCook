@@ -9,7 +9,8 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
-      registerType: 'autoUpdate',
+      // Новая версия скачивается в фоне и ждёт; применяется по кнопке «Обновить» (UpdateBanner).
+      registerType: 'prompt',
       includeAssets: ['favicon.svg', 'icons/*.png'],
       manifest: {
         id: './',
@@ -37,6 +38,9 @@ export default defineConfig({
         globIgnores: ['photos/**'],
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         cleanupOutdatedCaches: true,
+        // При первой установке SW сразу берёт страницу под контроль (фото кэшируются с первого визита).
+        // При обновлении новый SW ждёт, пока пользователь не нажмёт «Обновить» (SKIP_WAITING).
+        clientsClaim: true,
         runtimeCaching: [
           {
             urlPattern: ({ url }) => url.pathname.includes('/photos/'),

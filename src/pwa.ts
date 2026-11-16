@@ -34,7 +34,23 @@ export async function promptInstall(): Promise<boolean> {
 
 export const isStandalone = (): boolean => window.matchMedia('(display-mode: standalone)').matches;
 
-let toastTimer: ReturnType<typeof setTimeout> | undefined;
+// ---------- обновление приложения ----------
+// applyUpdate есть, когда новый service worker скачан и ждёт; updateHidden — пользователь закрыл плашку крестиком
+// (до следующего запуска: ожидающая версия снова вызовет onNeedRefresh).
+let applyUpdate: (() => Promise<void>) | null = null;
+let updateHidden = false;
+
+export function setUpdateReady(apply: () => Promise<void>): void {
+  applyUpdate = apply;
+  updateHidden = false;
+  emit();
+}
+export const useUpdateReady = (): boolean => useSyncExternalStore(subscribe, () => applyUpdate !== null && !updateHidden);
+export function dismissUpdate(): void { updateHidden = true; emit(); }
+/** Активирует новую версию (SKIP_WAITING) и перезагружает страницу. */
+export function installUpdate(): void { void applyUpdate?.(); }
+
+let toastTimer:ReturnType<typeof setTimeout> | undefined;
 export function toast(text: string): void {
   toastText = { id: Date.now(), text };
   clearTimeout(toastTimer);
