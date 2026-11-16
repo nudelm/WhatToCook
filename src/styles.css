@@ -222,10 +222,12 @@ button { border: 0; background: none; padding: 0; cursor: pointer; }
 .stepper button:disabled { opacity: .35; }
 .stepper span { min-width: 84px; text-align: center; font-weight: 650; font-size: .93rem; }
 .ingredients { background: var(--surface); border-radius: var(--radius); padding: 4px 14px; box-shadow: var(--shadow); }
-.ingredients li { display: flex; align-items: center; gap: 10px; padding: 11px 0; }
+.ingredients li > button { width: 100%; display: flex; align-items: center; gap: 10px; padding: 11px 0; min-height: 52px; text-align: left; }
+.ingredients li > button:not(:disabled):active .mark { transform: scale(.85); }
+.ingredients li > button:disabled { cursor: default; }
 .ingredients li + li { border-top: 1px solid var(--line); }
 .ingredients small { color: var(--muted); font-size: .8rem; }
-.mark { width: 20px; height: 20px; border-radius: 50%; border: 1.5px solid var(--line); display: grid; place-items: center; flex: none; }
+.mark { transition: transform .12s, background .15s; width: 24px; height: 24px; border-radius: 50%; border: 1.5px solid var(--line); display: grid; place-items: center; flex: none; }
 .have .mark { background: var(--ok-soft); border-color: transparent; color: var(--ok); }
 .qty { text-align: right; display: grid; white-space: nowrap; }
 .steps { display: grid; gap: 14px; }

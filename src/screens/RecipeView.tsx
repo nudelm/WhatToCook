@@ -5,7 +5,7 @@ import { isStaple } from '../engine/pantry';
 import { L, t, tn } from '../i18n';
 import { toast } from '../pwa';
 import { back, go } from '../router';
-import { addToShopping, hideRecipe, toggleFavorite, unhideRecipe, useStore } from '../store';
+import { addToShopping, hideRecipe, toggleFavorite, togglePantry, unhideRecipe, useStore } from '../store';
 import { formatLeft, startTimer, stopTimer, timerKey, useTimers } from '../timers';
 import type { PhotoCredit, Recipe } from '../types';
 import { Icon, Photo, minutes, productName } from '../ui';
@@ -51,11 +51,16 @@ export function IngredientList({ r, servings }: { r: Recipe; servings: number })
         const p = productMap.get(i.p);
         const have = pantry.has(i.p) || isStaple(p);
         const text = formatIngredient(i, factor, unit);
+        // Нажатие на строку отмечает продукт как «есть дома» — то же самое, что отметить его во вкладке «Продукты».
+        // Базовые продукты (соль, вода, масло…) считаются имеющимися всегда, поэтому не переключаются.
+        const staple = isStaple(p);
         return (
-          <li key={i.p} className={pantry.size > 0 && have ? 'have' : ''}>
-            <span className="mark">{pantry.size > 0 && have && <Icon name="check" size={14} />}</span>
-            <span className="grow">{productName(p)}{i.opt && <small> · {t('recipe.optional')}</small>}</span>
-            <span className="qty"><b>{text.main}</b>{text.sub && <small>{text.sub}</small>}</span>
+          <li key={i.p} className={have ? 'have' : ''}>
+            <button type="button" role="checkbox" aria-checked={have} disabled={staple} onClick={() => togglePantry(i.p)}>
+              <span className="mark">{have && <Icon name="check" size={14} />}</span>
+              <span className="grow">{productName(p)}{i.opt && <small> · {t('recipe.optional')}</small>}{staple && <small> · {t('recipe.alwaysHave')}</small>}</span>
+              <span className="qty"><b>{text.main}</b>{text.sub && <small>{text.sub}</small>}</span>
+            </button>
           </li>
         );
       })}
@@ -147,6 +152,7 @@ export function RecipeView({ id }: { id: string }) {
               <button onClick={() => setServings(servings + 1)} aria-label={t('recipe.moreServings')}><Icon name="plus" size={18} /></button>
             </div>
           </div>
+          <p className="hint">{t('recipe.tapToMark')}</p>
           <IngredientList r={r} servings={servings} />
           {need.length > 0 ? (
             <button className="btn soft block-btn" onClick={addNeed}>

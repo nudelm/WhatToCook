@@ -1,12 +1,13 @@
 // Все тексты интерфейса лежат в src/locales/<язык>.json. Чтобы добавить язык:
 // 1) скопируйте ru.json в, например, de.json и переведите; 2) добавьте его в dictionaries и LANGS ниже.
 import ru from './locales/ru.json';
+import uk from './locales/uk.json';
 import type { L10n } from './types';
 
 type Dict = { [key: string]: string | Dict };
-const dictionaries: Record<string, Dict> = { ru };
+const dictionaries: Record<string, Dict> = { ru, uk };
 
-export const LANGS: { id: string; label: string }[] = [{ id: 'ru', label: 'Русский' }];
+export const LANGS: { id: string; label: string }[] = [{ id: 'ru', label: 'Русский' }, { id: 'uk', label: 'Українська' }];
 
 let lang = 'ru';
 export function setLang(l: string): void {
