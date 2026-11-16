@@ -1,0 +1,2675 @@
+[
+  {
+    "id": "borsch",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Борщ"},
+    "description": {"ru":"Густой свекольный суп с говядиной и капустой"},
+    "activeMinutes": 40,
+    "totalMinutes": 120,
+    "difficulty": 2,
+    "servings": 6,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🍲",
+    "photoQuery": "borscht",
+    "ingredients": [
+      {"product":"beef","amount":500,"unit":"g"},
+      {"product":"water","amount":2500,"unit":"ml"},
+      {"product":"beet","amount":400,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"cabbage","amount":300,"unit":"g"},
+      {"product":"potato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"tomato_paste","amount":33,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"vinegar","amount":15,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"bay_leaf","amount":0.4,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"sour_cream","amount":90,"unit":"g","measure":{"qty":6,"unit":"tbsp"},"optional":true},
+      {"product":"dill","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Залейте говядину холодной водой, доведите до кипения, снимите пену и варите на слабом огне 1,5 часа."},"timerMinutes":90},
+      {"text":{"ru":"Натрите свёклу и морковь, нарежьте лук. Обжарьте на масле 5 минут, добавьте томатную пасту и уксус, тушите ещё 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Достаньте мясо и нарежьте. В бульон положите картофель кубиками, через 10 минут — нашинкованную капусту."},"timerMinutes":10},
+      {"text":{"ru":"Добавьте зажарку, мясо, лавровый лист и соль, варите 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Положите давленый чеснок, выключите огонь и дайте настояться 15 минут. Подавайте со сметаной и укропом."}}
+    ]
+  },
+  {
+    "id": "shchi",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Щи из свежей капусты"},
+    "description": {"ru":"Лёгкий капустный суп на курином бульоне"},
+    "activeMinutes": 25,
+    "totalMinutes": 60,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🥬",
+    "photoQuery": "shchi cabbage soup",
+    "ingredients": [
+      {"product":"chicken_legs","amount":500,"unit":"g"},
+      {"product":"water","amount":2500,"unit":"ml"},
+      {"product":"cabbage","amount":400,"unit":"g"},
+      {"product":"potato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"tomato","amount":240,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"veg_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"bay_leaf","amount":0.4,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"dill","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"sour_cream","amount":90,"unit":"g","measure":{"qty":6,"unit":"tbsp"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Варите курицу в подсоленной воде 35 минут, затем достаньте и разберите мясо."},"timerMinutes":35},
+      {"text":{"ru":"Обжарьте нарезанный лук и тёртую морковь 5 минут, добавьте нарезанные помидоры и тушите 3 минуты."}},
+      {"text":{"ru":"В бульон положите картофель и капусту, варите 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Добавьте зажарку, мясо, лавровый лист, варите ещё 5 минут. Посыпьте укропом."}}
+    ]
+  },
+  {
+    "id": "solyanka",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Солянка мясная"},
+    "description": {"ru":"Насыщенный кисло-солёный суп с копчёностями"},
+    "activeMinutes": 30,
+    "totalMinutes": 60,
+    "difficulty": 2,
+    "servings": 6,
+    "equipment": ["onepan"],
+    "emoji": "🍲",
+    "photoQuery": "solyanka soup",
+    "ingredients": [
+      {"product":"beef_broth","amount":2000,"unit":"ml"},
+      {"product":"smoked_sausage","amount":200,"unit":"g"},
+      {"product":"ham","amount":150,"unit":"g"},
+      {"product":"wieners","amount":150,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"pickles","amount":240,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"tomato_paste","amount":49.5,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"olives","amount":80,"unit":"g"},
+      {"product":"capers","amount":15,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"optional":true},
+      {"product":"lemon","amount":50,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"bay_leaf","amount":0.4,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"sour_cream","amount":90,"unit":"g","measure":{"qty":6,"unit":"tbsp"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте лук и обжарьте на масле до мягкости. Добавьте солёные огурцы соломкой и томатную пасту, тушите 7 минут."},"timerMinutes":7},
+      {"text":{"ru":"Нарежьте все мясные продукты соломкой и слегка обжарьте."}},
+      {"text":{"ru":"Доведите бульон до кипения, положите мясо и зажарку, варите 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Добавьте оливки, каперсы и лавровый лист, прогрейте 5 минут. Подавайте с долькой лимона и сметаной."}}
+    ]
+  },
+  {
+    "id": "okroshka",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Окрошка на кефире"},
+    "description": {"ru":"Холодный летний суп с зеленью"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥒",
+    "photoQuery": "okroshka",
+    "ingredients": [
+      {"product":"kefir","amount":1000,"unit":"ml"},
+      {"product":"water","amount":300,"unit":"ml"},
+      {"product":"potato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"egg","amount":220,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"boiled_sausage","amount":250,"unit":"g"},
+      {"product":"cucumber","amount":300,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"radish","amount":120,"unit":"g","measure":{"qty":8,"unit":"pc"}},
+      {"product":"green_onion","amount":50,"unit":"g","measure":{"qty":1,"unit":"bunch"}},
+      {"product":"dill","amount":30,"unit":"g","measure":{"qty":1,"unit":"bunch"}},
+      {"product":"mustard","amount":5.5,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите картофель в мундире и яйца заранее, остудите и очистите."}},
+      {"text":{"ru":"Нарежьте мелким кубиком картофель, яйца, колбасу, огурцы и редис. Порубите зелень."}},
+      {"text":{"ru":"Смешайте кефир с холодной водой, горчицей и солью."}},
+      {"text":{"ru":"Залейте нарезку кефиром и подавайте холодной."}}
+    ]
+  },
+  {
+    "id": "rassolnik",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Рассольник с перловкой"},
+    "description": {"ru":"Суп с солёными огурцами и перловой крупой"},
+    "activeMinutes": 25,
+    "totalMinutes": 80,
+    "difficulty": 2,
+    "servings": 6,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🍲",
+    "photoQuery": "rassolnik",
+    "ingredients": [
+      {"product":"beef","amount":400,"unit":"g"},
+      {"product":"water","amount":2500,"unit":"ml"},
+      {"product":"pearl_barley","amount":80,"unit":"g"},
+      {"product":"potato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"pickles","amount":240,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"bay_leaf","amount":0.4,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"sour_cream","amount":90,"unit":"g","measure":{"qty":6,"unit":"tbsp"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Варите говядину 1 час, затем достаньте и нарежьте."},"timerMinutes":60},
+      {"text":{"ru":"Перловку промойте и варите в бульоне 30 минут вместе с мясом."},"timerMinutes":30},
+      {"text":{"ru":"Обжарьте лук и морковь, добавьте тёртые солёные огурцы и тушите 5 минут."}},
+      {"text":{"ru":"Положите в суп картофель, через 10 минут — зажарку и мясо. Варите до готовности картофеля и посолите по вкусу."}}
+    ]
+  },
+  {
+    "id": "ukha",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Уха из лосося"},
+    "description": {"ru":"Прозрачный рыбный суп с картофелем"},
+    "activeMinutes": 15,
+    "totalMinutes": 35,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🐟",
+    "photoQuery": "ukha fish soup",
+    "ingredients": [
+      {"product":"salmon","amount":400,"unit":"g"},
+      {"product":"water","amount":1500,"unit":"ml"},
+      {"product":"potato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"bay_leaf","amount":0.4,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"peppercorns","amount":0.5,"unit":"g","measure":{"qty":5,"unit":"pc"}},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"dill","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Доведите воду до кипения, положите целую луковицу, нарезанные картофель и морковь, варите 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Добавьте лосось крупными кусками, лавровый лист, перец и соль. Варите на слабом огне 8 минут."},"timerMinutes":8},
+      {"text":{"ru":"Уберите луковицу, посыпьте укропом и дайте постоять под крышкой 5 минут."}}
+    ]
+  },
+  {
+    "id": "gorokhovy-sup",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Гороховый суп с копчёностями"},
+    "description": {"ru":"Густой суп из гороха с копчёными рёбрышками"},
+    "activeMinutes": 20,
+    "totalMinutes": 90,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🥣",
+    "photoQuery": "pea soup smoked pork",
+    "ingredients": [
+      {"product":"split_peas","amount":300,"unit":"g"},
+      {"product":"smoked_pork","amount":300,"unit":"g"},
+      {"product":"water","amount":2500,"unit":"ml"},
+      {"product":"potato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"veg_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"bay_leaf","amount":0.2,"unit":"g","measure":{"qty":1,"unit":"pc"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Промойте горох, залейте водой и варите с копчёностями 50 минут."},"timerMinutes":50},
+      {"text":{"ru":"Обжарьте нарезанный лук и тёртую морковь."}},
+      {"text":{"ru":"Добавьте в суп картофель кубиками и зажарку, варите 20 минут."},"timerMinutes":20},
+      {"text":{"ru":"Посолите, положите лавровый лист и дайте настояться 10 минут."}}
+    ]
+  },
+  {
+    "id": "kurinyj-sup-lapsha",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Куриный суп с лапшой"},
+    "description": {"ru":"Домашний суп, который спасает в любой день"},
+    "activeMinutes": 15,
+    "totalMinutes": 45,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🍜",
+    "photoQuery": "chicken noodle soup",
+    "ingredients": [
+      {"product":"chicken_legs","amount":400,"unit":"g"},
+      {"product":"water","amount":1800,"unit":"ml"},
+      {"product":"egg_noodles","amount":100,"unit":"g"},
+      {"product":"potato","amount":240,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"parsley","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Варите курицу с целой луковицей 30 минут, снимая пену."},"timerMinutes":30},
+      {"text":{"ru":"Достаньте курицу и луковицу. Мясо разберите на кусочки."}},
+      {"text":{"ru":"Положите в бульон картофель и морковь, варите 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Добавьте лапшу и мясо, варите ещё 5 минут. Посолите и посыпьте петрушкой."},"timerMinutes":5}
+    ]
+  },
+  {
+    "id": "gribnoj-sup",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Грибной суп с перловкой"},
+    "description": {"ru":"Ароматный суп из шампиньонов и сушёных грибов"},
+    "activeMinutes": 20,
+    "totalMinutes": 50,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🍄",
+    "photoQuery": "mushroom barley soup",
+    "ingredients": [
+      {"product":"mushrooms","amount":400,"unit":"g"},
+      {"product":"dried_mushrooms","amount":20,"unit":"g"},
+      {"product":"pearl_barley","amount":60,"unit":"g"},
+      {"product":"potato","amount":240,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"water","amount":1500,"unit":"ml"},
+      {"product":"butter","amount":20,"unit":"g","use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"sour_cream","amount":60,"unit":"g","measure":{"qty":4,"unit":"tbsp"},"optional":true},
+      {"product":"dill","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Сушёные грибы залейте кипятком на 15 минут, перловку поставьте вариться на 30 минут."},"timerMinutes":30},
+      {"text":{"ru":"Обжарьте на сливочном масле лук, морковь и нарезанные шампиньоны до золотистого цвета."}},
+      {"text":{"ru":"Добавьте к перловке картофель, жареные и сушёные грибы вместе с настоем, варите 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Посолите и подавайте со сметаной и укропом."}}
+    ]
+  },
+  {
+    "id": "sup-frikadelki",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Суп с фрикадельками"},
+    "description": {"ru":"Быстрый суп с мясными шариками и овощами"},
+    "activeMinutes": 20,
+    "totalMinutes": 35,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🍲",
+    "photoQuery": "meatball soup",
+    "ingredients": [
+      {"product":"mixed_mince","amount":300,"unit":"g"},
+      {"product":"water","amount":1800,"unit":"ml"},
+      {"product":"potato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"rice","amount":40,"unit":"g"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"bay_leaf","amount":0.2,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"dill","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Половину лука мелко порубите, смешайте с фаршем и щепоткой соли, скатайте шарики размером с грецкий орех."}},
+      {"text":{"ru":"В кипящую воду положите картофель кубиками, тёртую морковь, оставшийся лук и рис. Варите 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Опустите фрикадельки, добавьте лавровый лист и варите 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Посолите и посыпьте укропом."}}
+    ]
+  },
+  {
+    "id": "svekolnik",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Свекольник холодный"},
+    "description": {"ru":"Освежающий суп из свёклы на кефире"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥣",
+    "photoQuery": "cold beet soup",
+    "ingredients": [
+      {"product":"beet_cooked","amount":375,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"kefir","amount":800,"unit":"ml"},
+      {"product":"water","amount":200,"unit":"ml"},
+      {"product":"cucumber","amount":300,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"egg","amount":220,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"green_onion","amount":25,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"dill","amount":30,"unit":"g","measure":{"qty":1,"unit":"bunch"}},
+      {"product":"lemon_juice","amount":15.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Натрите варёную свёклу на крупной тёрке, огурцы нарежьте кубиками, зелень порубите."}},
+      {"text":{"ru":"Смешайте кефир с водой, лимонным соком и солью, добавьте свёклу, огурцы и зелень."}},
+      {"text":{"ru":"Разлейте по тарелкам и положите в каждую половинки варёных яиц."}}
+    ]
+  },
+  {
+    "id": "kharcho-ru",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Суп с рисом и говядиной"},
+    "description": {"ru":"Простой сытный суп на каждый день"},
+    "activeMinutes": 20,
+    "totalMinutes": 90,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🍲",
+    "photoQuery": "beef rice soup",
+    "ingredients": [
+      {"product":"beef","amount":500,"unit":"g"},
+      {"product":"water","amount":2500,"unit":"ml"},
+      {"product":"rice","amount":80,"unit":"g"},
+      {"product":"potato","amount":240,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"veg_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"bay_leaf","amount":0.4,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"parsley","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Варите говядину кусочками 1 час."},"timerMinutes":60},
+      {"text":{"ru":"Обжарьте лук и морковь до мягкости."}},
+      {"text":{"ru":"Добавьте в бульон картофель, промытый рис и зажарку, варите 20 минут."},"timerMinutes":20},
+      {"text":{"ru":"Посолите, добавьте лавровый лист и петрушку."}}
+    ]
+  },
+  {
+    "id": "pelmeni",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Пельмени домашние"},
+    "description": {"ru":"Классические пельмени со свино-говяжьим фаршем"},
+    "activeMinutes": 70,
+    "totalMinutes": 90,
+    "difficulty": 3,
+    "servings": 6,
+    "equipment": [],
+    "emoji": "🥟",
+    "photoQuery": "pelmeni",
+    "ingredients": [
+      {"product":"flour","amount":500,"unit":"g"},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"water","amount":200,"unit":"ml"},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"mixed_mince","amount":500,"unit":"g"},
+      {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"bay_leaf","amount":0.4,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"sour_cream","amount":90,"unit":"g","measure":{"qty":6,"unit":"tbsp"},"optional":true},
+      {"product":"butter","amount":30,"unit":"g"}
+    ],
+    "steps": [
+      {"text":{"ru":"Замесите тесто из муки, яйца, воды и 1 ч. л. соли. Накройте и оставьте на 30 минут."},"timerMinutes":30},
+      {"text":{"ru":"Смешайте фарш с мелко рубленным луком, солью, перцем и 3 ст. л. холодной воды."}},
+      {"text":{"ru":"Раскатайте тесто тонко, вырежьте кружки стаканом, положите по чайной ложке фарша и слепите пельмени."}},
+      {"text":{"ru":"Варите в подсоленной воде с лавровым листом 6–7 минут после всплытия."},"timerMinutes":7},
+      {"text":{"ru":"Подавайте со сливочным маслом и сметаной."}}
+    ]
+  },
+  {
+    "id": "vareniki-kartoshka",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Вареники с картошкой"},
+    "description": {"ru":"Вареники с картофельным пюре и жареным луком"},
+    "activeMinutes": 60,
+    "totalMinutes": 80,
+    "difficulty": 3,
+    "servings": 5,
+    "equipment": [],
+    "emoji": "🥟",
+    "photoQuery": "varenyky potato",
+    "ingredients": [
+      {"product":"flour","amount":400,"unit":"g"},
+      {"product":"water","amount":200,"unit":"ml"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"potato","amount":600,"unit":"g"},
+      {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"butter","amount":40,"unit":"g"},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"sour_cream","amount":75,"unit":"g","measure":{"qty":5,"unit":"tbsp"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Замесите мягкое тесто из муки, тёплой воды и половины соли. Дайте отдохнуть 20 минут."},"timerMinutes":20},
+      {"text":{"ru":"Отварите картофель, разомните в пюре со сливочным маслом. Половину обжаренного лука вмешайте в пюре."}},
+      {"text":{"ru":"Раскатайте тесто, вырежьте кружки, положите начинку и защипните края."}},
+      {"text":{"ru":"Варите 4–5 минут после всплытия. Подавайте с оставшимся жареным луком и сметаной."},"timerMinutes":5}
+    ]
+  },
+  {
+    "id": "golubtsy",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Голубцы"},
+    "description": {"ru":"Капустные рулеты с мясом и рисом в томатном соусе"},
+    "activeMinutes": 50,
+    "totalMinutes": 100,
+    "difficulty": 3,
+    "servings": 6,
+    "equipment": ["onepan"],
+    "emoji": "🥬",
+    "photoQuery": "golubtsy cabbage rolls",
+    "ingredients": [
+      {"product":"cabbage","amount":1200,"unit":"g"},
+      {"product":"mixed_mince","amount":600,"unit":"g"},
+      {"product":"rice","amount":100,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"tomato_paste","amount":49.5,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"sour_cream","amount":150,"unit":"g"},
+      {"product":"water","amount":400,"unit":"ml"},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите кочан 10 минут, разберите на листья и срежьте утолщения."}},
+      {"text":{"ru":"Отварите рис до полуготовности, смешайте с фаршем, половиной лука, солью и перцем."}},
+      {"text":{"ru":"Заверните начинку в листья конвертами и уложите в сотейник швом вниз."}},
+      {"text":{"ru":"Обжарьте оставшийся лук с морковью, добавьте томатную пасту, сметану и воду, залейте голубцы."}},
+      {"text":{"ru":"Тушите под крышкой на слабом огне 45 минут."},"timerMinutes":45}
+    ]
+  },
+  {
+    "id": "lenivye-golubtsy",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Ленивые голубцы"},
+    "description": {"ru":"Те же голубцы, только без возни с листьями"},
+    "activeMinutes": 25,
+    "totalMinutes": 55,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🥘",
+    "photoQuery": "lazy cabbage rolls",
+    "ingredients": [
+      {"product":"mixed_mince","amount":500,"unit":"g"},
+      {"product":"cabbage","amount":500,"unit":"g"},
+      {"product":"rice","amount":120,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"tomato_paste","amount":33,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"sour_cream","amount":100,"unit":"g"},
+      {"product":"water","amount":500,"unit":"ml"},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте фарш с луком и морковью 7 минут в глубокой сковороде."}},
+      {"text":{"ru":"Добавьте мелко нашинкованную капусту и тушите 5 минут."}},
+      {"text":{"ru":"Всыпьте промытый рис, влейте воду с томатной пастой и сметаной, посолите и поперчите."}},
+      {"text":{"ru":"Тушите под крышкой 30 минут, пока рис не станет мягким."},"timerMinutes":30}
+    ]
+  },
+  {
+    "id": "kotlety",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Котлеты домашние"},
+    "description": {"ru":"Сочные котлеты из смешанного фарша"},
+    "activeMinutes": 30,
+    "totalMinutes": 40,
+    "difficulty": 2,
+    "servings": 5,
+    "equipment": [],
+    "emoji": "🍖",
+    "photoQuery": "kotlety cutlets",
+    "ingredients": [
+      {"product":"mixed_mince","amount":600,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"white_bread","amount":60,"unit":"g","measure":{"qty":2,"unit":"slice"}},
+      {"product":"milk","amount":80,"unit":"ml"},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"garlic","amount":4,"unit":"g","measure":{"qty":1,"unit":"clove"}},
+      {"product":"breadcrumbs","amount":27,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
+      {"product":"veg_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Замочите хлеб без корок в молоке на 5 минут."}},
+      {"text":{"ru":"Смешайте фарш с тёртым луком, чесноком, яйцом, отжатым хлебом, солью и перцем. Хорошо вымесите."}},
+      {"text":{"ru":"Сформируйте котлеты, обваляйте в сухарях."}},
+      {"text":{"ru":"Жарьте на среднем огне по 5 минут с каждой стороны, затем доведите под крышкой 5 минут."},"timerMinutes":5}
+    ]
+  },
+  {
+    "id": "kurinye-kotlety",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Куриные котлеты"},
+    "description": {"ru":"Нежные котлеты из куриного фарша"},
+    "activeMinutes": 25,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🍗",
+    "photoQuery": "chicken cutlets patties",
+    "ingredients": [
+      {"product":"chicken_mince","amount":500,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"oats","amount":18,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"sour_cream","amount":15,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"veg_oil","amount":41.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте фарш с тёртым луком, яйцом, хлопьями, сметаной, солью и перцем. Оставьте на 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Мокрыми руками сформируйте небольшие котлеты."}},
+      {"text":{"ru":"Жарьте по 4–5 минут с каждой стороны до румяной корочки."}}
+    ]
+  },
+  {
+    "id": "beef-stroganoff",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Бефстроганов"},
+    "description": {"ru":"Говядина в сметанном соусе с грибами"},
+    "activeMinutes": 25,
+    "totalMinutes": 35,
+    "difficulty": 2,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🥘",
+    "photoQuery": "beef stroganoff",
+    "ingredients": [
+      {"product":"beef_steak","amount":500,"unit":"g"},
+      {"product":"mushrooms","amount":250,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"sour_cream","amount":200,"unit":"g"},
+      {"product":"flour","amount":9,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"mustard","amount":5.5,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"butter","amount":15,"unit":"g"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте говядину тонкими полосками поперёк волокон, посолите и поперчите."}},
+      {"text":{"ru":"Быстро обжарьте мясо на сильном огне 2–3 минуты и переложите на тарелку."}},
+      {"text":{"ru":"На сливочном масле обжарьте лук и грибы 7 минут, посыпьте мукой и перемешайте."}},
+      {"text":{"ru":"Добавьте сметану и горчицу, верните мясо и тушите 8 минут."},"timerMinutes":8}
+    ]
+  },
+  {
+    "id": "tefteli",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Тефтели в томатном соусе"},
+    "description": {"ru":"Мясные шарики с рисом в подливе"},
+    "activeMinutes": 25,
+    "totalMinutes": 50,
+    "difficulty": 2,
+    "servings": 5,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🍝",
+    "photoQuery": "tefteli meatballs tomato sauce",
+    "ingredients": [
+      {"product":"mixed_mince","amount":500,"unit":"g"},
+      {"product":"rice","amount":80,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"tomato_paste","amount":33,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"sour_cream","amount":45,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"flour","amount":9,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"water","amount":400,"unit":"ml"},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите рис до полуготовности. Смешайте с фаршем, половиной тёртого лука, яйцом и солью, скатайте шарики."}},
+      {"text":{"ru":"Обжарьте тефтели со всех сторон и переложите."}},
+      {"text":{"ru":"В той же сковороде обжарьте оставшийся лук с морковью, добавьте муку, томатную пасту, сметану и воду."}},
+      {"text":{"ru":"Верните тефтели в соус и тушите под крышкой 25 минут."},"timerMinutes":25}
+    ]
+  },
+  {
+    "id": "plov",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Плов с бараниной"},
+    "description": {"ru":"Узбекский плов с морковью и зирой"},
+    "activeMinutes": 30,
+    "totalMinutes": 90,
+    "difficulty": 3,
+    "servings": 6,
+    "equipment": ["onepan"],
+    "emoji": "🍚",
+    "photoQuery": "plov pilaf uzbek",
+    "ingredients": [
+      {"product":"lamb","amount":700,"unit":"g"},
+      {"product":"rice","amount":500,"unit":"g"},
+      {"product":"carrot","amount":500,"unit":"g"},
+      {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"garlic","amount":40,"unit":"g","measure":{"qty":10,"unit":"clove"}},
+      {"product":"cumin","amount":4.5,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"veg_oil","amount":100,"unit":"ml"},
+      {"product":"water","amount":800,"unit":"ml"},
+      {"product":"salt","amount":15,"unit":"g","measure":{"qty":2.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Раскалите масло в казане или толстостенной кастрюле, обжарьте баранину кусками до корочки."}},
+      {"text":{"ru":"Добавьте лук полукольцами, затем морковь соломкой, жарьте 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Влейте половину воды, добавьте зиру и соль, тушите 30 минут."},"timerMinutes":30},
+      {"text":{"ru":"Выложите промытый рис ровным слоем, долейте воду на 1,5 см выше риса, воткните головку чеснока."}},
+      {"text":{"ru":"Готовьте без крышки, пока вода не впитается, затем накройте и томите на минимальном огне 20 минут."},"timerMinutes":20}
+    ]
+  },
+  {
+    "id": "plov-kurica",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Плов с курицей"},
+    "description": {"ru":"Быстрый домашний плов в одной сковороде"},
+    "activeMinutes": 20,
+    "totalMinutes": 50,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🍚",
+    "photoQuery": "chicken pilaf",
+    "ingredients": [
+      {"product":"chicken_thigh_fillet","amount":500,"unit":"g"},
+      {"product":"rice","amount":300,"unit":"g"},
+      {"product":"carrot","amount":200,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"garlic","amount":16,"unit":"g","measure":{"qty":4,"unit":"clove"}},
+      {"product":"cumin","amount":2.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"turmeric","amount":1.3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"veg_oil","amount":41.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"water","amount":550,"unit":"ml"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте курицу кусочками до золотистой корочки."}},
+      {"text":{"ru":"Добавьте лук и морковь соломкой, жарьте 7 минут. Всыпьте специи и соль."}},
+      {"text":{"ru":"Выложите промытый рис, залейте горячей водой, воткните чеснок."}},
+      {"text":{"ru":"Готовьте под крышкой на слабом огне 25 минут, не перемешивая."},"timerMinutes":25}
+    ]
+  },
+  {
+    "id": "grechka-po-kupecheski",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Гречка по-купечески"},
+    "description": {"ru":"Гречка со свининой и овощами в одной сковороде"},
+    "activeMinutes": 20,
+    "totalMinutes": 45,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🥘",
+    "photoQuery": "buckwheat with meat",
+    "ingredients": [
+      {"product":"pork","amount":400,"unit":"g"},
+      {"product":"buckwheat","amount":250,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"tomato_paste","amount":16.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"water","amount":550,"unit":"ml"},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте свинину кубиками до румяности."}},
+      {"text":{"ru":"Добавьте лук и морковь, жарьте 5 минут, вмешайте томатную пасту."}},
+      {"text":{"ru":"Всыпьте промытую гречку, залейте кипятком, посолите и поперчите."}},
+      {"text":{"ru":"Тушите под крышкой 20 минут, в конце добавьте чеснок."},"timerMinutes":20}
+    ]
+  },
+  {
+    "id": "makarony-po-flotski",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Макароны по-флотски"},
+    "description": {"ru":"Макароны с обжаренным фаршем и луком"},
+    "activeMinutes": 20,
+    "totalMinutes": 25,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🍝",
+    "photoQuery": "pasta with minced meat",
+    "ingredients": [
+      {"product":"pasta","amount":350,"unit":"g"},
+      {"product":"mixed_mince","amount":400,"unit":"g"},
+      {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите макароны в подсолёной воде до готовности."}},
+      {"text":{"ru":"Обжарьте лук до прозрачности, добавьте фарш и жарьте 10 минут, разбивая комки."},"timerMinutes":10},
+      {"text":{"ru":"Посолите, поперчите, смешайте с макаронами и прогрейте 2 минуты."}}
+    ]
+  },
+  {
+    "id": "zharkoe",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Жаркое по-домашнему"},
+    "description": {"ru":"Тушёная свинина с картофелем"},
+    "activeMinutes": 20,
+    "totalMinutes": 70,
+    "difficulty": 1,
+    "servings": 5,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🍲",
+    "photoQuery": "pork potato stew",
+    "ingredients": [
+      {"product":"pork","amount":600,"unit":"g"},
+      {"product":"potato","amount":1000,"unit":"g"},
+      {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"garlic","amount":12,"unit":"g","measure":{"qty":3,"unit":"clove"}},
+      {"product":"tomato_paste","amount":16.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"water","amount":400,"unit":"ml"},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"bay_leaf","amount":0.4,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте свинину крупными кубиками до корочки."}},
+      {"text":{"ru":"Добавьте лук и морковь, жарьте 5 минут."}},
+      {"text":{"ru":"Положите картофель крупными кусками, томатную пасту, воду, соль и перец."}},
+      {"text":{"ru":"Тушите под крышкой 45 минут. В конце добавьте чеснок и лавровый лист."},"timerMinutes":45}
+    ]
+  },
+  {
+    "id": "gulyash",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Гуляш из говядины"},
+    "description": {"ru":"Мягкая говядина в густой подливе"},
+    "activeMinutes": 20,
+    "totalMinutes": 100,
+    "difficulty": 2,
+    "servings": 5,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🥘",
+    "photoQuery": "beef goulash",
+    "ingredients": [
+      {"product":"beef","amount":700,"unit":"g"},
+      {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"tomato_paste","amount":33,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"flour","amount":9,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"paprika","amount":4.5,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"water","amount":500,"unit":"ml"},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"bay_leaf","amount":0.4,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте говядину кубиками на сильном огне до корочки."}},
+      {"text":{"ru":"Добавьте лук и морковь, жарьте 5 минут. Всыпьте муку и паприку, перемешайте."}},
+      {"text":{"ru":"Вмешайте томатную пасту, залейте горячей водой, посолите."}},
+      {"text":{"ru":"Тушите под крышкой на слабом огне 1 час 15 минут."},"timerMinutes":75}
+    ]
+  },
+  {
+    "id": "kurica-v-smetane",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Курица в сметанном соусе"},
+    "description": {"ru":"Нежная курица с чесноком на сковороде"},
+    "activeMinutes": 15,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🍗",
+    "photoQuery": "chicken sour cream sauce",
+    "ingredients": [
+      {"product":"chicken_breast","amount":600,"unit":"g"},
+      {"product":"sour_cream","amount":200,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"garlic","amount":12,"unit":"g","measure":{"qty":3,"unit":"clove"}},
+      {"product":"flour","amount":9,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"water","amount":100,"unit":"ml"},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"dill","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте курицу кусочками 5 минут до золотистого цвета."}},
+      {"text":{"ru":"Добавьте лук, жарьте 3 минуты, посыпьте мукой."}},
+      {"text":{"ru":"Влейте сметану с водой, добавьте чеснок, соль и перец."}},
+      {"text":{"ru":"Тушите под крышкой 12 минут. Посыпьте укропом."},"timerMinutes":12}
+    ]
+  },
+  {
+    "id": "kurica-s-kartoshkoj",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Курица с картошкой в духовке"},
+    "description": {"ru":"Всё на одном противне, минимум усилий"},
+    "activeMinutes": 15,
+    "totalMinutes": 60,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["oven"],
+    "emoji": "🍗",
+    "photoQuery": "roast chicken potatoes",
+    "ingredients": [
+      {"product":"chicken_legs","amount":1000,"unit":"g"},
+      {"product":"potato","amount":1000,"unit":"g"},
+      {"product":"garlic","amount":16,"unit":"g","measure":{"qty":4,"unit":"clove"}},
+      {"product":"paprika","amount":4.5,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"veg_oil","amount":41.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Разогрейте духовку до 200 °C."}},
+      {"text":{"ru":"Картофель нарежьте дольками, смешайте с курицей, маслом, паприкой, давленым чесноком, солью и перцем."}},
+      {"text":{"ru":"Выложите на противень в один слой, курицу кожей вверх."}},
+      {"text":{"ru":"Запекайте 45 минут до румяной корочки."},"timerMinutes":45}
+    ]
+  },
+  {
+    "id": "myaso-po-francuzski",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Мясо по-французски"},
+    "description": {"ru":"Свинина под луком и сырной шапкой"},
+    "activeMinutes": 20,
+    "totalMinutes": 55,
+    "difficulty": 2,
+    "servings": 6,
+    "equipment": ["oven"],
+    "emoji": "🧀",
+    "photoQuery": "meat french style baked cheese",
+    "ingredients": [
+      {"product":"pork_loin","amount":800,"unit":"g"},
+      {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"cheese","amount":200,"unit":"g"},
+      {"product":"mayonnaise","amount":100,"unit":"g"},
+      {"product":"tomato","amount":240,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"veg_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте свинину пластами по 1,5 см, отбейте, посолите и поперчите."}},
+      {"text":{"ru":"Выложите на смазанный противень, сверху лук кольцами и кружки помидоров."}},
+      {"text":{"ru":"Смажьте майонезом и засыпьте тёртым сыром."}},
+      {"text":{"ru":"Запекайте при 190 °C 35 минут."},"timerMinutes":35}
+    ]
+  },
+  {
+    "id": "pechen-so-smetanoj",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Куриная печень в сметане"},
+    "description": {"ru":"Быстрое и бюджетное блюдо на ужин"},
+    "activeMinutes": 15,
+    "totalMinutes": 25,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🥘",
+    "photoQuery": "chicken liver sour cream",
+    "ingredients": [
+      {"product":"chicken_liver","amount":600,"unit":"g"},
+      {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"sour_cream","amount":150,"unit":"g"},
+      {"product":"flour","amount":9,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Печень промойте, обсушите и разрежьте пополам."}},
+      {"text":{"ru":"Обжарьте лук полукольцами до золотистого цвета, добавьте печень и жарьте 5 минут."}},
+      {"text":{"ru":"Посыпьте мукой, влейте сметану, посолите и поперчите."}},
+      {"text":{"ru":"Тушите под крышкой 7 минут."},"timerMinutes":7}
+    ]
+  },
+  {
+    "id": "ryba-pod-marinadom",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Рыба под маринадом"},
+    "description": {"ru":"Белая рыба под тушёными овощами"},
+    "activeMinutes": 25,
+    "totalMinutes": 40,
+    "difficulty": 2,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🐟",
+    "photoQuery": "fish under marinade carrots",
+    "ingredients": [
+      {"product":"white_fish","amount":600,"unit":"g"},
+      {"product":"carrot","amount":300,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"tomato_paste","amount":33,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"flour","amount":18,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"vinegar","amount":15,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"water","amount":150,"unit":"ml"},
+      {"product":"veg_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"},"use":"fry"},
+      {"product":"bay_leaf","amount":0.4,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Рыбу нарежьте кусками, посолите, обваляйте в муке и обжарьте по 3 минуты с каждой стороны."}},
+      {"text":{"ru":"Отдельно обжарьте лук и тёртую морковь 10 минут."}},
+      {"text":{"ru":"Добавьте к овощам томатную пасту, воду, уксус, лавровый лист и тушите 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Выложите маринад на рыбу. Подавайте тёплой или холодной."}}
+    ]
+  },
+  {
+    "id": "kartoshka-s-gribami",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Жареная картошка с грибами"},
+    "description": {"ru":"Хрустящая картошка с шампиньонами и луком"},
+    "activeMinutes": 25,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 3,
+    "equipment": ["onepan"],
+    "emoji": "🥔",
+    "photoQuery": "fried potatoes mushrooms",
+    "ingredients": [
+      {"product":"potato","amount":800,"unit":"g"},
+      {"product":"mushrooms","amount":300,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"veg_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"dill","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте картофель брусочками, промойте и обсушите."}},
+      {"text":{"ru":"Жарьте картофель на сильном огне 10 минут, редко перемешивая."},"timerMinutes":10},
+      {"text":{"ru":"Добавьте грибы и лук, жарьте ещё 10 минут до готовности."},"timerMinutes":10},
+      {"text":{"ru":"Посолите в самом конце и посыпьте укропом."}}
+    ]
+  },
+  {
+    "id": "draniki",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Драники"},
+    "description": {"ru":"Белорусские картофельные оладьи"},
+    "activeMinutes": 30,
+    "totalMinutes": 30,
+    "difficulty": 2,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥔",
+    "photoQuery": "draniki potato pancakes",
+    "ingredients": [
+      {"product":"potato","amount":1000,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"flour","amount":18,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"veg_oil","amount":82.8,"unit":"g","measure":{"qty":6,"unit":"tbsp"},"use":"fry"},
+      {"product":"sour_cream","amount":60,"unit":"g","measure":{"qty":4,"unit":"tbsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Натрите картофель и лук на мелкой тёрке, отожмите лишний сок."}},
+      {"text":{"ru":"Вмешайте яйцо, муку и соль."}},
+      {"text":{"ru":"Выкладывайте тесто ложкой на разогретую сковороду и жарьте по 3–4 минуты с каждой стороны."}},
+      {"text":{"ru":"Подавайте горячими со сметаной."}}
+    ]
+  },
+  {
+    "id": "syrniki",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Сырники"},
+    "description": {"ru":"Творожные оладьи с румяной корочкой"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 2,
+    "servings": 3,
+    "equipment": [],
+    "emoji": "🥞",
+    "photoQuery": "syrniki",
+    "ingredients": [
+      {"product":"quark","amount":500,"unit":"g"},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"flour","amount":36,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
+      {"product":"sugar","amount":25.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"vanilla_sugar","amount":4.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}},
+      {"product":"veg_oil","amount":41.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"},"use":"fry"},
+      {"product":"sour_cream","amount":45,"unit":"g","measure":{"qty":3,"unit":"tbsp"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Разомните творог вилкой с яйцом, сахаром, ванильным сахаром и солью."}},
+      {"text":{"ru":"Добавьте 2 ст. л. муки и перемешайте. Сформируйте шайбы и обваляйте в оставшейся муке."}},
+      {"text":{"ru":"Жарьте на среднем огне по 3–4 минуты с каждой стороны."}},
+      {"text":{"ru":"Подавайте со сметаной или вареньем."}}
+    ]
+  },
+  {
+    "id": "bliny",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Блины на молоке"},
+    "description": {"ru":"Тонкие блинчики для любой начинки"},
+    "activeMinutes": 35,
+    "totalMinutes": 45,
+    "difficulty": 2,
+    "servings": 5,
+    "equipment": [],
+    "emoji": "🥞",
+    "photoQuery": "blini thin pancakes",
+    "ingredients": [
+      {"product":"milk","amount":500,"unit":"ml"},
+      {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"flour","amount":200,"unit":"g"},
+      {"product":"sugar","amount":12.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"butter","amount":30,"unit":"g"}
+    ],
+    "steps": [
+      {"text":{"ru":"Взбейте яйца с сахаром и солью, влейте молоко, всыпьте муку и размешайте до гладкости."}},
+      {"text":{"ru":"Добавьте растительное масло и оставьте тесто на 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Жарьте тонкие блины на раскалённой сковороде по 1 минуте с каждой стороны."}},
+      {"text":{"ru":"Смазывайте горячие блины сливочным маслом."}}
+    ]
+  },
+  {
+    "id": "oladi",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Оладьи на кефире"},
+    "description": {"ru":"Пышные оладьи к завтраку"},
+    "activeMinutes": 20,
+    "totalMinutes": 25,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥞",
+    "photoQuery": "oladyi",
+    "ingredients": [
+      {"product":"kefir","amount":400,"unit":"ml"},
+      {"product":"flour","amount":280,"unit":"g"},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"sugar","amount":25.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"soda","amount":2.8,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"veg_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"},"use":"fry"}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте тёплый кефир с яйцом, сахаром и солью."}},
+      {"text":{"ru":"Всыпьте муку с содой, перемешайте до густоты сметаны и оставьте на 5 минут."}},
+      {"text":{"ru":"Жарьте оладьи на среднем огне по 2 минуты с каждой стороны под крышкой."}}
+    ]
+  },
+  {
+    "id": "mannaya-kasha",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Манная каша"},
+    "description": {"ru":"Гладкая каша без комочков"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["onepan"],
+    "emoji": "🥣",
+    "photoQuery": "semolina porridge",
+    "ingredients": [
+      {"product":"milk","amount":500,"unit":"ml"},
+      {"product":"semolina","amount":31.5,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"sugar","amount":12.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"salt","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}},
+      {"product":"butter","amount":15,"unit":"g"}
+    ],
+    "steps": [
+      {"text":{"ru":"Доведите молоко до кипения с сахаром и солью."}},
+      {"text":{"ru":"Всыпайте манку тонкой струйкой, постоянно помешивая венчиком."}},
+      {"text":{"ru":"Варите 3 минуты, добавьте масло и дайте постоять под крышкой 5 минут."},"timerMinutes":5}
+    ]
+  },
+  {
+    "id": "ovsyanka",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Овсяная каша с бананом"},
+    "description": {"ru":"Простой сытный завтрак"},
+    "activeMinutes": 7,
+    "totalMinutes": 7,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["onepan"],
+    "emoji": "🥣",
+    "photoQuery": "oatmeal banana porridge",
+    "ingredients": [
+      {"product":"oats","amount":100,"unit":"g"},
+      {"product":"milk","amount":400,"unit":"ml"},
+      {"product":"banana","amount":120,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"honey","amount":21,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"salt","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}},
+      {"product":"cinnamon","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Доведите молоко до кипения, всыпьте хлопья и соль."}},
+      {"text":{"ru":"Варите 5 минут на слабом огне, помешивая."},"timerMinutes":5},
+      {"text":{"ru":"Разложите по тарелкам, сверху — кружки банана, мёд и корица."}}
+    ]
+  },
+  {
+    "id": "grechnevaya-kasha-moloko",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Гречневая каша с молоком"},
+    "description": {"ru":"Вкус детства за 20 минут"},
+    "activeMinutes": 5,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🥣",
+    "photoQuery": "buckwheat porridge milk",
+    "ingredients": [
+      {"product":"buckwheat","amount":150,"unit":"g"},
+      {"product":"water","amount":300,"unit":"ml"},
+      {"product":"milk","amount":300,"unit":"ml"},
+      {"product":"butter","amount":15,"unit":"g"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"sugar","amount":4.3,"unit":"g","measure":{"qty":1,"unit":"tsp"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Промойте гречку, залейте водой, посолите и варите под крышкой 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Добавьте сливочное масло."}},
+      {"text":{"ru":"Разложите по тарелкам и залейте тёплым молоком."}}
+    ]
+  },
+  {
+    "id": "pshennaya-kasha-tykva",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Пшённая каша с тыквой"},
+    "description": {"ru":"Золотистая каша на молоке"},
+    "activeMinutes": 10,
+    "totalMinutes": 35,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🎃",
+    "photoQuery": "millet porridge pumpkin",
+    "ingredients": [
+      {"product":"millet","amount":200,"unit":"g"},
+      {"product":"pumpkin","amount":300,"unit":"g"},
+      {"product":"milk","amount":600,"unit":"ml"},
+      {"product":"water","amount":200,"unit":"ml"},
+      {"product":"sugar","amount":25.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"butter","amount":25,"unit":"g"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Тыкву нарежьте кубиками и варите в воде 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Пшено промойте кипятком, добавьте к тыкве вместе с молоком, сахаром и солью."}},
+      {"text":{"ru":"Варите на слабом огне 20 минут, помешивая."},"timerMinutes":20},
+      {"text":{"ru":"Добавьте масло и дайте настояться 5 минут."}}
+    ]
+  },
+  {
+    "id": "omlet",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Омлет пышный"},
+    "description": {"ru":"Классический омлет на молоке"},
+    "activeMinutes": 10,
+    "totalMinutes": 12,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["onepan"],
+    "emoji": "🍳",
+    "photoQuery": "omelette",
+    "ingredients": [
+      {"product":"egg","amount":220,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"milk","amount":80,"unit":"ml"},
+      {"product":"butter","amount":10,"unit":"g","use":"fry"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"cheese","amount":40,"unit":"g","optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Взбейте вилкой яйца с молоком и солью."}},
+      {"text":{"ru":"Растопите масло на сковороде, вылейте смесь."}},
+      {"text":{"ru":"Готовьте под крышкой на слабом огне 7 минут. В конце посыпьте сыром."},"timerMinutes":7}
+    ]
+  },
+  {
+    "id": "yaichnica-s-pomidorami",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Яичница с помидорами"},
+    "description": {"ru":"Глазунья с томатами и зеленью"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["onepan"],
+    "emoji": "🍳",
+    "photoQuery": "fried eggs tomatoes",
+    "ingredients": [
+      {"product":"egg","amount":220,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"tomato","amount":240,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"onion","amount":55,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"veg_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"dill","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук 2 минуты, добавьте помидоры дольками и готовьте 3 минуты."}},
+      {"text":{"ru":"Вбейте яйца, посолите и жарьте до готовности белка."}},
+      {"text":{"ru":"Посыпьте зеленью."}}
+    ]
+  },
+  {
+    "id": "tvorog-so-smetanoj",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Творог с ягодами и мёдом"},
+    "description": {"ru":"Завтрак без готовки за 3 минуты"},
+    "activeMinutes": 3,
+    "totalMinutes": 3,
+    "difficulty": 1,
+    "servings": 1,
+    "equipment": [],
+    "emoji": "🍓",
+    "photoQuery": "quark with berries",
+    "ingredients": [
+      {"product":"quark","amount":200,"unit":"g"},
+      {"product":"sour_cream","amount":30,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"berries_frozen","amount":80,"unit":"g"},
+      {"product":"honey","amount":21,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"walnuts","amount":15,"unit":"g","optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Разомните творог со сметаной."}},
+      {"text":{"ru":"Сверху выложите ягоды, полейте мёдом и посыпьте орехами."}}
+    ]
+  },
+  {
+    "id": "buterbrody-goryachie",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Горячие бутерброды"},
+    "description": {"ru":"Бутерброды с колбасой и сыром из духовки"},
+    "activeMinutes": 5,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["oven"],
+    "emoji": "🥪",
+    "photoQuery": "hot sandwiches cheese baked",
+    "ingredients": [
+      {"product":"white_bread","amount":120,"unit":"g","measure":{"qty":4,"unit":"slice"}},
+      {"product":"boiled_sausage","amount":100,"unit":"g"},
+      {"product":"cheese","amount":80,"unit":"g"},
+      {"product":"tomato","amount":120,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"mayonnaise","amount":14.3,"unit":"g","measure":{"qty":1,"unit":"tbsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Смажьте хлеб тонким слоем майонеза."}},
+      {"text":{"ru":"Выложите колбасу, кружки помидора и тёртый сыр."}},
+      {"text":{"ru":"Запекайте при 200 °C 8–10 минут до расплавления сыра."},"timerMinutes":9}
+    ]
+  },
+  {
+    "id": "grenki",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Гренки сладкие"},
+    "description": {"ru":"Обжаренный в яйце и молоке батон"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍞",
+    "photoQuery": "sweet french toast",
+    "ingredients": [
+      {"product":"white_bread","amount":180,"unit":"g","measure":{"qty":6,"unit":"slice"}},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"milk","amount":100,"unit":"ml"},
+      {"product":"sugar","amount":12.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"butter","amount":20,"unit":"g","use":"fry"}
+    ],
+    "steps": [
+      {"text":{"ru":"Взбейте яйца с молоком и сахаром."}},
+      {"text":{"ru":"Обмакивайте ломтики хлеба в смесь с двух сторон."}},
+      {"text":{"ru":"Жарьте на сливочном масле по 2 минуты с каждой стороны."}}
+    ]
+  },
+  {
+    "id": "zapekanka",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Творожная запеканка"},
+    "description": {"ru":"Нежная запеканка как в детском саду"},
+    "activeMinutes": 15,
+    "totalMinutes": 60,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": ["oven"],
+    "emoji": "🍰",
+    "photoQuery": "cottage cheese casserole zapekanka",
+    "ingredients": [
+      {"product":"quark","amount":600,"unit":"g"},
+      {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"semolina","amount":42,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
+      {"product":"sour_cream","amount":100,"unit":"g"},
+      {"product":"sugar","amount":80,"unit":"g"},
+      {"product":"vanilla_sugar","amount":8.5,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"raisins","amount":50,"unit":"g","optional":true},
+      {"product":"butter","amount":10,"unit":"g"},
+      {"product":"salt","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте манку со сметаной и оставьте на 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Разотрите творог с яйцами, сахаром, ванильным сахаром и солью, добавьте манку и изюм."}},
+      {"text":{"ru":"Выложите в смазанную маслом форму."}},
+      {"text":{"ru":"Выпекайте при 180 °C 40 минут до золотистого верха."},"timerMinutes":40}
+    ]
+  },
+  {
+    "id": "olivier",
+    "cuisine": "russian",
+    "type": "salad",
+    "name": {"ru":"Оливье"},
+    "description": {"ru":"Главный праздничный салат с колбасой и горошком"},
+    "activeMinutes": 30,
+    "totalMinutes": 50,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "olivier salad",
+    "ingredients": [
+      {"product":"potato","amount":480,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"carrot","amount":200,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"egg","amount":220,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"boiled_sausage","amount":300,"unit":"g"},
+      {"product":"pickles","amount":240,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"peas_canned","amount":280,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"mayonnaise","amount":150,"unit":"g"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите картофель и морковь в мундире 25 минут, яйца — 10 минут. Остудите и очистите."},"timerMinutes":25},
+      {"text":{"ru":"Нарежьте всё мелким кубиком одинакового размера."}},
+      {"text":{"ru":"Добавьте горошек без жидкости, заправьте майонезом и посолите."}}
+    ]
+  },
+  {
+    "id": "vinegret",
+    "cuisine": "russian",
+    "type": "salad",
+    "name": {"ru":"Винегрет"},
+    "description": {"ru":"Постный салат из свёклы и квашеной капусты"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "vinegret salad",
+    "ingredients": [
+      {"product":"beet_cooked","amount":375,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"potato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"carrot","amount":200,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"pickles","amount":180,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"sauerkraut","amount":200,"unit":"g"},
+      {"product":"peas_canned","amount":140,"unit":"g","measure":{"qty":0.5,"unit":"can"}},
+      {"product":"onion","amount":55,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"veg_oil","amount":41.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите картофель и морковь в мундире, остудите."}},
+      {"text":{"ru":"Нарежьте все овощи мелким кубиком. Свёклу отдельно смешайте с ложкой масла, чтобы она не окрасила остальное."}},
+      {"text":{"ru":"Соедините всё, добавьте капусту, горошек и масло, посолите."}}
+    ]
+  },
+  {
+    "id": "seledka-pod-shuboj",
+    "cuisine": "russian",
+    "type": "salad",
+    "name": {"ru":"Сельдь под шубой"},
+    "description": {"ru":"Слоёный салат со свёклой и селёдкой"},
+    "activeMinutes": 35,
+    "totalMinutes": 95,
+    "difficulty": 2,
+    "servings": 8,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "dressed herring salad",
+    "ingredients": [
+      {"product":"herring","amount":300,"unit":"g"},
+      {"product":"beet_cooked","amount":375,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"potato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"carrot","amount":200,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"mayonnaise","amount":200,"unit":"g"}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите картофель, морковь и яйца, остудите и натрите на крупной тёрке по отдельности."}},
+      {"text":{"ru":"Сельдь и лук нарежьте мелким кубиком."}},
+      {"text":{"ru":"Выложите слоями: картофель, сельдь с луком, морковь, яйца, свёкла. Каждый слой промазывайте майонезом."}},
+      {"text":{"ru":"Уберите в холодильник минимум на 1 час."},"timerMinutes":60}
+    ]
+  },
+  {
+    "id": "mimoza",
+    "cuisine": "russian",
+    "type": "salad",
+    "name": {"ru":"Салат «Мимоза»"},
+    "description": {"ru":"Слоёный салат с рыбными консервами"},
+    "activeMinutes": 30,
+    "totalMinutes": 60,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "mimosa salad russian",
+    "ingredients": [
+      {"product":"fish_canned","amount":240,"unit":"g","measure":{"qty":2,"unit":"can"}},
+      {"product":"potato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"carrot","amount":200,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"egg","amount":220,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"cheese","amount":100,"unit":"g"},
+      {"product":"mayonnaise","amount":150,"unit":"g"}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите овощи и яйца, остудите. Натрите на тёрке по отдельности, желтки отдельно от белков."}},
+      {"text":{"ru":"Рыбу разомните вилкой, лук мелко нарежьте."}},
+      {"text":{"ru":"Выложите слоями: картофель, рыба с луком, белки, морковь, сыр, желтки. Слои промазывайте майонезом."}},
+      {"text":{"ru":"Охладите 30 минут перед подачей."},"timerMinutes":30}
+    ]
+  },
+  {
+    "id": "krabovyj-salat",
+    "cuisine": "russian",
+    "type": "salad",
+    "name": {"ru":"Крабовый салат"},
+    "description": {"ru":"Салат с крабовыми палочками и кукурузой"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "crab stick salad",
+    "ingredients": [
+      {"product":"crab_sticks","amount":250,"unit":"g"},
+      {"product":"corn_canned","amount":285,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"egg","amount":220,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"cucumber","amount":150,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"rice","amount":60,"unit":"g"},
+      {"product":"mayonnaise","amount":100,"unit":"g"},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите рис и яйца, остудите."}},
+      {"text":{"ru":"Нарежьте палочки, яйца и огурец кубиками."}},
+      {"text":{"ru":"Смешайте с рисом и кукурузой, заправьте майонезом."}}
+    ]
+  },
+  {
+    "id": "salat-iz-svezhih-ovoshchej",
+    "cuisine": "russian",
+    "type": "salad",
+    "name": {"ru":"Салат из огурцов и помидоров"},
+    "description": {"ru":"Летний салат со сметаной"},
+    "activeMinutes": 7,
+    "totalMinutes": 7,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "cucumber tomato salad",
+    "ingredients": [
+      {"product":"tomato","amount":240,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"cucumber","amount":150,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"red_onion","amount":27.5,"unit":"g","measure":{"qty":0.25,"unit":"pc"}},
+      {"product":"sour_cream","amount":30,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"dill","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте помидоры дольками, огурцы кружками, лук тонкими полукольцами."}},
+      {"text":{"ru":"Заправьте сметаной, посолите и посыпьте укропом."}}
+    ]
+  },
+  {
+    "id": "salat-kapusta-morkov",
+    "cuisine": "russian",
+    "type": "salad",
+    "name": {"ru":"Салат из капусты с морковью"},
+    "description": {"ru":"Хрустящий витаминный салат"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥬",
+    "photoQuery": "coleslaw cabbage carrot",
+    "ingredients": [
+      {"product":"cabbage","amount":400,"unit":"g"},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"vinegar","amount":15,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"sugar","amount":4.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Тонко нашинкуйте капусту, посолите и помните руками до сока."}},
+      {"text":{"ru":"Добавьте тёртую морковь, сахар, уксус и масло, перемешайте."}}
+    ]
+  },
+  {
+    "id": "svekla-s-chesnokom",
+    "cuisine": "russian",
+    "type": "salad",
+    "name": {"ru":"Свёкла с чесноком и орехами"},
+    "description": {"ru":"Простая закуска-салат"},
+    "activeMinutes": 7,
+    "totalMinutes": 7,
+    "difficulty": 1,
+    "servings": 3,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "beetroot salad garlic",
+    "ingredients": [
+      {"product":"beet_cooked","amount":375,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"walnuts","amount":40,"unit":"g"},
+      {"product":"mayonnaise","amount":28.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Натрите свёклу на крупной тёрке."}},
+      {"text":{"ru":"Добавьте давленый чеснок, рубленые орехи и майонез, посолите."}}
+    ]
+  },
+  {
+    "id": "salat-s-pechenyu-treski",
+    "cuisine": "russian",
+    "type": "salad",
+    "name": {"ru":"Салат с тунцом и яйцом"},
+    "description": {"ru":"Сытный салат из простых продуктов"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 3,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "tuna egg salad",
+    "ingredients": [
+      {"product":"tuna_canned","amount":140,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"cucumber","amount":150,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"green_onion","amount":25,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"lettuce","amount":80,"unit":"g"},
+      {"product":"mayonnaise","amount":28.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите яйца вкрутую и нарежьте."}},
+      {"text":{"ru":"Разомните тунец, нарежьте огурец и зелёный лук."}},
+      {"text":{"ru":"Смешайте с листьями салата и заправьте майонезом."}}
+    ]
+  },
+  {
+    "id": "grechka-garnir",
+    "cuisine": "russian",
+    "type": "side",
+    "name": {"ru":"Гречка рассыпчатая"},
+    "description": {"ru":"Универсальный гарнир"},
+    "activeMinutes": 5,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🌾",
+    "photoQuery": "boiled buckwheat",
+    "ingredients": [
+      {"product":"buckwheat","amount":250,"unit":"g"},
+      {"product":"water","amount":500,"unit":"ml"},
+      {"product":"butter","amount":20,"unit":"g"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Промойте гречку, залейте водой, посолите."}},
+      {"text":{"ru":"Доведите до кипения, накройте и варите на слабом огне 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Добавьте масло и дайте постоять под крышкой 5 минут."}}
+    ]
+  },
+  {
+    "id": "pyure",
+    "cuisine": "russian",
+    "type": "side",
+    "name": {"ru":"Картофельное пюре"},
+    "description": {"ru":"Воздушное пюре на молоке"},
+    "activeMinutes": 10,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥔",
+    "photoQuery": "mashed potatoes",
+    "ingredients": [
+      {"product":"potato","amount":1000,"unit":"g"},
+      {"product":"milk","amount":150,"unit":"ml"},
+      {"product":"butter","amount":50,"unit":"g"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите очищенный картофель в подсоленной воде 20 минут."},"timerMinutes":20},
+      {"text":{"ru":"Слейте воду, разомните картофель толкушкой."}},
+      {"text":{"ru":"Влейте горячее молоко, добавьте масло и взбейте до пышности."}}
+    ]
+  },
+  {
+    "id": "kartoshka-otvarnaya",
+    "cuisine": "russian",
+    "type": "side",
+    "name": {"ru":"Картофель отварной с укропом"},
+    "description": {"ru":"Молодая картошка с маслом и зеленью"},
+    "activeMinutes": 5,
+    "totalMinutes": 25,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🥔",
+    "photoQuery": "boiled potatoes dill",
+    "ingredients": [
+      {"product":"potato","amount":800,"unit":"g"},
+      {"product":"butter","amount":30,"unit":"g"},
+      {"product":"dill","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"garlic","amount":4,"unit":"g","measure":{"qty":1,"unit":"clove"},"optional":true},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Варите картофель в подсоленной воде 20 минут до мягкости."},"timerMinutes":20},
+      {"text":{"ru":"Слейте воду, добавьте масло, рубленый укроп и чеснок, встряхните под крышкой."}}
+    ]
+  },
+  {
+    "id": "tushenaya-kapusta",
+    "cuisine": "russian",
+    "type": "side",
+    "name": {"ru":"Тушёная капуста"},
+    "description": {"ru":"Гарнир или самостоятельное постное блюдо"},
+    "activeMinutes": 15,
+    "totalMinutes": 45,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🥬",
+    "photoQuery": "braised cabbage",
+    "ingredients": [
+      {"product":"cabbage","amount":800,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"tomato_paste","amount":33,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"water","amount":150,"unit":"ml"},
+      {"product":"veg_oil","amount":41.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"bay_leaf","amount":0.2,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"sugar","amount":4.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук и морковь 5 минут."}},
+      {"text":{"ru":"Добавьте нашинкованную капусту, жарьте 5 минут, помешивая."}},
+      {"text":{"ru":"Вмешайте томатную пасту, воду, соль, сахар и лавровый лист."}},
+      {"text":{"ru":"Тушите под крышкой 30 минут."},"timerMinutes":30}
+    ]
+  },
+  {
+    "id": "kapusta-s-sosiskami",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Тушёная капуста с сосисками"},
+    "description": {"ru":"Быстрый ужин из того, что есть"},
+    "activeMinutes": 15,
+    "totalMinutes": 40,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🌭",
+    "photoQuery": "braised cabbage sausages",
+    "ingredients": [
+      {"product":"cabbage","amount":800,"unit":"g"},
+      {"product":"wieners","amount":300,"unit":"g","measure":{"qty":6,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"tomato_paste","amount":33,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"water","amount":150,"unit":"ml"},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук и морковь, добавьте капусту и жарьте 5 минут."}},
+      {"text":{"ru":"Добавьте томатную пасту, воду и соль, тушите под крышкой 20 минут."},"timerMinutes":20},
+      {"text":{"ru":"Положите сосиски кружочками и тушите ещё 10 минут."},"timerMinutes":10}
+    ]
+  },
+  {
+    "id": "ris-otvarnoj",
+    "cuisine": "russian",
+    "type": "side",
+    "name": {"ru":"Рис рассыпчатый"},
+    "description": {"ru":"Простой гарнир к мясу и рыбе"},
+    "activeMinutes": 3,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🍚",
+    "photoQuery": "steamed white rice",
+    "ingredients": [
+      {"product":"rice","amount":250,"unit":"g"},
+      {"product":"water","amount":450,"unit":"ml"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"butter","amount":15,"unit":"g","optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Промойте рис до прозрачной воды."}},
+      {"text":{"ru":"Залейте водой, посолите, доведите до кипения."}},
+      {"text":{"ru":"Варите под крышкой на минимальном огне 15 минут, затем дайте постоять 5 минут."},"timerMinutes":15}
+    ]
+  },
+  {
+    "id": "kabachkovye-oladi",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Оладьи из кабачков"},
+    "description": {"ru":"Лёгкие овощные оладьи со сметаной"},
+    "activeMinutes": 25,
+    "totalMinutes": 25,
+    "difficulty": 1,
+    "servings": 3,
+    "equipment": [],
+    "emoji": "🥒",
+    "photoQuery": "zucchini fritters",
+    "ingredients": [
+      {"product":"zucchini","amount":500,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"flour","amount":45,"unit":"g","measure":{"qty":5,"unit":"tbsp"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"dill","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"veg_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"},"use":"fry"},
+      {"product":"sour_cream","amount":45,"unit":"g","measure":{"qty":3,"unit":"tbsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Натрите кабачки на крупной тёрке, посолите, через 10 минут отожмите."}},
+      {"text":{"ru":"Вмешайте яйца, муку, чеснок и укроп."}},
+      {"text":{"ru":"Жарьте оладьи по 3 минуты с каждой стороны. Подавайте со сметаной."}}
+    ]
+  },
+  {
+    "id": "farshirovannye-percy",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Фаршированные перцы"},
+    "description": {"ru":"Перцы с мясом и рисом в томатном соусе"},
+    "activeMinutes": 30,
+    "totalMinutes": 80,
+    "difficulty": 2,
+    "servings": 6,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🫑",
+    "photoQuery": "stuffed peppers",
+    "ingredients": [
+      {"product":"bell_pepper","amount":1280,"unit":"g","measure":{"qty":8,"unit":"pc"}},
+      {"product":"mixed_mince","amount":500,"unit":"g"},
+      {"product":"rice","amount":100,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"tomato_paste","amount":33,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"sour_cream","amount":100,"unit":"g"},
+      {"product":"water","amount":600,"unit":"ml"},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Срежьте у перцев верхушки, удалите семена."}},
+      {"text":{"ru":"Смешайте фарш с полусваренным рисом, половиной лука и солью. Наполните перцы."}},
+      {"text":{"ru":"Обжарьте оставшийся лук с морковью, добавьте томатную пасту, сметану и воду."}},
+      {"text":{"ru":"Поставьте перцы в кастрюлю, залейте соусом и тушите под крышкой 45 минут."},"timerMinutes":45}
+    ]
+  },
+  {
+    "id": "ezhiki",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Ёжики из фарша с рисом"},
+    "description": {"ru":"Мясные шарики в сливочном соусе"},
+    "activeMinutes": 20,
+    "totalMinutes": 50,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","oven"],
+    "emoji": "🦔",
+    "photoQuery": "porcupine meatballs rice",
+    "ingredients": [
+      {"product":"mixed_mince","amount":500,"unit":"g"},
+      {"product":"rice","amount":100,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"cooking_cream","amount":200,"unit":"ml"},
+      {"product":"tomato_paste","amount":16.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"water","amount":150,"unit":"ml"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте фарш с сырым промытым рисом, тёртым луком, яйцом, солью и перцем."}},
+      {"text":{"ru":"Скатайте шарики и уложите в форму."}},
+      {"text":{"ru":"Смешайте сливки, томатную пасту и воду, залейте ёжиков."}},
+      {"text":{"ru":"Запекайте под фольгой при 190 °C 35 минут."},"timerMinutes":35}
+    ]
+  },
+  {
+    "id": "kurica-s-grechkoj-v-duhovke",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Курица с гречкой в духовке"},
+    "description": {"ru":"Сложил всё в форму и забыл на час"},
+    "activeMinutes": 10,
+    "totalMinutes": 65,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["oven"],
+    "emoji": "🍗",
+    "photoQuery": "baked chicken buckwheat",
+    "ingredients": [
+      {"product":"chicken_legs","amount":800,"unit":"g"},
+      {"product":"buckwheat","amount":250,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"sour_cream","amount":100,"unit":"g"},
+      {"product":"water","amount":500,"unit":"ml"},
+      {"product":"cheese","amount":80,"unit":"g"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Высыпьте промытую гречку в форму, сверху — лук и чеснок."}},
+      {"text":{"ru":"Выложите курицу, посолите, поперчите, смажьте сметаной."}},
+      {"text":{"ru":"Залейте горячей водой, посыпьте сыром."}},
+      {"text":{"ru":"Запекайте при 190 °C 55 минут."},"timerMinutes":55}
+    ]
+  },
+  {
+    "id": "zapekanka-kartofelnaya",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Картофельная запеканка с фаршем"},
+    "description": {"ru":"Пюре и мясо под сырной корочкой"},
+    "activeMinutes": 30,
+    "totalMinutes": 65,
+    "difficulty": 2,
+    "servings": 6,
+    "equipment": ["oven"],
+    "emoji": "🥔",
+    "photoQuery": "potato casserole minced meat",
+    "ingredients": [
+      {"product":"potato","amount":1000,"unit":"g"},
+      {"product":"mixed_mince","amount":500,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"milk","amount":100,"unit":"ml"},
+      {"product":"butter","amount":30,"unit":"g"},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"cheese","amount":100,"unit":"g"},
+      {"product":"veg_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите картофель, разомните с молоком, маслом и яйцом."}},
+      {"text":{"ru":"Обжарьте фарш с луком 10 минут, посолите и поперчите."}},
+      {"text":{"ru":"В форму выложите половину пюре, фарш, оставшееся пюре, посыпьте сыром."}},
+      {"text":{"ru":"Запекайте при 190 °C 25 минут."},"timerMinutes":25}
+    ]
+  },
+  {
+    "id": "minitai-v-klyare",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Рыба в кляре"},
+    "description": {"ru":"Хрустящее филе белой рыбы"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🐟",
+    "photoQuery": "battered fried fish",
+    "ingredients": [
+      {"product":"white_fish","amount":600,"unit":"g"},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"flour","amount":36,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
+      {"product":"veg_oil","amount":69,"unit":"g","measure":{"qty":5,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}},
+      {"product":"lemon","amount":50,"unit":"g","measure":{"qty":0.5,"unit":"pc"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте рыбу порционно, посолите и поперчите."}},
+      {"text":{"ru":"Взбейте яйца с мукой до гладкого кляра."}},
+      {"text":{"ru":"Окуните рыбу в кляр и жарьте по 3 минуты с каждой стороны."}},
+      {"text":{"ru":"Подавайте с лимоном."}}
+    ]
+  },
+  {
+    "id": "losos-v-duhovke",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Лосось в духовке с лимоном"},
+    "description": {"ru":"Запечённая красная рыба за 20 минут"},
+    "activeMinutes": 5,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["oven"],
+    "emoji": "🐟",
+    "photoQuery": "baked salmon lemon",
+    "ingredients": [
+      {"product":"salmon","amount":400,"unit":"g"},
+      {"product":"lemon","amount":50,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"dill","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Разогрейте духовку до 200 °C."}},
+      {"text":{"ru":"Выложите лосось на пергамент, посолите, поперчите, полейте маслом, сверху — кружки лимона."}},
+      {"text":{"ru":"Запекайте 14 минут. Посыпьте укропом."},"timerMinutes":14}
+    ]
+  },
+  {
+    "id": "otbivnye",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Свиные отбивные"},
+    "description": {"ru":"Отбивные в яичной панировке"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥩",
+    "photoQuery": "pork chops breaded",
+    "ingredients": [
+      {"product":"pork_loin","amount":600,"unit":"g"},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"flour","amount":27,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"veg_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте мясо на куски по 1 см, отбейте через плёнку, посолите и поперчите."}},
+      {"text":{"ru":"Обваляйте в муке, затем окуните во взбитые яйца."}},
+      {"text":{"ru":"Жарьте по 3–4 минуты с каждой стороны."}}
+    ]
+  },
+  {
+    "id": "shashlik-v-duhovke",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Шашлык из свинины в духовке"},
+    "description": {"ru":"Маринованная свинина на шпажках"},
+    "activeMinutes": 20,
+    "totalMinutes": 160,
+    "difficulty": 2,
+    "servings": 5,
+    "equipment": ["oven"],
+    "emoji": "🍢",
+    "photoQuery": "shashlik pork skewers",
+    "ingredients": [
+      {"product":"pork","amount":1000,"unit":"g"},
+      {"product":"onion","amount":330,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"vinegar","amount":30,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"paprika","amount":2.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"pepper","amount":2.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте мясо кусками по 4 см, лук — кольцами. Смешайте с уксусом, солью и специями, помните руками."}},
+      {"text":{"ru":"Маринуйте минимум 2 часа."},"timerMinutes":120},
+      {"text":{"ru":"Нанижите на шпажки и уложите на решётку над противнем."}},
+      {"text":{"ru":"Запекайте при 220 °C 25–30 минут, один раз перевернув."},"timerMinutes":28}
+    ]
+  },
+  {
+    "id": "kurica-tabaka",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Цыплёнок под прессом"},
+    "description": {"ru":"Курица с хрустящей кожей на сковороде"},
+    "activeMinutes": 15,
+    "totalMinutes": 50,
+    "difficulty": 2,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🍗",
+    "photoQuery": "chicken tabaka",
+    "ingredients": [
+      {"product":"chicken_whole","amount":1200,"unit":"g"},
+      {"product":"garlic","amount":16,"unit":"g","measure":{"qty":4,"unit":"clove"}},
+      {"product":"butter","amount":30,"unit":"g","use":"fry"},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"paprika","amount":2.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Разрежьте курицу вдоль грудки, распластайте и слегка отбейте. Натрите солью, перцем и паприкой."}},
+      {"text":{"ru":"Выложите кожей вниз на сковороду с маслом, придавите крышкой с грузом."}},
+      {"text":{"ru":"Жарьте на среднем огне по 20 минут с каждой стороны."},"timerMinutes":20},
+      {"text":{"ru":"Смажьте давленым чесноком и дайте отдохнуть 5 минут."}}
+    ]
+  },
+  {
+    "id": "bliny-s-myasom",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Блинчики с мясом"},
+    "description": {"ru":"Блины с начинкой из фарша"},
+    "activeMinutes": 45,
+    "totalMinutes": 60,
+    "difficulty": 2,
+    "servings": 5,
+    "equipment": [],
+    "emoji": "🌯",
+    "photoQuery": "blini stuffed meat",
+    "ingredients": [
+      {"product":"milk","amount":500,"unit":"ml"},
+      {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"flour","amount":200,"unit":"g"},
+      {"product":"sugar","amount":4.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"veg_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"},"use":"fry"},
+      {"product":"mixed_mince","amount":400,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Приготовьте тесто из молока, яиц, муки, сахара и половины соли. Испеките тонкие блины."}},
+      {"text":{"ru":"Обжарьте фарш с луком 10 минут, посолите и поперчите."}},
+      {"text":{"ru":"Заверните начинку в блины конвертиками."}},
+      {"text":{"ru":"Обжарьте конвертики с двух сторон до корочки."}}
+    ]
+  },
+  {
+    "id": "chebureki-lenivye",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Ленивые чебуреки в лаваше"},
+    "description": {"ru":"Хрустящие конверты с сочным фаршем"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥟",
+    "photoQuery": "chebureki",
+    "ingredients": [
+      {"product":"lavash","amount":200,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"mixed_mince","amount":350,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"water","amount":45,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"veg_oil","amount":69,"unit":"g","measure":{"qty":5,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте фарш с тёртым луком, водой, солью и перцем."}},
+      {"text":{"ru":"Разрежьте лаваш на квадраты, намажьте половину каждого тонким слоем фарша и сложите треугольником."}},
+      {"text":{"ru":"Жарьте по 2–3 минуты с каждой стороны до хруста."}}
+    ]
+  },
+  {
+    "id": "pirozhki-s-kapustoj",
+    "cuisine": "russian",
+    "type": "snack",
+    "name": {"ru":"Пирожки с капустой из слоёного теста"},
+    "description": {"ru":"Быстрые пирожки без замеса"},
+    "activeMinutes": 20,
+    "totalMinutes": 45,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": ["oven"],
+    "emoji": "🥐",
+    "photoQuery": "pirozhki cabbage",
+    "ingredients": [
+      {"product":"puff_pastry","amount":550,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"cabbage","amount":500,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук, добавьте капусту и тушите 15 минут. Посолите, вмешайте одно рубленое варёное яйцо."},"timerMinutes":15},
+      {"text":{"ru":"Разрежьте тесто на прямоугольники, положите начинку и защипните."}},
+      {"text":{"ru":"Смажьте вторым взбитым яйцом и выпекайте при 200 °C 20 минут."},"timerMinutes":20}
+    ]
+  },
+  {
+    "id": "buterbrody-so-shprotami",
+    "cuisine": "russian",
+    "type": "snack",
+    "name": {"ru":"Бутерброды со шпротами"},
+    "description": {"ru":"Закуска на ржаном хлебе"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥪",
+    "photoQuery": "sprats sandwich",
+    "ingredients": [
+      {"product":"rye_bread","amount":320,"unit":"g","measure":{"qty":8,"unit":"slice"}},
+      {"product":"fish_canned","amount":120,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"pickles","amount":120,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"garlic","amount":4,"unit":"g","measure":{"qty":1,"unit":"clove"}},
+      {"product":"mayonnaise","amount":28.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"dill","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Подсушите хлеб на сухой сковороде и натрите чесноком."}},
+      {"text":{"ru":"Смажьте майонезом, выложите кружок огурца и рыбку."}},
+      {"text":{"ru":"Украсьте укропом."}}
+    ]
+  },
+  {
+    "id": "forshmak",
+    "cuisine": "russian",
+    "type": "snack",
+    "name": {"ru":"Форшмак"},
+    "description": {"ru":"Паштет из сельди с яблоком"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": [],
+    "emoji": "🐟",
+    "photoQuery": "forshmak herring",
+    "ingredients": [
+      {"product":"herring","amount":300,"unit":"g"},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"apple","amount":170,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"onion","amount":55,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"butter","amount":50,"unit":"g"},
+      {"product":"rye_bread","amount":240,"unit":"g","measure":{"qty":6,"unit":"slice"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите яйца вкрутую."}},
+      {"text":{"ru":"Мелко порубите или измельчите блендером сельдь, яйца, яблоко и лук."}},
+      {"text":{"ru":"Вмешайте мягкое сливочное масло."}},
+      {"text":{"ru":"Подавайте на ржаном хлебе."}}
+    ]
+  },
+  {
+    "id": "sharlotka",
+    "cuisine": "russian",
+    "type": "dessert",
+    "name": {"ru":"Шарлотка с яблоками"},
+    "description": {"ru":"Самый простой яблочный пирог"},
+    "activeMinutes": 15,
+    "totalMinutes": 55,
+    "difficulty": 1,
+    "servings": 8,
+    "equipment": ["oven"],
+    "emoji": "🍎",
+    "photoQuery": "sharlotka apple cake",
+    "ingredients": [
+      {"product":"apple","amount":680,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"egg","amount":220,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"sugar","amount":180,"unit":"g"},
+      {"product":"flour","amount":160,"unit":"g"},
+      {"product":"baking_powder","amount":4.5,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"cinnamon","amount":1.3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"},"optional":true},
+      {"product":"butter","amount":10,"unit":"g"}
+    ],
+    "steps": [
+      {"text":{"ru":"Взбейте яйца с сахаром миксером 5 минут до пышной светлой массы."}},
+      {"text":{"ru":"Аккуратно вмешайте муку с разрыхлителем."}},
+      {"text":{"ru":"Яблоки нарежьте дольками, выложите в смазанную форму и залейте тестом."}},
+      {"text":{"ru":"Выпекайте при 180 °C 40 минут."},"timerMinutes":40}
+    ]
+  },
+  {
+    "id": "blinchiki-s-tvorogom",
+    "cuisine": "russian",
+    "type": "dessert",
+    "name": {"ru":"Блинчики с творогом"},
+    "description": {"ru":"Сладкие блины с творожной начинкой"},
+    "activeMinutes": 40,
+    "totalMinutes": 50,
+    "difficulty": 2,
+    "servings": 5,
+    "equipment": [],
+    "emoji": "🥞",
+    "photoQuery": "blintzes cheese",
+    "ingredients": [
+      {"product":"milk","amount":500,"unit":"ml"},
+      {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"flour","amount":200,"unit":"g"},
+      {"product":"sugar","amount":51,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"veg_oil","amount":41.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"},"use":"fry"},
+      {"product":"quark","amount":400,"unit":"g"},
+      {"product":"sour_cream","amount":30,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"raisins","amount":40,"unit":"g","optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Замесите тесто из молока, яиц, муки, 1 ст. л. сахара и соли. Испеките блины."}},
+      {"text":{"ru":"Смешайте творог с оставшимся сахаром, сметаной и изюмом."}},
+      {"text":{"ru":"Заверните начинку в блины."}},
+      {"text":{"ru":"По желанию обжарьте конвертики на сливочном масле."}}
+    ]
+  },
+  {
+    "id": "medovik-lenivyj",
+    "cuisine": "russian",
+    "type": "dessert",
+    "name": {"ru":"Ленивый медовик в стакане"},
+    "description": {"ru":"Медовое печенье со сметанным кремом"},
+    "activeMinutes": 15,
+    "totalMinutes": 75,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🍯",
+    "photoQuery": "honey cake dessert glass",
+    "ingredients": [
+      {"product":"cookies","amount":200,"unit":"g"},
+      {"product":"sour_cream","amount":400,"unit":"g"},
+      {"product":"honey","amount":42,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"powdered_sugar","amount":22.5,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"walnuts","amount":30,"unit":"g"}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте сметану с сахарной пудрой и мёдом."}},
+      {"text":{"ru":"Раскрошите печенье."}},
+      {"text":{"ru":"Выложите в стаканы слоями крошку и крем, сверху — орехи."}},
+      {"text":{"ru":"Уберите в холодильник на 1 час."},"timerMinutes":60}
+    ]
+  },
+  {
+    "id": "kompot-kisel",
+    "cuisine": "russian",
+    "type": "dessert",
+    "name": {"ru":"Яблоки печёные с мёдом"},
+    "description": {"ru":"Тёплый десерт из трёх продуктов"},
+    "activeMinutes": 5,
+    "totalMinutes": 35,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["oven"],
+    "emoji": "🍏",
+    "photoQuery": "baked apples honey",
+    "ingredients": [
+      {"product":"apple","amount":680,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"honey","amount":28,"unit":"g","measure":{"qty":4,"unit":"tsp"}},
+      {"product":"walnuts","amount":40,"unit":"g"},
+      {"product":"cinnamon","amount":1.3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Вырежьте у яблок сердцевину, не прорезая дно."}},
+      {"text":{"ru":"Наполните орехами, мёдом и корицей."}},
+      {"text":{"ru":"Запекайте при 180 °C 30 минут."},"timerMinutes":30}
+    ]
+  },
+  {
+    "id": "lagman",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Лагман"},
+    "description": {"ru":"Густой суп-лапша с говядиной и овощами"},
+    "activeMinutes": 30,
+    "totalMinutes": 80,
+    "difficulty": 2,
+    "servings": 5,
+    "equipment": ["onepan"],
+    "emoji": "🍜",
+    "photoQuery": "lagman noodles",
+    "ingredients": [
+      {"product":"beef","amount":500,"unit":"g"},
+      {"product":"wheat_noodles","amount":400,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"bell_pepper","amount":320,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"tomato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"potato","amount":240,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"garlic","amount":16,"unit":"g","measure":{"qty":4,"unit":"clove"}},
+      {"product":"tomato_paste","amount":16.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"cumin","amount":2.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"water","amount":1000,"unit":"ml"},
+      {"product":"veg_oil","amount":41.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"cilantro","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте говядину мелкими кусочками до корочки, добавьте лук и морковь."}},
+      {"text":{"ru":"Положите перец, помидоры, картофель, чеснок, томатную пасту и зиру, жарьте 5 минут."}},
+      {"text":{"ru":"Влейте воду, посолите и тушите 45 минут."},"timerMinutes":45},
+      {"text":{"ru":"Отварите лапшу, разложите по тарелкам и залейте подливой. Посыпьте кинзой."}}
+    ]
+  },
+  {
+    "id": "manty-lenivye",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Ленивые манты"},
+    "description": {"ru":"Рулет из теста с мясом на пару"},
+    "activeMinutes": 40,
+    "totalMinutes": 85,
+    "difficulty": 3,
+    "servings": 5,
+    "equipment": [],
+    "emoji": "🥟",
+    "photoQuery": "manti dumplings",
+    "ingredients": [
+      {"product":"flour","amount":400,"unit":"g"},
+      {"product":"water","amount":180,"unit":"ml"},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"beef_mince","amount":500,"unit":"g"},
+      {"product":"onion","amount":330,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"pumpkin","amount":150,"unit":"g","optional":true},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"butter","amount":30,"unit":"g"}
+    ],
+    "steps": [
+      {"text":{"ru":"Замесите тесто из муки, воды, яйца и половины соли, дайте отдохнуть 20 минут."},"timerMinutes":20},
+      {"text":{"ru":"Смешайте фарш с мелко нарезанным луком, тыквой, солью и перцем."}},
+      {"text":{"ru":"Раскатайте тесто в тонкий пласт, распределите начинку и сверните рулетом."}},
+      {"text":{"ru":"Готовьте на пару 45 минут. Смажьте маслом и нарежьте."},"timerMinutes":45}
+    ]
+  },
+  {
+    "id": "shurpa",
+    "cuisine": "russian",
+    "type": "soup",
+    "name": {"ru":"Шурпа"},
+    "description": {"ru":"Наваристый суп с бараниной и крупными овощами"},
+    "activeMinutes": 20,
+    "totalMinutes": 120,
+    "difficulty": 2,
+    "servings": 6,
+    "equipment": ["onepan"],
+    "emoji": "🍲",
+    "photoQuery": "shurpa soup",
+    "ingredients": [
+      {"product":"lamb","amount":700,"unit":"g"},
+      {"product":"water","amount":2500,"unit":"ml"},
+      {"product":"potato","amount":480,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"carrot","amount":200,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"bell_pepper","amount":160,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"tomato","amount":240,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"cumin","amount":2.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"cilantro","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Залейте баранину холодной водой и варите 1 час, снимая пену."},"timerMinutes":60},
+      {"text":{"ru":"Добавьте крупно нарезанные морковь, лук и перец, варите 20 минут."},"timerMinutes":20},
+      {"text":{"ru":"Положите картофель и помидоры, зиру и соль, варите ещё 25 минут."},"timerMinutes":25},
+      {"text":{"ru":"Подавайте с кинзой."}}
+    ]
+  },
+  {
+    "id": "beshbarmak",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Мясо с лапшой по-казахски"},
+    "description": {"ru":"Отварная говядина с широкой лапшой и луком"},
+    "activeMinutes": 25,
+    "totalMinutes": 130,
+    "difficulty": 2,
+    "servings": 6,
+    "equipment": [],
+    "emoji": "🍖",
+    "photoQuery": "beshbarmak",
+    "ingredients": [
+      {"product":"beef","amount":1000,"unit":"g"},
+      {"product":"water","amount":3000,"unit":"ml"},
+      {"product":"lasagna_sheets","amount":216,"unit":"g","measure":{"qty":12,"unit":"pc"}},
+      {"product":"onion","amount":330,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"bay_leaf","amount":0.4,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"peppercorns","amount":0.6,"unit":"g","measure":{"qty":6,"unit":"pc"}},
+      {"product":"salt","amount":15,"unit":"g","measure":{"qty":2.5,"unit":"tsp"}},
+      {"product":"parsley","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Варите говядину целым куском с солью, лавровым листом и перцем 2 часа."},"timerMinutes":120},
+      {"text":{"ru":"Достаньте мясо и разберите на волокна. Лук нарежьте полукольцами и залейте половником горячего бульона."}},
+      {"text":{"ru":"Листы лазаньи разломайте на квадраты и отварите в бульоне до мягкости."}},
+      {"text":{"ru":"Выложите лапшу, сверху мясо и лук. Бульон подайте отдельно с петрушкой."}}
+    ]
+  },
+  {
+    "id": "dolma",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Долма в капустных листьях"},
+    "description": {"ru":"Маленькие рулетики с бараниной, рисом и зеленью"},
+    "activeMinutes": 40,
+    "totalMinutes": 90,
+    "difficulty": 3,
+    "servings": 5,
+    "equipment": ["onepan"],
+    "emoji": "🥬",
+    "photoQuery": "dolma cabbage",
+    "ingredients": [
+      {"product":"napa_cabbage","amount":800,"unit":"g"},
+      {"product":"lamb_mince","amount":500,"unit":"g"},
+      {"product":"rice","amount":80,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"cilantro","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"mint","amount":10,"unit":"g","measure":{"qty":0.5,"unit":"bunch"},"optional":true},
+      {"product":"water","amount":400,"unit":"ml"},
+      {"product":"butter","amount":30,"unit":"g"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"yogurt","amount":200,"unit":"g"},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Листья пекинской капусты ошпарьте кипятком на 2 минуты."}},
+      {"text":{"ru":"Смешайте фарш с рисом, луком, рубленой зеленью, солью и перцем."}},
+      {"text":{"ru":"Заверните по ложке начинки в каждый лист и плотно уложите в кастрюлю."}},
+      {"text":{"ru":"Добавьте воду и масло, придавите тарелкой и тушите 45 минут."},"timerMinutes":45},
+      {"text":{"ru":"Подавайте с йогуртом, смешанным с чесноком."}}
+    ]
+  },
+  {
+    "id": "chicken-kiev",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Котлета по-киевски"},
+    "description": {"ru":"Куриное филе с зелёным маслом внутри"},
+    "activeMinutes": 35,
+    "totalMinutes": 60,
+    "difficulty": 3,
+    "servings": 4,
+    "equipment": ["oven"],
+    "emoji": "🍗",
+    "photoQuery": "chicken kiev",
+    "ingredients": [
+      {"product":"chicken_breast","amount":600,"unit":"g"},
+      {"product":"butter","amount":80,"unit":"g"},
+      {"product":"dill","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"garlic","amount":4,"unit":"g","measure":{"qty":1,"unit":"clove"}},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"flour","amount":27,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"breadcrumbs","amount":100,"unit":"g"},
+      {"product":"veg_oil","amount":82.8,"unit":"g","measure":{"qty":6,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте мягкое масло с укропом и чесноком, сформируйте 4 бруска и заморозьте на 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Филе разрежьте книжкой, отбейте, посолите. Заверните в каждое брусок масла."}},
+      {"text":{"ru":"Панируйте дважды: мука, яйцо, сухари, снова яйцо и сухари."}},
+      {"text":{"ru":"Обжарьте до золотистой корочки и доведите в духовке при 180 °C 15 минут."},"timerMinutes":15}
+    ]
+  },
+  {
+    "id": "deruny-s-myasom",
+    "cuisine": "russian",
+    "type": "main",
+    "name": {"ru":"Колдуны"},
+    "description": {"ru":"Картофельные оладьи с мясной начинкой"},
+    "activeMinutes": 40,
+    "totalMinutes": 40,
+    "difficulty": 2,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥔",
+    "photoQuery": "kolduny potato pancakes meat",
+    "ingredients": [
+      {"product":"potato","amount":1000,"unit":"g"},
+      {"product":"mixed_mince","amount":300,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"flour","amount":27,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"veg_oil","amount":82.8,"unit":"g","measure":{"qty":6,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}},
+      {"product":"sour_cream","amount":60,"unit":"g","measure":{"qty":4,"unit":"tbsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Натрите картофель на мелкой тёрке, отожмите, вмешайте яйцо, муку и половину соли."}},
+      {"text":{"ru":"Фарш смешайте с тёртым луком, солью и перцем."}},
+      {"text":{"ru":"На сковороду выложите ложку картофельной массы, сверху лепёшку фарша и ещё ложку картофеля."}},
+      {"text":{"ru":"Жарьте по 5 минут с каждой стороны под крышкой. Подавайте со сметаной."}}
+    ]
+  },
+  {
+    "id": "nalistniki",
+    "cuisine": "russian",
+    "type": "breakfast",
+    "name": {"ru":"Ленивые вареники"},
+    "description": {"ru":"Творожные клёцки за 15 минут"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 3,
+    "equipment": [],
+    "emoji": "🥟",
+    "photoQuery": "lazy vareniki",
+    "ingredients": [
+      {"product":"quark","amount":400,"unit":"g"},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"flour","amount":120,"unit":"g"},
+      {"product":"sugar","amount":25.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"salt","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}},
+      {"product":"butter","amount":20,"unit":"g"},
+      {"product":"sour_cream","amount":45,"unit":"g","measure":{"qty":3,"unit":"tbsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Разомните творог с яйцом, сахаром и солью, добавьте муку и замесите мягкое тесто."}},
+      {"text":{"ru":"Скатайте колбаски и нарежьте на кусочки по 2 см."}},
+      {"text":{"ru":"Варите в подсоленной воде 2–3 минуты после всплытия."}},
+      {"text":{"ru":"Подавайте с маслом и сметаной."}}
+    ]
+  },
+  {
+    "id": "salat-s-kuricej-i-ananasom",
+    "cuisine": "russian",
+    "type": "salad",
+    "name": {"ru":"Салат с курицей и ананасом"},
+    "description": {"ru":"Праздничный салат с сыром"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "chicken pineapple salad",
+    "ingredients": [
+      {"product":"chicken_breast","amount":400,"unit":"g"},
+      {"product":"pineapple_canned","amount":200,"unit":"g"},
+      {"product":"cheese","amount":100,"unit":"g"},
+      {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"corn_canned","amount":142.5,"unit":"g","measure":{"qty":0.5,"unit":"can"}},
+      {"product":"mayonnaise","amount":100,"unit":"g"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите куриное филе 20 минут и яйца 10 минут, остудите."}},
+      {"text":{"ru":"Нарежьте курицу, ананас и яйца кубиками, сыр натрите."}},
+      {"text":{"ru":"Смешайте с кукурузой и заправьте майонезом."}}
+    ]
+  },
+  {
+    "id": "morkov-po-korejski",
+    "cuisine": "russian",
+    "type": "salad",
+    "name": {"ru":"Морковь по-корейски"},
+    "description": {"ru":"Острая маринованная морковь"},
+    "activeMinutes": 15,
+    "totalMinutes": 135,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": [],
+    "emoji": "🥕",
+    "photoQuery": "korean carrot salad",
+    "ingredients": [
+      {"product":"carrot","amount":600,"unit":"g"},
+      {"product":"garlic","amount":12,"unit":"g","measure":{"qty":3,"unit":"clove"}},
+      {"product":"coriander","amount":2,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"chili_flakes","amount":1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"vinegar","amount":30,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"sugar","amount":12.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"veg_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Натрите морковь длинной соломкой, посыпьте солью и сахаром, помните руками."}},
+      {"text":{"ru":"Добавьте уксус, чеснок и кориандр."}},
+      {"text":{"ru":"Раскалите масло с молотым чили и вылейте на морковь, перемешайте."}},
+      {"text":{"ru":"Настаивайте в холодильнике 2 часа."},"timerMinutes":120}
+    ]
+  }
+]

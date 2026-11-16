@@ -1,0 +1,880 @@
+[
+  {
+    "id": "burger",
+    "cuisine": "international",
+    "type": "main",
+    "name": {"ru":"Домашний бургер"},
+    "description": {"ru":"Сочная говяжья котлета в булочке"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🍔",
+    "photoQuery": "hamburger",
+    "ingredients": [
+      {"product":"beef_mince","amount":600,"unit":"g"},
+      {"product":"bun","amount":240,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"cheese","amount":100,"unit":"g","measure":{"qty":4,"unit":"slice"}},
+      {"product":"tomato","amount":120,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"red_onion","amount":55,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"lettuce","amount":40,"unit":"g"},
+      {"product":"pickles","amount":120,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"ketchup","amount":34.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"mayonnaise","amount":28.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"mustard","amount":16.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"veg_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Сформируйте из фарша 4 котлеты чуть шире булочек, посолите и поперчите снаружи."}},
+      {"text":{"ru":"Жарьте на сильном огне по 3–4 минуты с каждой стороны, в конце положите сыр."}},
+      {"text":{"ru":"Подсушите булочки срезом вниз."}},
+      {"text":{"ru":"Соберите бургер с соусами, салатом, помидором, луком и огурцом."}}
+    ]
+  },
+  {
+    "id": "caesar",
+    "cuisine": "international",
+    "type": "salad",
+    "name": {"ru":"Салат «Цезарь» с курицей"},
+    "description": {"ru":"Хрустящий ромэн с сухариками и пармезаном"},
+    "activeMinutes": 25,
+    "totalMinutes": 25,
+    "difficulty": 2,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "chicken caesar salad",
+    "ingredients": [
+      {"product":"chicken_breast","amount":300,"unit":"g"},
+      {"product":"romaine","amount":200,"unit":"g"},
+      {"product":"white_bread","amount":60,"unit":"g","measure":{"qty":2,"unit":"slice"}},
+      {"product":"parmesan","amount":40,"unit":"g"},
+      {"product":"mayonnaise","amount":42.8,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"lemon_juice","amount":15.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"garlic","amount":4,"unit":"g","measure":{"qty":1,"unit":"clove"}},
+      {"product":"mustard","amount":5.5,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"anchovy","amount":8,"unit":"g","measure":{"qty":2,"unit":"pc"},"optional":true},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте курицу по 5–6 минут с каждой стороны, нарежьте."}},
+      {"text":{"ru":"Обжарьте кубики хлеба в ложке масла до хруста."}},
+      {"text":{"ru":"Смешайте майонез, лимонный сок, чеснок, горчицу, рубленые анчоусы и половину пармезана."}},
+      {"text":{"ru":"Заправьте салат, добавьте курицу, сухарики и оставшийся пармезан."}}
+    ]
+  },
+  {
+    "id": "club-sandwich",
+    "cuisine": "international",
+    "type": "main",
+    "name": {"ru":"Клаб-сэндвич"},
+    "description": {"ru":"Трёхэтажный сэндвич с курицей и беконом"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🥪",
+    "photoQuery": "club sandwich",
+    "ingredients": [
+      {"product":"white_bread","amount":180,"unit":"g","measure":{"qty":6,"unit":"slice"}},
+      {"product":"chicken_breast","amount":200,"unit":"g"},
+      {"product":"bacon","amount":60,"unit":"g","measure":{"qty":4,"unit":"slice"}},
+      {"product":"tomato","amount":120,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"lettuce","amount":40,"unit":"g"},
+      {"product":"mayonnaise","amount":28.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"veg_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте курицу и бекон, курицу нарежьте ломтиками."}},
+      {"text":{"ru":"Подсушите хлеб и смажьте майонезом."}},
+      {"text":{"ru":"Соберите: хлеб, курица и салат, хлеб, бекон и помидор, хлеб."}},
+      {"text":{"ru":"Скрепите шпажками и разрежьте по диагонали."}}
+    ]
+  },
+  {
+    "id": "pancakes",
+    "cuisine": "international",
+    "type": "breakfast",
+    "name": {"ru":"Американские панкейки"},
+    "description": {"ru":"Пышные блинчики с кленовым сиропом"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 3,
+    "equipment": [],
+    "emoji": "🥞",
+    "photoQuery": "american pancakes",
+    "ingredients": [
+      {"product":"flour","amount":200,"unit":"g"},
+      {"product":"milk","amount":250,"unit":"ml"},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"sugar","amount":25.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"baking_powder","amount":9,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"butter","amount":30,"unit":"g"},
+      {"product":"salt","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}},
+      {"product":"maple_syrup","amount":58.5,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"berries_frozen","amount":80,"unit":"g","optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте муку, сахар, разрыхлитель и соль."}},
+      {"text":{"ru":"Добавьте молоко, яйцо и растопленное масло, размешайте до исчезновения сухой муки."}},
+      {"text":{"ru":"Жарьте на сухой сковороде на среднем огне по 2 минуты с каждой стороны."}},
+      {"text":{"ru":"Подавайте с сиропом и ягодами."}}
+    ]
+  },
+  {
+    "id": "avocado-toast",
+    "cuisine": "international",
+    "type": "breakfast",
+    "name": {"ru":"Тост с авокадо и яйцом"},
+    "description": {"ru":"Модный завтрак за 10 минут"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 1,
+    "equipment": [],
+    "emoji": "🥑",
+    "photoQuery": "avocado toast egg",
+    "ingredients": [
+      {"product":"rye_bread","amount":80,"unit":"g","measure":{"qty":2,"unit":"slice"}},
+      {"product":"avocado","amount":75,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"lemon_juice","amount":5.2,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"chili_flakes","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"},"optional":true},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Подсушите хлеб."}},
+      {"text":{"ru":"Разомните авокадо с лимонным соком и солью, намажьте на хлеб."}},
+      {"text":{"ru":"Приготовьте яйца пашот или глазунью, выложите сверху и посыпьте чили."}}
+    ]
+  },
+  {
+    "id": "scrambled-eggs",
+    "cuisine": "international",
+    "type": "breakfast",
+    "name": {"ru":"Яичница-болтунья с тостом"},
+    "description": {"ru":"Кремовый скрэмбл на сливочном масле"},
+    "activeMinutes": 7,
+    "totalMinutes": 7,
+    "difficulty": 1,
+    "servings": 1,
+    "equipment": ["onepan"],
+    "emoji": "🍳",
+    "photoQuery": "scrambled eggs toast",
+    "ingredients": [
+      {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"butter","amount":15,"unit":"g","use":"fry"},
+      {"product":"milk","amount":15.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"white_bread","amount":60,"unit":"g","measure":{"qty":2,"unit":"slice"}},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}},
+      {"product":"chives","amount":6.3,"unit":"g","measure":{"qty":0.25,"unit":"bunch"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Слегка взболтайте яйца с молоком и солью."}},
+      {"text":{"ru":"Готовьте на слабом огне в масле, медленно сгребая лопаткой, 3 минуты."}},
+      {"text":{"ru":"Снимите, пока масса ещё влажная. Подавайте на тосте."}}
+    ]
+  },
+  {
+    "id": "granola-bowl",
+    "cuisine": "international",
+    "type": "breakfast",
+    "name": {"ru":"Йогурт с гранолой и ягодами"},
+    "description": {"ru":"Хрустящий завтрак без готовки"},
+    "activeMinutes": 3,
+    "totalMinutes": 3,
+    "difficulty": 1,
+    "servings": 1,
+    "equipment": [],
+    "emoji": "🥣",
+    "photoQuery": "yogurt granola berries",
+    "ingredients": [
+      {"product":"yogurt","amount":200,"unit":"g"},
+      {"product":"granola","amount":50,"unit":"g"},
+      {"product":"berries_frozen","amount":80,"unit":"g"},
+      {"product":"honey","amount":7,"unit":"g","measure":{"qty":1,"unit":"tsp"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Выложите йогурт в миску."}},
+      {"text":{"ru":"Добавьте гранолу и ягоды, полейте мёдом."}}
+    ]
+  },
+  {
+    "id": "smoothie-bowl",
+    "cuisine": "international",
+    "type": "breakfast",
+    "name": {"ru":"Смузи-боул с бананом и ягодами"},
+    "description": {"ru":"Густой смузи, который едят ложкой"},
+    "activeMinutes": 5,
+    "totalMinutes": 5,
+    "difficulty": 1,
+    "servings": 1,
+    "equipment": [],
+    "emoji": "🍓",
+    "photoQuery": "smoothie bowl",
+    "ingredients": [
+      {"product":"banana","amount":120,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"berries_frozen","amount":150,"unit":"g"},
+      {"product":"yogurt","amount":100,"unit":"g"},
+      {"product":"granola","amount":30,"unit":"g"},
+      {"product":"chia","amount":3.5,"unit":"g","measure":{"qty":1,"unit":"tsp"},"optional":true},
+      {"product":"honey","amount":7,"unit":"g","measure":{"qty":1,"unit":"tsp"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Заморозьте банан кружочками заранее."}},
+      {"text":{"ru":"Взбейте блендером банан, ягоды и йогурт до густого пюре."}},
+      {"text":{"ru":"Переложите в миску, посыпьте гранолой и чиа."}}
+    ]
+  },
+  {
+    "id": "overnight-oats",
+    "cuisine": "international",
+    "type": "breakfast",
+    "name": {"ru":"Ленивая овсянка в банке"},
+    "description": {"ru":"Овсянка, которая готовится ночью сама"},
+    "activeMinutes": 5,
+    "totalMinutes": 5,
+    "difficulty": 1,
+    "servings": 1,
+    "equipment": [],
+    "emoji": "🥣",
+    "photoQuery": "overnight oats",
+    "ingredients": [
+      {"product":"oats","amount":50,"unit":"g"},
+      {"product":"milk","amount":120,"unit":"ml"},
+      {"product":"yogurt","amount":80,"unit":"g"},
+      {"product":"chia","amount":3.5,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"honey","amount":7,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"banana","amount":60,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"berries_frozen","amount":50,"unit":"g","optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте в банке хлопья, молоко, йогурт, чиа и мёд."}},
+      {"text":{"ru":"Уберите в холодильник на ночь."}},
+      {"text":{"ru":"Утром добавьте банан и ягоды."}}
+    ]
+  },
+  {
+    "id": "chia-pudding",
+    "cuisine": "international",
+    "type": "breakfast",
+    "name": {"ru":"Чиа-пудинг с манго"},
+    "description": {"ru":"Десерт-завтрак на кокосовом молоке"},
+    "activeMinutes": 5,
+    "totalMinutes": 125,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🥭",
+    "photoQuery": "chia pudding mango",
+    "ingredients": [
+      {"product":"chia","amount":42,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
+      {"product":"coconut_milk","amount":200,"unit":"ml"},
+      {"product":"milk","amount":100,"unit":"ml"},
+      {"product":"honey","amount":21,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"mango","amount":150,"unit":"g","measure":{"qty":0.5,"unit":"pc"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте чиа, кокосовое молоко, молоко и мёд."}},
+      {"text":{"ru":"Через 10 минут перемешайте ещё раз."}},
+      {"text":{"ru":"Уберите в холодильник минимум на 2 часа."},"timerMinutes":120},
+      {"text":{"ru":"Подавайте с кубиками манго."}}
+    ]
+  },
+  {
+    "id": "banana-pancakes",
+    "cuisine": "international",
+    "type": "breakfast",
+    "name": {"ru":"Банановые оладьи из двух продуктов"},
+    "description": {"ru":"Без муки и сахара"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 1,
+    "equipment": [],
+    "emoji": "🍌",
+    "photoQuery": "banana egg pancakes",
+    "ingredients": [
+      {"product":"banana","amount":120,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"cinnamon","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"},"optional":true},
+      {"product":"veg_oil","amount":4.6,"unit":"g","measure":{"qty":1,"unit":"tsp"},"use":"fry"}
+    ],
+    "steps": [
+      {"text":{"ru":"Разомните банан вилкой в пюре."}},
+      {"text":{"ru":"Смешайте с яйцами и корицей."}},
+      {"text":{"ru":"Жарьте маленькие оладьи на слабом огне по 1–2 минуты с каждой стороны."}}
+    ]
+  },
+  {
+    "id": "mac-and-cheese",
+    "cuisine": "international",
+    "type": "main",
+    "name": {"ru":"Мак-н-чиз"},
+    "description": {"ru":"Макароны в сырном соусе"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🧀",
+    "photoQuery": "macaroni and cheese",
+    "ingredients": [
+      {"product":"pasta","amount":350,"unit":"g"},
+      {"product":"cheese","amount":250,"unit":"g"},
+      {"product":"milk","amount":500,"unit":"ml"},
+      {"product":"butter","amount":30,"unit":"g"},
+      {"product":"flour","amount":30,"unit":"g"},
+      {"product":"mustard","amount":5.5,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"nutmeg","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите макароны."}},
+      {"text":{"ru":"Растопите масло, обжарьте муку 1 минуту, постепенно влейте молоко и варите до загустения."}},
+      {"text":{"ru":"Снимите с огня, вмешайте сыр, горчицу, мускат и соль."}},
+      {"text":{"ru":"Соедините соус с макаронами."}}
+    ]
+  },
+  {
+    "id": "chicken-nuggets",
+    "cuisine": "international",
+    "type": "main",
+    "name": {"ru":"Куриные наггетсы из духовки"},
+    "description": {"ru":"Хрустящие кусочки без фритюра"},
+    "activeMinutes": 15,
+    "totalMinutes": 35,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["oven"],
+    "emoji": "🍗",
+    "photoQuery": "baked chicken nuggets",
+    "ingredients": [
+      {"product":"chicken_breast","amount":600,"unit":"g"},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"breadcrumbs","amount":100,"unit":"g"},
+      {"product":"parmesan","amount":30,"unit":"g"},
+      {"product":"paprika","amount":2.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"garlic_powder","amount":1.3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"veg_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"ketchup","amount":69,"unit":"g","measure":{"qty":4,"unit":"tbsp"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте курицу кусочками по 3 см, посолите."}},
+      {"text":{"ru":"Смешайте сухари с пармезаном, паприкой и чесноком."}},
+      {"text":{"ru":"Обмакните курицу в яйцо, затем в сухари, выложите на противень и сбрызните маслом."}},
+      {"text":{"ru":"Запекайте при 210 °C 18 минут, перевернув в середине."},"timerMinutes":18}
+    ]
+  },
+  {
+    "id": "coleslaw",
+    "cuisine": "international",
+    "type": "salad",
+    "name": {"ru":"Коулслоу"},
+    "description": {"ru":"Американский капустный салат"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": [],
+    "emoji": "🥬",
+    "photoQuery": "coleslaw",
+    "ingredients": [
+      {"product":"cabbage","amount":400,"unit":"g"},
+      {"product":"red_cabbage","amount":150,"unit":"g"},
+      {"product":"carrot","amount":200,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"mayonnaise","amount":57,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
+      {"product":"yogurt","amount":46.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"vinegar","amount":15,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"mustard","amount":5.5,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"sugar","amount":4.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Тонко нашинкуйте капусту, натрите морковь."}},
+      {"text":{"ru":"Смешайте майонез, йогурт, уксус, горчицу, сахар и соль."}},
+      {"text":{"ru":"Заправьте овощи и дайте постоять 10 минут."}}
+    ]
+  },
+  {
+    "id": "buffalo-wings",
+    "cuisine": "international",
+    "type": "main",
+    "name": {"ru":"Крылышки баффало в духовке"},
+    "description": {"ru":"Острые крылья с соусом из голубого сыра"},
+    "activeMinutes": 15,
+    "totalMinutes": 60,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["oven"],
+    "emoji": "🍗",
+    "photoQuery": "buffalo wings",
+    "ingredients": [
+      {"product":"chicken_wings","amount":1000,"unit":"g"},
+      {"product":"baking_powder","amount":13.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"hot_sauce","amount":66,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
+      {"product":"butter","amount":40,"unit":"g"},
+      {"product":"garlic_powder","amount":2.5,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"sour_cream","amount":100,"unit":"g"},
+      {"product":"blue_cheese","amount":50,"unit":"g"},
+      {"product":"celery","amount":120,"unit":"g","measure":{"qty":3,"unit":"pc"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Обсушите крылья, смешайте с разрыхлителем, солью и чесноком."}},
+      {"text":{"ru":"Выложите на решётку и запекайте при 220 °C 45 минут, перевернув в середине."},"timerMinutes":45},
+      {"text":{"ru":"Растопите масло с острым соусом, перемешайте с крыльями."}},
+      {"text":{"ru":"Смешайте сметану с размятым сыром, подавайте как соус с сельдереем."}}
+    ]
+  },
+  {
+    "id": "hot-dog",
+    "cuisine": "international",
+    "type": "snack",
+    "name": {"ru":"Хот-дог с жареным луком"},
+    "description": {"ru":"Быстрый перекус"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🌭",
+    "photoQuery": "hot dog",
+    "ingredients": [
+      {"product":"wieners","amount":100,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"bun","amount":120,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"pickles","amount":120,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"ketchup","amount":17.3,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"mustard","amount":16.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"veg_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук до золотистого цвета."}},
+      {"text":{"ru":"Отварите или обжарьте сосиски."}},
+      {"text":{"ru":"Разрежьте булочки, вложите сосиски, добавьте лук, огурцы, кетчуп и горчицу."}}
+    ]
+  },
+  {
+    "id": "tuna-melt",
+    "cuisine": "international",
+    "type": "main",
+    "name": {"ru":"Горячий сэндвич с тунцом"},
+    "description": {"ru":"Тунец под расплавленным сыром"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🥪",
+    "photoQuery": "tuna melt sandwich",
+    "ingredients": [
+      {"product":"white_bread","amount":120,"unit":"g","measure":{"qty":4,"unit":"slice"}},
+      {"product":"tuna_canned","amount":140,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"mayonnaise","amount":28.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"celery","amount":40,"unit":"g","measure":{"qty":1,"unit":"pc"},"optional":true},
+      {"product":"red_onion","amount":27.5,"unit":"g","measure":{"qty":0.25,"unit":"pc"}},
+      {"product":"cheese","amount":100,"unit":"g","measure":{"qty":4,"unit":"slice"}},
+      {"product":"butter","amount":15,"unit":"g","use":"fry"}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте тунец с майонезом, мелко нарезанным луком и сельдереем."}},
+      {"text":{"ru":"Соберите сэндвичи с тунцом и сыром."}},
+      {"text":{"ru":"Обжарьте на сливочном масле по 3 минуты с каждой стороны до расплавления сыра."}}
+    ]
+  },
+  {
+    "id": "mushroom-cream-soup",
+    "cuisine": "international",
+    "type": "soup",
+    "name": {"ru":"Крем-суп из шампиньонов"},
+    "description": {"ru":"Сливочный грибной суп"},
+    "activeMinutes": 15,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🍄",
+    "photoQuery": "cream of mushroom soup",
+    "ingredients": [
+      {"product":"mushrooms","amount":500,"unit":"g"},
+      {"product":"potato","amount":240,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"veg_broth","amount":700,"unit":"ml"},
+      {"product":"cooking_cream","amount":150,"unit":"ml"},
+      {"product":"butter","amount":25,"unit":"g","use":"fry"},
+      {"product":"thyme","amount":1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук и грибы на масле 8 минут, отложите пару ложек грибов для подачи."}},
+      {"text":{"ru":"Добавьте чеснок, картофель, бульон и тимьян, варите 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Пюрируйте, влейте сливки и прогрейте."}},
+      {"text":{"ru":"Подавайте с отложенными грибами."}}
+    ]
+  },
+  {
+    "id": "broccoli-cream-soup",
+    "cuisine": "international",
+    "type": "soup",
+    "name": {"ru":"Крем-суп из брокколи с сыром"},
+    "description": {"ru":"Зелёный суп за 20 минут"},
+    "activeMinutes": 10,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🥦",
+    "photoQuery": "broccoli cheese soup",
+    "ingredients": [
+      {"product":"broccoli","amount":500,"unit":"g"},
+      {"product":"potato","amount":120,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"veg_broth","amount":700,"unit":"ml"},
+      {"product":"processed_cheese","amount":100,"unit":"g"},
+      {"product":"butter","amount":15,"unit":"g","use":"fry"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"nutmeg","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук на масле."}},
+      {"text":{"ru":"Добавьте картофель и бульон, варите 8 минут, положите брокколи и варите ещё 6 минут."}},
+      {"text":{"ru":"Пюрируйте с плавленым сыром."}},
+      {"text":{"ru":"Приправьте мускатом и солью."}}
+    ]
+  },
+  {
+    "id": "baked-potato",
+    "cuisine": "international",
+    "type": "main",
+    "name": {"ru":"Печёный картофель с начинкой"},
+    "description": {"ru":"Картошка в мундире со сметаной и беконом"},
+    "activeMinutes": 10,
+    "totalMinutes": 70,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["oven"],
+    "emoji": "🥔",
+    "photoQuery": "baked potato sour cream bacon",
+    "ingredients": [
+      {"product":"potato","amount":600,"unit":"g"},
+      {"product":"sour_cream","amount":100,"unit":"g"},
+      {"product":"bacon","amount":60,"unit":"g","measure":{"qty":4,"unit":"slice"}},
+      {"product":"cheese","amount":60,"unit":"g"},
+      {"product":"green_onion","amount":12.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Натрите крупные картофелины маслом и солью, наколите вилкой."}},
+      {"text":{"ru":"Запекайте при 200 °C 1 час до мягкости."},"timerMinutes":60},
+      {"text":{"ru":"Обжарьте бекон до хруста и покрошите."}},
+      {"text":{"ru":"Надрежьте картофель крестом, раскройте, положите сметану, сыр, бекон и зелёный лук."}}
+    ]
+  },
+  {
+    "id": "steak",
+    "cuisine": "international",
+    "type": "main",
+    "name": {"ru":"Стейк с чесночным маслом"},
+    "description": {"ru":"Говядина средней прожарки на сковороде"},
+    "activeMinutes": 15,
+    "totalMinutes": 25,
+    "difficulty": 2,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🥩",
+    "photoQuery": "pan seared steak garlic butter",
+    "ingredients": [
+      {"product":"beef_steak","amount":500,"unit":"g"},
+      {"product":"butter","amount":30,"unit":"g"},
+      {"product":"garlic","amount":12,"unit":"g","measure":{"qty":3,"unit":"clove"}},
+      {"product":"rosemary","amount":4,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"veg_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Достаньте мясо из холодильника за 20 минут, обсушите, посолите и поперчите."}},
+      {"text":{"ru":"Жарьте на раскалённой сковороде по 3 минуты с каждой стороны."}},
+      {"text":{"ru":"Убавьте огонь, добавьте масло, чеснок и розмарин, поливайте стейк маслом 1 минуту."}},
+      {"text":{"ru":"Дайте мясу отдохнуть 5 минут перед нарезкой."},"timerMinutes":5}
+    ]
+  },
+  {
+    "id": "caesar-wrap",
+    "cuisine": "international",
+    "type": "main",
+    "name": {"ru":"Ролл «Цезарь» с курицей"},
+    "description": {"ru":"Салат, завёрнутый в лепёшку"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🌯",
+    "photoQuery": "chicken caesar wrap",
+    "ingredients": [
+      {"product":"tortilla","amount":120,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"chicken_breast","amount":250,"unit":"g"},
+      {"product":"romaine","amount":100,"unit":"g"},
+      {"product":"parmesan","amount":25,"unit":"g"},
+      {"product":"mayonnaise","amount":28.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"lemon_juice","amount":5.2,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"garlic","amount":4,"unit":"g","measure":{"qty":1,"unit":"clove"}},
+      {"product":"cherry_tomato","amount":90,"unit":"g","measure":{"qty":6,"unit":"pc"}},
+      {"product":"veg_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте курицу по 5 минут с каждой стороны, нарежьте полосками."}},
+      {"text":{"ru":"Смешайте майонез, лимонный сок, чеснок и пармезан."}},
+      {"text":{"ru":"Смешайте салат с соусом, выложите на тортилью с курицей и черри."}},
+      {"text":{"ru":"Сверните плотным рулетом."}}
+    ]
+  },
+  {
+    "id": "egg-salad-sandwich",
+    "cuisine": "international",
+    "type": "snack",
+    "name": {"ru":"Сэндвич с яичным салатом"},
+    "description": {"ru":"Простой ланч с собой"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🥪",
+    "photoQuery": "egg salad sandwich",
+    "ingredients": [
+      {"product":"egg","amount":220,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"mayonnaise","amount":28.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"mustard","amount":5.5,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"green_onion","amount":12.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"white_bread","amount":120,"unit":"g","measure":{"qty":4,"unit":"slice"}},
+      {"product":"lettuce","amount":20,"unit":"g"},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите яйца вкрутую, остудите и порубите."}},
+      {"text":{"ru":"Смешайте с майонезом, горчицей, зелёным луком и солью."}},
+      {"text":{"ru":"Намажьте на хлеб, добавьте лист салата и накройте вторым ломтиком."}}
+    ]
+  },
+  {
+    "id": "banana-bread",
+    "cuisine": "international",
+    "type": "dessert",
+    "name": {"ru":"Банановый хлеб"},
+    "description": {"ru":"Влажный кекс из переспелых бананов"},
+    "activeMinutes": 15,
+    "totalMinutes": 75,
+    "difficulty": 1,
+    "servings": 10,
+    "equipment": ["oven"],
+    "emoji": "🍌",
+    "photoQuery": "banana bread",
+    "ingredients": [
+      {"product":"banana","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"flour","amount":220,"unit":"g"},
+      {"product":"sugar","amount":120,"unit":"g"},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"butter","amount":80,"unit":"g"},
+      {"product":"baking_powder","amount":9,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"cinnamon","amount":1.3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"walnuts","amount":60,"unit":"g","optional":true},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Разомните бананы вилкой, смешайте с растопленным маслом, сахаром и яйцами."}},
+      {"text":{"ru":"Добавьте муку, разрыхлитель, корицу и соль, перемешайте лопаткой."}},
+      {"text":{"ru":"Вмешайте орехи, выложите в форму для кекса."}},
+      {"text":{"ru":"Выпекайте при 175 °C 55–60 минут."},"timerMinutes":58}
+    ]
+  },
+  {
+    "id": "brownies",
+    "cuisine": "international",
+    "type": "dessert",
+    "name": {"ru":"Брауни"},
+    "description": {"ru":"Шоколадный пирог с влажной серединкой"},
+    "activeMinutes": 15,
+    "totalMinutes": 45,
+    "difficulty": 1,
+    "servings": 12,
+    "equipment": ["oven"],
+    "emoji": "🍫",
+    "photoQuery": "brownies",
+    "ingredients": [
+      {"product":"dark_chocolate","amount":200,"unit":"g"},
+      {"product":"butter","amount":150,"unit":"g"},
+      {"product":"sugar","amount":200,"unit":"g"},
+      {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"flour","amount":100,"unit":"g"},
+      {"product":"cocoa","amount":13.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}},
+      {"product":"walnuts","amount":60,"unit":"g","optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Растопите шоколад с маслом на водяной бане."}},
+      {"text":{"ru":"Вмешайте сахар, затем яйца по одному."}},
+      {"text":{"ru":"Добавьте муку, какао и соль, перемешайте до однородности. Вмешайте орехи."}},
+      {"text":{"ru":"Выпекайте в форме 20×20 см при 175 °C 25 минут — серединка должна остаться влажной."},"timerMinutes":25}
+    ]
+  },
+  {
+    "id": "waldorf",
+    "cuisine": "international",
+    "type": "salad",
+    "name": {"ru":"Вальдорфский салат"},
+    "description": {"ru":"Яблоко, сельдерей и грецкие орехи"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "waldorf salad",
+    "ingredients": [
+      {"product":"apple","amount":340,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"celery","amount":120,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"walnuts","amount":40,"unit":"g"},
+      {"product":"grapes","amount":100,"unit":"g"},
+      {"product":"yogurt","amount":46.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"mayonnaise","amount":14.3,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"lemon_juice","amount":15.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"lettuce","amount":40,"unit":"g"}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте яблоки кубиками и сбрызните лимонным соком."}},
+      {"text":{"ru":"Добавьте сельдерей ломтиками, половинки винограда и орехи."}},
+      {"text":{"ru":"Заправьте йогуртом с майонезом, подавайте на листьях салата."}}
+    ]
+  },
+  {
+    "id": "buddha-bowl",
+    "cuisine": "international",
+    "type": "main",
+    "name": {"ru":"Боул с киноа и овощами"},
+    "description": {"ru":"Запечённый батат, нут и авокадо"},
+    "activeMinutes": 15,
+    "totalMinutes": 40,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["oven"],
+    "emoji": "🥗",
+    "photoQuery": "buddha bowl quinoa",
+    "ingredients": [
+      {"product":"quinoa","amount":120,"unit":"g"},
+      {"product":"sweet_potato","amount":250,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"chickpeas_canned","amount":240,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"avocado","amount":150,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"spinach","amount":60,"unit":"g"},
+      {"product":"tahini","amount":31.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"lemon_juice","amount":30.9,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"smoked_paprika","amount":2.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"water","amount":45,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте батат кубиками, смешайте с нутом, маслом, паприкой и солью, запекайте при 200 °C 25 минут."},"timerMinutes":25},
+      {"text":{"ru":"Отварите киноа 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Смешайте тахини, лимонный сок и воду."}},
+      {"text":{"ru":"Разложите по мискам киноа, батат с нутом, шпинат и авокадо, полейте соусом."}}
+    ]
+  },
+  {
+    "id": "stuffed-mushrooms",
+    "cuisine": "international",
+    "type": "snack",
+    "name": {"ru":"Фаршированные шампиньоны"},
+    "description": {"ru":"Грибные шляпки с сыром и чесноком"},
+    "activeMinutes": 15,
+    "totalMinutes": 35,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["oven"],
+    "emoji": "🍄",
+    "photoQuery": "stuffed mushrooms",
+    "ingredients": [
+      {"product":"mushrooms","amount":500,"unit":"g"},
+      {"product":"cream_cheese","amount":100,"unit":"g"},
+      {"product":"parmesan","amount":30,"unit":"g"},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"breadcrumbs","amount":13.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"parsley","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отделите ножки грибов, мелко порубите и обжарьте с чесноком."}},
+      {"text":{"ru":"Смешайте со сливочным сыром, пармезаном, петрушкой и солью."}},
+      {"text":{"ru":"Наполните шляпки, посыпьте сухарями."}},
+      {"text":{"ru":"Запекайте при 190 °C 20 минут."},"timerMinutes":20}
+    ]
+  },
+  {
+    "id": "potato-wedges",
+    "cuisine": "international",
+    "type": "side",
+    "name": {"ru":"Картофель по-деревенски"},
+    "description": {"ru":"Пряные дольки из духовки"},
+    "activeMinutes": 10,
+    "totalMinutes": 45,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["oven"],
+    "emoji": "🥔",
+    "photoQuery": "potato wedges",
+    "ingredients": [
+      {"product":"potato","amount":1000,"unit":"g"},
+      {"product":"veg_oil","amount":41.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"paprika","amount":4.5,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"garlic_powder","amount":2.5,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"oregano","amount":1.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте неочищенный картофель дольками."}},
+      {"text":{"ru":"Смешайте с маслом, специями и солью."}},
+      {"text":{"ru":"Выложите на противень в один слой и запекайте при 210 °C 35 минут."},"timerMinutes":35}
+    ]
+  },
+  {
+    "id": "spinach-feta-omelette",
+    "cuisine": "international",
+    "type": "breakfast",
+    "name": {"ru":"Омлет со шпинатом и фетой"},
+    "description": {"ru":"Белковый завтрак за 10 минут"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 1,
+    "equipment": ["onepan"],
+    "emoji": "🍳",
+    "photoQuery": "spinach feta omelette",
+    "ingredients": [
+      {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"spinach","amount":60,"unit":"g"},
+      {"product":"feta","amount":40,"unit":"g"},
+      {"product":"olive_oil","amount":4.6,"unit":"g","measure":{"qty":1,"unit":"tsp"},"use":"fry"},
+      {"product":"salt","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}},
+      {"product":"pepper","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Припустите шпинат на сковороде 1 минуту."}},
+      {"text":{"ru":"Влейте взбитые яйца с солью и перцем."}},
+      {"text":{"ru":"Когда низ схватится, выложите фету на половину и сложите омлет пополам."}}
+    ]
+  }
+]

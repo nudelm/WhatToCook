@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="Что приготовить сегодня: подбор блюд на каждый день, поиск рецептов по продуктам, список покупок. Работает офлайн." />
+    <meta name="theme-color" content="#D8552B" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
+    <title>Что приготовить сегодня</title>
+    <style>
+      html { background: #faf5ec; }
+      @media (prefers-color-scheme: dark) { html { background: #17110d; } }
+      .boot { min-height: 100vh; display: grid; place-items: center; font: 600 18px system-ui, sans-serif; color: #d8552b; }
+    </style>
+  </head>
+  <body>
+    <div id="root"><div class="boot">🍲</div></div>
+    <noscript>Для работы приложения нужен JavaScript.</noscript>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

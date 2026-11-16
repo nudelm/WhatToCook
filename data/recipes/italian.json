@@ -1,0 +1,1622 @@
+[
+  {
+    "id": "carbonara",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Спагетти карбонара"},
+    "description": {"ru":"Паста с беконом в шелковистом яичном соусе"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 2,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍝",
+    "photoQuery": "spaghetti carbonara",
+    "ingredients": [
+      {"product":"spaghetti","amount":200,"unit":"g"},
+      {"product":"bacon","amount":100,"unit":"g"},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"parmesan","amount":50,"unit":"g"},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите спагетти в подсоленной воде до состояния аль денте. Сохраните полстакана воды от варки."}},
+      {"text":{"ru":"Обжарьте бекон полосками до хруста, снимите сковороду с огня."}},
+      {"text":{"ru":"Взбейте яйца с тёртым пармезаном и перцем."}},
+      {"text":{"ru":"Переложите горячую пасту к бекону, влейте яичную смесь и немного воды от варки, быстро перемешивайте вне огня до кремового соуса."}}
+    ]
+  },
+  {
+    "id": "bolognese",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Спагетти болоньезе"},
+    "description": {"ru":"Паста с густым мясным рагу"},
+    "activeMinutes": 25,
+    "totalMinutes": 75,
+    "difficulty": 2,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🍝",
+    "photoQuery": "spaghetti bolognese",
+    "ingredients": [
+      {"product":"spaghetti","amount":400,"unit":"g"},
+      {"product":"beef_mince","amount":500,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"celery","amount":80,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"canned_tomato","amount":800,"unit":"g","measure":{"qty":2,"unit":"can"}},
+      {"product":"tomato_paste","amount":33,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"red_wine","amount":100,"unit":"ml","optional":true},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"oregano","amount":1.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"parmesan","amount":40,"unit":"g"}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте мелко нарезанные лук, морковь и сельдерей 7 минут."}},
+      {"text":{"ru":"Добавьте фарш и жарьте, разбивая комки, до испарения жидкости."}},
+      {"text":{"ru":"Вмешайте томатную пасту, чеснок, влейте вино и выпарите."}},
+      {"text":{"ru":"Добавьте томаты, орегано, соль и перец, тушите под крышкой 45 минут."},"timerMinutes":45},
+      {"text":{"ru":"Отварите спагетти и подавайте с соусом и пармезаном."}}
+    ]
+  },
+  {
+    "id": "aglio-olio",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Спагетти с чесноком и маслом"},
+    "description": {"ru":"Алио олио: ужин из пяти продуктов"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍝",
+    "photoQuery": "spaghetti aglio e olio",
+    "ingredients": [
+      {"product":"spaghetti","amount":200,"unit":"g"},
+      {"product":"garlic","amount":20,"unit":"g","measure":{"qty":5,"unit":"clove"}},
+      {"product":"olive_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
+      {"product":"chili_flakes","amount":1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"parsley","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"parmesan","amount":20,"unit":"g","optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите спагетти аль денте, сохраните немного воды."}},
+      {"text":{"ru":"На слабом огне прогрейте масло с тонко нарезанным чесноком и чили 3 минуты, не давая чесноку потемнеть."}},
+      {"text":{"ru":"Добавьте пасту, половник воды от варки и петрушку, перемешивайте минуту."}}
+    ]
+  },
+  {
+    "id": "arrabbiata",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Пенне арабьята"},
+    "description": {"ru":"Острый томатный соус с чесноком"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍝",
+    "photoQuery": "penne arrabbiata",
+    "ingredients": [
+      {"product":"pasta","amount":200,"unit":"g"},
+      {"product":"canned_tomato","amount":400,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"garlic","amount":12,"unit":"g","measure":{"qty":3,"unit":"clove"}},
+      {"product":"chili","amount":15,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"parsley","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"parmesan","amount":20,"unit":"g","optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте чеснок и чили в масле 1 минуту."}},
+      {"text":{"ru":"Добавьте томаты и соль, уваривайте 12 минут."},"timerMinutes":12},
+      {"text":{"ru":"Отварите пенне и смешайте с соусом. Посыпьте петрушкой."}}
+    ]
+  },
+  {
+    "id": "pasta-pesto",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Паста с песто"},
+    "description": {"ru":"Быстрый ужин с зелёным соусом"},
+    "activeMinutes": 12,
+    "totalMinutes": 12,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍝",
+    "photoQuery": "pasta pesto genovese",
+    "ingredients": [
+      {"product":"pasta","amount":200,"unit":"g"},
+      {"product":"pesto","amount":80,"unit":"g"},
+      {"product":"cherry_tomato","amount":120,"unit":"g","measure":{"qty":8,"unit":"pc"}},
+      {"product":"parmesan","amount":20,"unit":"g"},
+      {"product":"pine_nuts","amount":9,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"optional":true},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите пасту аль денте, сохраните 3 ст. л. воды."}},
+      {"text":{"ru":"Смешайте пасту с песто и водой от варки вне огня."}},
+      {"text":{"ru":"Добавьте половинки черри, пармезан и орехи."}}
+    ]
+  },
+  {
+    "id": "alfredo",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Феттучине альфредо с курицей"},
+    "description": {"ru":"Паста в сливочно-сырном соусе"},
+    "activeMinutes": 25,
+    "totalMinutes": 25,
+    "difficulty": 1,
+    "servings": 3,
+    "equipment": [],
+    "emoji": "🍝",
+    "photoQuery": "fettuccine alfredo chicken",
+    "ingredients": [
+      {"product":"spaghetti","amount":250,"unit":"g"},
+      {"product":"chicken_breast","amount":300,"unit":"g"},
+      {"product":"cream","amount":200,"unit":"ml"},
+      {"product":"parmesan","amount":60,"unit":"g"},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"butter","amount":20,"unit":"g","use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}},
+      {"product":"parsley","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите пасту."}},
+      {"text":{"ru":"Обжарьте курицу полосками на масле 6 минут, добавьте чеснок."}},
+      {"text":{"ru":"Влейте сливки, прогрейте 3 минуты, вмешайте пармезан."}},
+      {"text":{"ru":"Соедините с пастой, приправьте."}}
+    ]
+  },
+  {
+    "id": "puttanesca",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Спагетти путтанеска"},
+    "description": {"ru":"Паста с оливками, каперсами и анчоусами"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍝",
+    "photoQuery": "spaghetti puttanesca",
+    "ingredients": [
+      {"product":"spaghetti","amount":200,"unit":"g"},
+      {"product":"canned_tomato","amount":400,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"olives","amount":60,"unit":"g"},
+      {"product":"capers","amount":15,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"anchovy","amount":16,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"chili_flakes","amount":0.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"parsley","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Прогрейте в масле чеснок, анчоусы и чили, пока анчоусы не растворятся."}},
+      {"text":{"ru":"Добавьте томаты, оливки и каперсы, уваривайте 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Смешайте с отваренными спагетти и петрушкой."}}
+    ]
+  },
+  {
+    "id": "cacio-e-pepe",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Спагетти качо э пепе"},
+    "description": {"ru":"Паста с сыром и чёрным перцем"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 2,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍝",
+    "photoQuery": "cacio e pepe",
+    "ingredients": [
+      {"product":"spaghetti","amount":200,"unit":"g"},
+      {"product":"parmesan","amount":80,"unit":"g"},
+      {"product":"pepper","amount":2.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"butter","amount":15,"unit":"g"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите спагетти в небольшом количестве воды, чтобы отвар был крахмалистым."}},
+      {"text":{"ru":"Прогрейте перец на сухой сковороде минуту, добавьте масло и половник отвара."}},
+      {"text":{"ru":"Переложите пасту в сковороду, снимите с огня и, постоянно мешая, всыпайте сыр, подливая отвар до кремовой консистенции."}}
+    ]
+  },
+  {
+    "id": "pasta-pomodoro",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Паста с томатным соусом и базиликом"},
+    "description": {"ru":"Простая классика помодоро"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍝",
+    "photoQuery": "pasta al pomodoro",
+    "ingredients": [
+      {"product":"spaghetti","amount":200,"unit":"g"},
+      {"product":"canned_tomato","amount":400,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"basil","amount":10,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"sugar","amount":1.1,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"parmesan","amount":20,"unit":"g","optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте чеснок в масле, добавьте томаты, сахар и соль."}},
+      {"text":{"ru":"Уваривайте соус 12 минут, в конце добавьте базилик."},"timerMinutes":12},
+      {"text":{"ru":"Смешайте с отваренными спагетти."}}
+    ]
+  },
+  {
+    "id": "pasta-tonno",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Паста с тунцом и томатами"},
+    "description": {"ru":"Ужин из кладовки за 15 минут"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍝",
+    "photoQuery": "pasta al tonno",
+    "ingredients": [
+      {"product":"pasta","amount":200,"unit":"g"},
+      {"product":"tuna_canned","amount":140,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"canned_tomato","amount":400,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"onion","amount":55,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"garlic","amount":4,"unit":"g","measure":{"qty":1,"unit":"clove"}},
+      {"product":"olives","amount":40,"unit":"g","optional":true},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"oregano","amount":0.6,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук и чеснок, добавьте томаты и орегано, уваривайте 8 минут."},"timerMinutes":8},
+      {"text":{"ru":"Вмешайте тунец и оливки, прогрейте."}},
+      {"text":{"ru":"Соедините с отваренной пастой."}}
+    ]
+  },
+  {
+    "id": "pasta-primavera",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Паста примавера"},
+    "description": {"ru":"Паста с весенними овощами"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 3,
+    "equipment": [],
+    "emoji": "🍝",
+    "photoQuery": "pasta primavera",
+    "ingredients": [
+      {"product":"pasta","amount":250,"unit":"g"},
+      {"product":"zucchini","amount":250,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"broccoli","amount":200,"unit":"g"},
+      {"product":"peas_frozen","amount":100,"unit":"g"},
+      {"product":"cherry_tomato","amount":150,"unit":"g","measure":{"qty":10,"unit":"pc"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"parmesan","amount":30,"unit":"g"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"basil","amount":5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите пасту, за 3 минуты до готовности добавьте в воду брокколи и горошек."}},
+      {"text":{"ru":"Обжарьте кабачок с чесноком 4 минуты, добавьте черри."}},
+      {"text":{"ru":"Смешайте всё вместе с парой ложек воды от варки и пармезаном."}}
+    ]
+  },
+  {
+    "id": "lasagne",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Лазанья болоньезе"},
+    "description": {"ru":"Слои пасты, мясного рагу и бешамеля"},
+    "activeMinutes": 45,
+    "totalMinutes": 100,
+    "difficulty": 3,
+    "servings": 8,
+    "equipment": ["oven"],
+    "emoji": "🍝",
+    "photoQuery": "lasagne bolognese",
+    "ingredients": [
+      {"product":"lasagna_sheets","amount":216,"unit":"g","measure":{"qty":12,"unit":"pc"}},
+      {"product":"beef_mince","amount":600,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"canned_tomato","amount":800,"unit":"g","measure":{"qty":2,"unit":"can"}},
+      {"product":"tomato_paste","amount":33,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"milk","amount":700,"unit":"ml"},
+      {"product":"butter","amount":50,"unit":"g"},
+      {"product":"flour","amount":50,"unit":"g"},
+      {"product":"cheese","amount":150,"unit":"g"},
+      {"product":"parmesan","amount":40,"unit":"g"},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"nutmeg","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"oregano","amount":1.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук и морковь, добавьте фарш, затем томаты, пасту, чеснок, орегано и половину соли. Тушите 25 минут."},"timerMinutes":25},
+      {"text":{"ru":"Для бешамеля растопите масло, обжарьте муку, влейте молоко и варите, мешая, до загустения. Приправьте мускатом и солью."}},
+      {"text":{"ru":"В форму выкладывайте слоями: рагу, листы, бешамель, сыр. Повторите 4 раза."}},
+      {"text":{"ru":"Запекайте при 180 °C 40 минут, дайте постоять 10 минут."},"timerMinutes":40}
+    ]
+  },
+  {
+    "id": "pasta-al-forno",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Запечённая паста с моцареллой"},
+    "description": {"ru":"Паста аль форно в томатном соусе"},
+    "activeMinutes": 15,
+    "totalMinutes": 40,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["oven"],
+    "emoji": "🧀",
+    "photoQuery": "pasta al forno",
+    "ingredients": [
+      {"product":"pasta","amount":350,"unit":"g"},
+      {"product":"passata","amount":500,"unit":"ml"},
+      {"product":"mozzarella","amount":250,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"parmesan","amount":40,"unit":"g"},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"dried_basil","amount":1.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите пасту на 3 минуты меньше нормы."}},
+      {"text":{"ru":"Смешайте с пассатой, чесноком, базиликом, солью и половиной моцареллы кубиками."}},
+      {"text":{"ru":"Выложите в форму, сверху оставшаяся моцарелла и пармезан."}},
+      {"text":{"ru":"Запекайте при 200 °C 20 минут."},"timerMinutes":20}
+    ]
+  },
+  {
+    "id": "amatriciana",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Паста аматричана"},
+    "description": {"ru":"Томатный соус с беконом и луком"},
+    "activeMinutes": 20,
+    "totalMinutes": 25,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍝",
+    "photoQuery": "bucatini amatriciana",
+    "ingredients": [
+      {"product":"spaghetti","amount":200,"unit":"g"},
+      {"product":"bacon","amount":100,"unit":"g"},
+      {"product":"canned_tomato","amount":400,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"onion","amount":55,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"chili_flakes","amount":0.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}},
+      {"product":"parmesan","amount":30,"unit":"g"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте бекон до вытапливания жира, добавьте лук."}},
+      {"text":{"ru":"Влейте томаты, добавьте чили, уваривайте 12 минут."},"timerMinutes":12},
+      {"text":{"ru":"Смешайте с пастой и пармезаном."}}
+    ]
+  },
+  {
+    "id": "pasta-gamberi",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Паста с креветками и чесноком"},
+    "description": {"ru":"Спагетти с креветками в белом вине"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 2,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍤",
+    "photoQuery": "spaghetti shrimp garlic",
+    "ingredients": [
+      {"product":"spaghetti","amount":200,"unit":"g"},
+      {"product":"shrimp","amount":250,"unit":"g"},
+      {"product":"garlic","amount":12,"unit":"g","measure":{"qty":3,"unit":"clove"}},
+      {"product":"cherry_tomato","amount":150,"unit":"g","measure":{"qty":10,"unit":"pc"}},
+      {"product":"white_wine","amount":80,"unit":"ml"},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"chili_flakes","amount":0.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}},
+      {"product":"parsley","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите спагетти."}},
+      {"text":{"ru":"Обжарьте чеснок и чили в масле, добавьте креветки на 2 минуты."}},
+      {"text":{"ru":"Влейте вино, добавьте черри, выпаривайте 3 минуты."}},
+      {"text":{"ru":"Смешайте с пастой и петрушкой."}}
+    ]
+  },
+  {
+    "id": "pasta-funghi",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Паста с грибами в сливочном соусе"},
+    "description": {"ru":"Тальятелле с шампиньонами"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍄",
+    "photoQuery": "tagliatelle funghi cream",
+    "ingredients": [
+      {"product":"spaghetti","amount":200,"unit":"g"},
+      {"product":"mushrooms","amount":300,"unit":"g"},
+      {"product":"cooking_cream","amount":200,"unit":"ml"},
+      {"product":"onion","amount":55,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"parmesan","amount":30,"unit":"g"},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"thyme","amount":1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте грибы на сильном огне до румяности, добавьте лук и чеснок."}},
+      {"text":{"ru":"Влейте сливки, добавьте тимьян, уваривайте 4 минуты."}},
+      {"text":{"ru":"Смешайте с отваренной пастой и пармезаном."}}
+    ]
+  },
+  {
+    "id": "pasta-alla-norma",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Паста алла Норма"},
+    "description": {"ru":"Сицилийская паста с баклажанами"},
+    "activeMinutes": 30,
+    "totalMinutes": 35,
+    "difficulty": 2,
+    "servings": 3,
+    "equipment": [],
+    "emoji": "🍆",
+    "photoQuery": "pasta alla norma",
+    "ingredients": [
+      {"product":"pasta","amount":250,"unit":"g"},
+      {"product":"eggplant","amount":300,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"canned_tomato","amount":400,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"ricotta","amount":80,"unit":"g"},
+      {"product":"basil","amount":10,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"olive_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте баклажан кубиками, посолите на 10 минут, обсушите и обжарьте до золотистого цвета."}},
+      {"text":{"ru":"Отдельно уварите томаты с чесноком 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Смешайте соус с баклажанами и пастой."}},
+      {"text":{"ru":"Подавайте с рикоттой и базиликом."}}
+    ]
+  },
+  {
+    "id": "pasta-salmone",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Паста с лососем в сливках"},
+    "description": {"ru":"Нежная паста с красной рыбой"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🐟",
+    "photoQuery": "pasta salmon cream",
+    "ingredients": [
+      {"product":"pasta","amount":200,"unit":"g"},
+      {"product":"salmon","amount":200,"unit":"g"},
+      {"product":"cooking_cream","amount":150,"unit":"ml"},
+      {"product":"shallot","amount":30,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"lemon_juice","amount":15.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"dill","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите пасту."}},
+      {"text":{"ru":"Обжарьте шалот, добавьте лосось кубиками на 2 минуты."}},
+      {"text":{"ru":"Влейте сливки, прогрейте 3 минуты, добавьте лимонный сок."}},
+      {"text":{"ru":"Смешайте с пастой и укропом."}}
+    ]
+  },
+  {
+    "id": "gnocchi-sorrentina",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Ньокки алла сорентина"},
+    "description": {"ru":"Ньокки, запечённые в томатном соусе с моцареллой"},
+    "activeMinutes": 10,
+    "totalMinutes": 25,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["oven"],
+    "emoji": "🍅",
+    "photoQuery": "gnocchi alla sorrentina",
+    "ingredients": [
+      {"product":"gnocchi","amount":500,"unit":"g"},
+      {"product":"passata","amount":300,"unit":"ml"},
+      {"product":"mozzarella","amount":125,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"parmesan","amount":20,"unit":"g"},
+      {"product":"garlic","amount":4,"unit":"g","measure":{"qty":1,"unit":"clove"}},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"basil","amount":5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Прогрейте пассату с чесноком, маслом и солью 5 минут."}},
+      {"text":{"ru":"Отварите ньокки 2 минуты, смешайте с соусом."}},
+      {"text":{"ru":"Выложите в форму, сверху — моцарелла и пармезан."}},
+      {"text":{"ru":"Запекайте при 220 °C 10 минут. Добавьте базилик."},"timerMinutes":10}
+    ]
+  },
+  {
+    "id": "gnocchi-spinaci",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Ньокки со шпинатом и горгонзолой"},
+    "description": {"ru":"Сливочный ужин за 15 минут"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["onepan"],
+    "emoji": "🥬",
+    "photoQuery": "gnocchi spinach gorgonzola",
+    "ingredients": [
+      {"product":"gnocchi","amount":500,"unit":"g"},
+      {"product":"spinach","amount":150,"unit":"g"},
+      {"product":"blue_cheese","amount":80,"unit":"g"},
+      {"product":"cooking_cream","amount":150,"unit":"ml"},
+      {"product":"garlic","amount":4,"unit":"g","measure":{"qty":1,"unit":"clove"}},
+      {"product":"walnuts","amount":20,"unit":"g","optional":true},
+      {"product":"butter","amount":10,"unit":"g","use":"fry"}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте ньокки на масле 5 минут до корочки."}},
+      {"text":{"ru":"Добавьте чеснок и шпинат, дайте ему осесть."}},
+      {"text":{"ru":"Влейте сливки и раскрошите сыр, прогревайте до расплавления."}},
+      {"text":{"ru":"Посыпьте орехами."}}
+    ]
+  },
+  {
+    "id": "risotto-funghi",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Ризотто с грибами"},
+    "description": {"ru":"Кремовый рис с шампиньонами и пармезаном"},
+    "activeMinutes": 35,
+    "totalMinutes": 35,
+    "difficulty": 2,
+    "servings": 3,
+    "equipment": ["onepan"],
+    "emoji": "🍄",
+    "photoQuery": "risotto ai funghi",
+    "ingredients": [
+      {"product":"arborio","amount":250,"unit":"g"},
+      {"product":"mushrooms","amount":300,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"garlic","amount":4,"unit":"g","measure":{"qty":1,"unit":"clove"}},
+      {"product":"white_wine","amount":100,"unit":"ml"},
+      {"product":"veg_broth","amount":900,"unit":"ml"},
+      {"product":"parmesan","amount":50,"unit":"g"},
+      {"product":"butter","amount":30,"unit":"g"},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте грибы до румяности, отложите."}},
+      {"text":{"ru":"Обжарьте лук и чеснок, всыпьте рис и прогрейте 2 минуты. Влейте вино и выпарите."}},
+      {"text":{"ru":"Подливайте горячий бульон по половнику, постоянно помешивая, 18 минут."},"timerMinutes":18},
+      {"text":{"ru":"Верните грибы, вмешайте масло и пармезан, накройте на 2 минуты."}}
+    ]
+  },
+  {
+    "id": "risotto-zucca",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Ризотто с тыквой"},
+    "description": {"ru":"Осеннее ризотто с пармезаном"},
+    "activeMinutes": 35,
+    "totalMinutes": 35,
+    "difficulty": 2,
+    "servings": 3,
+    "equipment": ["onepan"],
+    "emoji": "🎃",
+    "photoQuery": "risotto alla zucca",
+    "ingredients": [
+      {"product":"arborio","amount":250,"unit":"g"},
+      {"product":"pumpkin","amount":400,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"white_wine","amount":100,"unit":"ml"},
+      {"product":"veg_broth","amount":900,"unit":"ml"},
+      {"product":"parmesan","amount":50,"unit":"g"},
+      {"product":"butter","amount":30,"unit":"g"},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"nutmeg","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук и тыкву мелкими кубиками 5 минут."}},
+      {"text":{"ru":"Всыпьте рис, прогрейте, влейте вино и выпарите."}},
+      {"text":{"ru":"Подливайте бульон по половнику 18 минут, помешивая."},"timerMinutes":18},
+      {"text":{"ru":"Вмешайте масло, пармезан и мускат."}}
+    ]
+  },
+  {
+    "id": "risi-e-bisi",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Рис с зелёным горошком"},
+    "description": {"ru":"Венецианское ризи э бизи"},
+    "activeMinutes": 25,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 3,
+    "equipment": ["onepan"],
+    "emoji": "🍚",
+    "photoQuery": "risi e bisi",
+    "ingredients": [
+      {"product":"arborio","amount":250,"unit":"g"},
+      {"product":"peas_frozen","amount":300,"unit":"g"},
+      {"product":"bacon","amount":60,"unit":"g","measure":{"qty":4,"unit":"slice"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"veg_broth","amount":1000,"unit":"ml"},
+      {"product":"parmesan","amount":40,"unit":"g"},
+      {"product":"butter","amount":25,"unit":"g"},
+      {"product":"parsley","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте бекон и лук на половине масла."}},
+      {"text":{"ru":"Добавьте рис, влейте бульон и варите 12 минут, помешивая."},"timerMinutes":12},
+      {"text":{"ru":"Добавьте горошек, варите ещё 5 минут. Блюдо должно быть жиже ризотто."}},
+      {"text":{"ru":"Вмешайте оставшееся масло, пармезан и петрушку."}}
+    ]
+  },
+  {
+    "id": "risotto-frutti-di-mare",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Ризотто с морепродуктами"},
+    "description": {"ru":"Рис с морским коктейлем и томатами"},
+    "activeMinutes": 35,
+    "totalMinutes": 35,
+    "difficulty": 2,
+    "servings": 3,
+    "equipment": ["onepan"],
+    "emoji": "🦐",
+    "photoQuery": "risotto frutti di mare",
+    "ingredients": [
+      {"product":"arborio","amount":250,"unit":"g"},
+      {"product":"seafood_mix","amount":400,"unit":"g"},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"cherry_tomato","amount":150,"unit":"g","measure":{"qty":10,"unit":"pc"}},
+      {"product":"white_wine","amount":100,"unit":"ml"},
+      {"product":"veg_broth","amount":800,"unit":"ml"},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"parsley","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук и чеснок, всыпьте рис, влейте вино."}},
+      {"text":{"ru":"Подливайте бульон по половнику 14 минут."},"timerMinutes":14},
+      {"text":{"ru":"Добавьте морепродукты и черри, готовьте ещё 5 минут."}},
+      {"text":{"ru":"Посыпьте петрушкой."}}
+    ]
+  },
+  {
+    "id": "pizza-margherita",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Пицца «Маргарита»"},
+    "description": {"ru":"Томаты, моцарелла и базилик"},
+    "activeMinutes": 15,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["oven"],
+    "emoji": "🍕",
+    "photoQuery": "pizza margherita",
+    "ingredients": [
+      {"product":"pizza_dough","amount":400,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"passata","amount":150,"unit":"ml"},
+      {"product":"mozzarella","amount":250,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"basil","amount":10,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"oregano","amount":0.6,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Разогрейте духовку до максимума (250 °C) вместе с противнем."}},
+      {"text":{"ru":"Растяните тесто, смажьте пассатой с солью и орегано."}},
+      {"text":{"ru":"Разложите моцареллу кусочками, сбрызните маслом."}},
+      {"text":{"ru":"Выпекайте 10–12 минут. Добавьте свежий базилик."},"timerMinutes":11}
+    ]
+  },
+  {
+    "id": "pizza-salami",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Пицца с салями"},
+    "description": {"ru":"Острая пицца с колбасой и сыром"},
+    "activeMinutes": 15,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["oven"],
+    "emoji": "🍕",
+    "photoQuery": "pizza salami",
+    "ingredients": [
+      {"product":"pizza_dough","amount":400,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"passata","amount":150,"unit":"ml"},
+      {"product":"mozzarella","amount":125,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"cheese","amount":80,"unit":"g"},
+      {"product":"salami","amount":80,"unit":"g"},
+      {"product":"oregano","amount":1.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"bell_pepper","amount":80,"unit":"g","measure":{"qty":0.5,"unit":"pc"},"optional":true},
+      {"product":"olives","amount":30,"unit":"g","optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Разогрейте духовку до 250 °C."}},
+      {"text":{"ru":"Смажьте тесто пассатой, посыпьте орегано и сыром."}},
+      {"text":{"ru":"Разложите салями, моцареллу, перец и оливки."}},
+      {"text":{"ru":"Выпекайте 12 минут."},"timerMinutes":12}
+    ]
+  },
+  {
+    "id": "pizza-funghi",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Пицца с грибами и ветчиной"},
+    "description": {"ru":"Просчутто э фунги"},
+    "activeMinutes": 15,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["oven"],
+    "emoji": "🍕",
+    "photoQuery": "pizza prosciutto funghi",
+    "ingredients": [
+      {"product":"pizza_dough","amount":400,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"passata","amount":150,"unit":"ml"},
+      {"product":"mozzarella","amount":250,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"mushrooms","amount":150,"unit":"g"},
+      {"product":"ham","amount":80,"unit":"g","measure":{"qty":4,"unit":"slice"}},
+      {"product":"oregano","amount":1.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Разогрейте духовку до 250 °C."}},
+      {"text":{"ru":"Смажьте тесто пассатой, выложите моцареллу, тонкие ломтики грибов и ветчину."}},
+      {"text":{"ru":"Посыпьте орегано, сбрызните маслом."}},
+      {"text":{"ru":"Выпекайте 12 минут."},"timerMinutes":12}
+    ]
+  },
+  {
+    "id": "focaccia",
+    "cuisine": "italian",
+    "type": "snack",
+    "name": {"ru":"Фокачча с розмарином"},
+    "description": {"ru":"Пышная лепёшка на оливковом масле"},
+    "activeMinutes": 15,
+    "totalMinutes": 120,
+    "difficulty": 2,
+    "servings": 8,
+    "equipment": ["oven"],
+    "emoji": "🍞",
+    "photoQuery": "focaccia rosemary",
+    "ingredients": [
+      {"product":"flour","amount":500,"unit":"g"},
+      {"product":"water","amount":380,"unit":"ml"},
+      {"product":"yeast","amount":4.5,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"olive_oil","amount":69,"unit":"g","measure":{"qty":5,"unit":"tbsp"}},
+      {"product":"salt","amount":12,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"rosemary","amount":6,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"cherry_tomato","amount":120,"unit":"g","measure":{"qty":8,"unit":"pc"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте муку, дрожжи, воду, половину соли и 2 ст. л. масла. Тесто будет липким."}},
+      {"text":{"ru":"Накройте и оставьте в тепле на 1,5 часа, дважды сложив тесто конвертом."},"timerMinutes":90},
+      {"text":{"ru":"Выложите в смазанный противень, пальцами сделайте ямки, полейте маслом, посыпьте солью и розмарином."}},
+      {"text":{"ru":"Выпекайте при 220 °C 20–22 минуты."},"timerMinutes":21}
+    ]
+  },
+  {
+    "id": "pollo-cacciatora",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Курица по-охотничьи"},
+    "description": {"ru":"Каччаторе: курица в томатах с оливками"},
+    "activeMinutes": 20,
+    "totalMinutes": 60,
+    "difficulty": 2,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🍗",
+    "photoQuery": "pollo alla cacciatora",
+    "ingredients": [
+      {"product":"chicken_legs","amount":1000,"unit":"g"},
+      {"product":"canned_tomato","amount":400,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"bell_pepper","amount":160,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"garlic","amount":12,"unit":"g","measure":{"qty":3,"unit":"clove"}},
+      {"product":"olives","amount":80,"unit":"g"},
+      {"product":"red_wine","amount":100,"unit":"ml"},
+      {"product":"rosemary","amount":2,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":9,"unit":"g","measure":{"qty":1.5,"unit":"tsp"}},
+      {"product":"pepper","amount":1.1,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте курицу до золотистой корочки, отложите."}},
+      {"text":{"ru":"Обжарьте лук, перец и чеснок 5 минут, влейте вино."}},
+      {"text":{"ru":"Добавьте томаты, оливки, розмарин и верните курицу."}},
+      {"text":{"ru":"Тушите под крышкой 40 минут."},"timerMinutes":40}
+    ]
+  },
+  {
+    "id": "chicken-piccata",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Курица пиката"},
+    "description": {"ru":"Куриное филе в лимонном соусе с каперсами"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["onepan"],
+    "emoji": "🍋",
+    "photoQuery": "chicken piccata",
+    "ingredients": [
+      {"product":"chicken_breast","amount":400,"unit":"g"},
+      {"product":"flour","amount":18,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"lemon_juice","amount":30.9,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"capers","amount":15,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"chicken_broth","amount":150,"unit":"ml"},
+      {"product":"butter","amount":25,"unit":"g"},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"parsley","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Разрежьте филе вдоль на тонкие пласты, посолите, обваляйте в муке."}},
+      {"text":{"ru":"Обжарьте по 3 минуты с каждой стороны, отложите."}},
+      {"text":{"ru":"Влейте бульон и лимонный сок, добавьте каперсы, уварите вдвое."}},
+      {"text":{"ru":"Вмешайте сливочное масло, верните курицу на минуту. Посыпьте петрушкой."}}
+    ]
+  },
+  {
+    "id": "parmigiana",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Баклажаны пармиджана"},
+    "description": {"ru":"Запеканка из баклажанов с томатами и сыром"},
+    "activeMinutes": 30,
+    "totalMinutes": 70,
+    "difficulty": 2,
+    "servings": 4,
+    "equipment": ["oven"],
+    "emoji": "🍆",
+    "photoQuery": "parmigiana di melanzane",
+    "ingredients": [
+      {"product":"eggplant","amount":900,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"passata","amount":500,"unit":"ml"},
+      {"product":"mozzarella","amount":250,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"parmesan","amount":60,"unit":"g"},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"basil","amount":10,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"olive_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте баклажаны пластинами, смажьте маслом и запеките при 220 °C 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Прогрейте пассату с чесноком и солью."}},
+      {"text":{"ru":"Выложите слоями баклажаны, соус, моцареллу, пармезан и базилик. Повторите."}},
+      {"text":{"ru":"Запекайте при 190 °C 30 минут."},"timerMinutes":30}
+    ]
+  },
+  {
+    "id": "polpette",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Фрикадельки в томатном соусе"},
+    "description": {"ru":"Итальянские полпетте"},
+    "activeMinutes": 30,
+    "totalMinutes": 45,
+    "difficulty": 2,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🍝",
+    "photoQuery": "polpette al sugo",
+    "ingredients": [
+      {"product":"mixed_mince","amount":500,"unit":"g"},
+      {"product":"white_bread","amount":60,"unit":"g","measure":{"qty":2,"unit":"slice"}},
+      {"product":"milk","amount":60,"unit":"ml"},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"parmesan","amount":40,"unit":"g"},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"parsley","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"passata","amount":600,"unit":"ml"},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Замочите хлеб в молоке, смешайте с фаршем, яйцом, пармезаном, половиной чеснока, петрушкой и солью."}},
+      {"text":{"ru":"Скатайте шарики и обжарьте со всех сторон."}},
+      {"text":{"ru":"Добавьте пассату и оставшийся чеснок."}},
+      {"text":{"ru":"Тушите под крышкой 20 минут."},"timerMinutes":20}
+    ]
+  },
+  {
+    "id": "chicken-parmigiana",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Курица пармиджана"},
+    "description": {"ru":"Куриная отбивная под томатным соусом и сыром"},
+    "activeMinutes": 25,
+    "totalMinutes": 40,
+    "difficulty": 2,
+    "servings": 4,
+    "equipment": ["oven"],
+    "emoji": "🍗",
+    "photoQuery": "chicken parmigiana",
+    "ingredients": [
+      {"product":"chicken_breast","amount":600,"unit":"g"},
+      {"product":"egg","amount":55,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"breadcrumbs","amount":80,"unit":"g"},
+      {"product":"parmesan","amount":40,"unit":"g"},
+      {"product":"passata","amount":300,"unit":"ml"},
+      {"product":"mozzarella","amount":125,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"veg_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"},"use":"fry"},
+      {"product":"oregano","amount":1.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Разрежьте филе вдоль, отбейте, посолите."}},
+      {"text":{"ru":"Обмакните в яйцо, затем в сухари с пармезаном. Обжарьте по 3 минуты с каждой стороны."}},
+      {"text":{"ru":"Выложите в форму, сверху — пассата с орегано и моцарелла."}},
+      {"text":{"ru":"Запекайте при 200 °C 15 минут."},"timerMinutes":15}
+    ]
+  },
+  {
+    "id": "frittata",
+    "cuisine": "italian",
+    "type": "breakfast",
+    "name": {"ru":"Фриттата с овощами"},
+    "description": {"ru":"Итальянский омлет с кабачком и сыром"},
+    "activeMinutes": 15,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["onepan"],
+    "emoji": "🍳",
+    "photoQuery": "frittata vegetables",
+    "ingredients": [
+      {"product":"egg","amount":275,"unit":"g","measure":{"qty":5,"unit":"pc"}},
+      {"product":"zucchini","amount":125,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"bell_pepper","amount":80,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"onion","amount":55,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"parmesan","amount":30,"unit":"g"},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук, кабачок и перец 5 минут."}},
+      {"text":{"ru":"Взбейте яйца с пармезаном, солью и перцем, вылейте на овощи."}},
+      {"text":{"ru":"Готовьте под крышкой на слабом огне 8 минут."},"timerMinutes":8}
+    ]
+  },
+  {
+    "id": "scaloppine-limone",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Скалоппини с лимоном"},
+    "description": {"ru":"Тонкая свинина в лимонно-масляном соусе"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["onepan"],
+    "emoji": "🍋",
+    "photoQuery": "scaloppine al limone",
+    "ingredients": [
+      {"product":"pork_loin","amount":350,"unit":"g"},
+      {"product":"flour","amount":18,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"lemon_juice","amount":30.9,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"white_wine","amount":60,"unit":"ml"},
+      {"product":"butter","amount":25,"unit":"g"},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"parsley","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте мясо тонкими ломтиками, отбейте, посолите и обваляйте в муке."}},
+      {"text":{"ru":"Обжарьте по 2 минуты с каждой стороны, отложите."}},
+      {"text":{"ru":"Влейте вино и лимонный сок, выпарите наполовину, вмешайте сливочное масло."}},
+      {"text":{"ru":"Верните мясо в соус, посыпьте петрушкой."}}
+    ]
+  },
+  {
+    "id": "pesce-al-forno",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Рыба, запечённая с томатами и оливками"},
+    "description": {"ru":"Белая рыба по-средиземноморски"},
+    "activeMinutes": 10,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["oven"],
+    "emoji": "🐟",
+    "photoQuery": "baked fish tomatoes olives",
+    "ingredients": [
+      {"product":"white_fish","amount":400,"unit":"g"},
+      {"product":"cherry_tomato","amount":180,"unit":"g","measure":{"qty":12,"unit":"pc"}},
+      {"product":"olives","amount":50,"unit":"g"},
+      {"product":"capers","amount":15,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"optional":true},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"lemon_juice","amount":15.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"oregano","amount":0.6,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Разогрейте духовку до 200 °C."}},
+      {"text":{"ru":"Выложите рыбу в форму, вокруг — черри, оливки, каперсы и чеснок."}},
+      {"text":{"ru":"Полейте маслом и лимонным соком, посыпьте орегано и солью."}},
+      {"text":{"ru":"Запекайте 18 минут."},"timerMinutes":18}
+    ]
+  },
+  {
+    "id": "tuscan-chicken",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Курица по-тоскански"},
+    "description": {"ru":"Курица в сливочном соусе с вялеными томатами и шпинатом"},
+    "activeMinutes": 25,
+    "totalMinutes": 25,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🍗",
+    "photoQuery": "creamy tuscan chicken",
+    "ingredients": [
+      {"product":"chicken_breast","amount":600,"unit":"g"},
+      {"product":"cooking_cream","amount":250,"unit":"ml"},
+      {"product":"sundried_tomato","amount":60,"unit":"g"},
+      {"product":"spinach","amount":100,"unit":"g"},
+      {"product":"garlic","amount":12,"unit":"g","measure":{"qty":3,"unit":"clove"}},
+      {"product":"parmesan","amount":40,"unit":"g"},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"oregano","amount":1.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте курицу по 5 минут с каждой стороны, отложите."}},
+      {"text":{"ru":"Обжарьте чеснок и вяленые томаты минуту, влейте сливки, добавьте орегано и пармезан."}},
+      {"text":{"ru":"Добавьте шпинат, дайте осесть, верните курицу."}},
+      {"text":{"ru":"Тушите 6 минут до готовности курицы."},"timerMinutes":6}
+    ]
+  },
+  {
+    "id": "salsiccia-peperoni",
+    "cuisine": "italian",
+    "type": "main",
+    "name": {"ru":"Колбаски с перцем и луком"},
+    "description": {"ru":"Сковорода в итальянском стиле"},
+    "activeMinutes": 20,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 3,
+    "equipment": ["onepan"],
+    "emoji": "🌭",
+    "photoQuery": "sausage peppers onions",
+    "ingredients": [
+      {"product":"bratwurst","amount":600,"unit":"g","measure":{"qty":6,"unit":"pc"}},
+      {"product":"bell_pepper","amount":480,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"canned_tomato","amount":200,"unit":"g","measure":{"qty":0.5,"unit":"can"}},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"use":"fry"},
+      {"product":"oregano","amount":1.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте колбаски до румяности, отложите."}},
+      {"text":{"ru":"Обжарьте лук и перец полосками 8 минут, добавьте чеснок, томаты и орегано."}},
+      {"text":{"ru":"Верните колбаски и тушите 10 минут."},"timerMinutes":10}
+    ]
+  },
+  {
+    "id": "minestrone",
+    "cuisine": "italian",
+    "type": "soup",
+    "name": {"ru":"Минестроне"},
+    "description": {"ru":"Густой овощной суп с фасолью и пастой"},
+    "activeMinutes": 25,
+    "totalMinutes": 45,
+    "difficulty": 1,
+    "servings": 6,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🥣",
+    "photoQuery": "minestrone",
+    "ingredients": [
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"carrot","amount":200,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"celery","amount":80,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"zucchini","amount":250,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"potato","amount":240,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"canned_tomato","amount":400,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"beans_canned","amount":240,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"pasta","amount":80,"unit":"g"},
+      {"product":"veg_broth","amount":1500,"unit":"ml"},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"parmesan","amount":30,"unit":"g","optional":true},
+      {"product":"basil","amount":5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук, морковь и сельдерей 5 минут, добавьте чеснок."}},
+      {"text":{"ru":"Положите картофель, кабачок, томаты и бульон, варите 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Добавьте фасоль и пасту, варите ещё 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Подавайте с пармезаном и базиликом."}}
+    ]
+  },
+  {
+    "id": "pasta-e-fagioli",
+    "cuisine": "italian",
+    "type": "soup",
+    "name": {"ru":"Суп с фасолью и пастой"},
+    "description": {"ru":"Паста э фаджоли"},
+    "activeMinutes": 20,
+    "totalMinutes": 35,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🥣",
+    "photoQuery": "pasta e fagioli",
+    "ingredients": [
+      {"product":"beans_canned","amount":480,"unit":"g","measure":{"qty":2,"unit":"can"}},
+      {"product":"pasta","amount":120,"unit":"g"},
+      {"product":"bacon","amount":60,"unit":"g","measure":{"qty":4,"unit":"slice"},"optional":true},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"carrot","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"tomato_paste","amount":33,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"veg_broth","amount":1000,"unit":"ml"},
+      {"product":"rosemary","amount":2,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте бекон, лук и морковь, добавьте чеснок и томатную пасту."}},
+      {"text":{"ru":"Добавьте половину фасоли, бульон и розмарин, варите 10 минут."},"timerMinutes":10},
+      {"text":{"ru":"Вторую половину фасоли разомните вилкой и добавьте в суп для густоты."}},
+      {"text":{"ru":"Всыпьте пасту и варите до готовности."}}
+    ]
+  },
+  {
+    "id": "tomato-basil-soup",
+    "cuisine": "italian",
+    "type": "soup",
+    "name": {"ru":"Томатный крем-суп с базиликом"},
+    "description": {"ru":"Простой суп из консервированных томатов"},
+    "activeMinutes": 15,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan","multicooker"],
+    "emoji": "🍅",
+    "photoQuery": "tomato basil soup",
+    "ingredients": [
+      {"product":"canned_tomato","amount":800,"unit":"g","measure":{"qty":2,"unit":"can"}},
+      {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"veg_broth","amount":400,"unit":"ml"},
+      {"product":"cooking_cream","amount":100,"unit":"ml"},
+      {"product":"basil","amount":10,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"},"use":"fry"},
+      {"product":"sugar","amount":4.3,"unit":"g","measure":{"qty":1,"unit":"tsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Обжарьте лук и чеснок до мягкости."}},
+      {"text":{"ru":"Добавьте томаты, бульон, сахар и соль, варите 15 минут."},"timerMinutes":15},
+      {"text":{"ru":"Пюрируйте блендером с базиликом, влейте сливки."}}
+    ]
+  },
+  {
+    "id": "stracciatella",
+    "cuisine": "italian",
+    "type": "soup",
+    "name": {"ru":"Суп страчателла"},
+    "description": {"ru":"Римский бульон с яичными хлопьями"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": ["onepan"],
+    "emoji": "🥣",
+    "photoQuery": "stracciatella soup",
+    "ingredients": [
+      {"product":"chicken_broth","amount":700,"unit":"ml"},
+      {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"parmesan","amount":30,"unit":"g"},
+      {"product":"semolina","amount":10.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"parsley","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"nutmeg","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Доведите бульон до кипения."}},
+      {"text":{"ru":"Взбейте яйца с пармезаном, манкой и мускатом."}},
+      {"text":{"ru":"Влейте смесь в бульон тонкой струйкой, помешивая вилкой. Варите 2 минуты."}},
+      {"text":{"ru":"Посыпьте петрушкой."}}
+    ]
+  },
+  {
+    "id": "caprese",
+    "cuisine": "italian",
+    "type": "salad",
+    "name": {"ru":"Салат капрезе"},
+    "description": {"ru":"Томаты, моцарелла и базилик"},
+    "activeMinutes": 7,
+    "totalMinutes": 7,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🍅",
+    "photoQuery": "caprese salad",
+    "ingredients": [
+      {"product":"tomato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"mozzarella","amount":250,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"basil","amount":10,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"balsamic","amount":5.5,"unit":"g","measure":{"qty":1,"unit":"tsp"},"optional":true},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте помидоры и моцареллу кружками."}},
+      {"text":{"ru":"Выложите, чередуя, с листьями базилика."}},
+      {"text":{"ru":"Полейте маслом, посолите и поперчите."}}
+    ]
+  },
+  {
+    "id": "panzanella",
+    "cuisine": "italian",
+    "type": "salad",
+    "name": {"ru":"Панцанелла"},
+    "description": {"ru":"Тосканский салат с хлебом и томатами"},
+    "activeMinutes": 15,
+    "totalMinutes": 30,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "panzanella",
+    "ingredients": [
+      {"product":"baguette","amount":125,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"tomato","amount":480,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"cucumber","amount":150,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"red_onion","amount":55,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"basil","amount":10,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"olive_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
+      {"product":"vinegar","amount":30,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Порвите чёрствый хлеб кусочками и подсушите на сухой сковороде."}},
+      {"text":{"ru":"Нарежьте помидоры, огурцы и лук, смешайте с маслом, уксусом и солью."}},
+      {"text":{"ru":"Добавьте хлеб и базилик, оставьте на 15 минут пропитаться."},"timerMinutes":15}
+    ]
+  },
+  {
+    "id": "rucola-parmigiano",
+    "cuisine": "italian",
+    "type": "salad",
+    "name": {"ru":"Салат с рукколой, черри и пармезаном"},
+    "description": {"ru":"Трёхминутный салат к любому блюду"},
+    "activeMinutes": 5,
+    "totalMinutes": 5,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "rucola parmesan salad",
+    "ingredients": [
+      {"product":"arugula","amount":100,"unit":"g"},
+      {"product":"cherry_tomato","amount":150,"unit":"g","measure":{"qty":10,"unit":"pc"}},
+      {"product":"parmesan","amount":30,"unit":"g"},
+      {"product":"olive_oil","amount":20.7,"unit":"g","measure":{"qty":1.5,"unit":"tbsp"}},
+      {"product":"balsamic","amount":16.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"pine_nuts","amount":9,"unit":"g","measure":{"qty":1,"unit":"tbsp"},"optional":true},
+      {"product":"salt","amount":0.5,"unit":"g","measure":{"qty":1,"unit":"pinch"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Смешайте рукколу с половинками черри."}},
+      {"text":{"ru":"Заправьте маслом и бальзамиком, посолите."}},
+      {"text":{"ru":"Сверху — стружка пармезана и орехи."}}
+    ]
+  },
+  {
+    "id": "tonno-e-fagioli",
+    "cuisine": "italian",
+    "type": "salad",
+    "name": {"ru":"Салат с тунцом и белой фасолью"},
+    "description": {"ru":"Сытный салат без готовки"},
+    "activeMinutes": 7,
+    "totalMinutes": 7,
+    "difficulty": 1,
+    "servings": 2,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "tonno e fagioli salad",
+    "ingredients": [
+      {"product":"tuna_canned","amount":140,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"beans_canned","amount":240,"unit":"g","measure":{"qty":1,"unit":"can"}},
+      {"product":"red_onion","amount":55,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"parsley","amount":15,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"lemon_juice","amount":15.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"salt","amount":1.5,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}},
+      {"product":"pepper","amount":0.6,"unit":"g","measure":{"qty":0.25,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Промойте фасоль, смешайте с тунцом и тонко нарезанным луком."}},
+      {"text":{"ru":"Заправьте маслом и лимонным соком, добавьте петрушку."}}
+    ]
+  },
+  {
+    "id": "insalata-di-pasta",
+    "cuisine": "italian",
+    "type": "salad",
+    "name": {"ru":"Салат с пастой, моцареллой и песто"},
+    "description": {"ru":"Холодная паста для ланча с собой"},
+    "activeMinutes": 15,
+    "totalMinutes": 15,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🥗",
+    "photoQuery": "italian pasta salad",
+    "ingredients": [
+      {"product":"pasta","amount":250,"unit":"g"},
+      {"product":"mozzarella","amount":125,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"cherry_tomato","amount":225,"unit":"g","measure":{"qty":15,"unit":"pc"}},
+      {"product":"arugula","amount":50,"unit":"g"},
+      {"product":"pesto","amount":45,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"olives","amount":50,"unit":"g"},
+      {"product":"olive_oil","amount":13.8,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Отварите пасту, промойте холодной водой."}},
+      {"text":{"ru":"Смешайте с песто и маслом."}},
+      {"text":{"ru":"Добавьте моцареллу кубиками, черри, оливки и рукколу."}}
+    ]
+  },
+  {
+    "id": "bruschetta",
+    "cuisine": "italian",
+    "type": "snack",
+    "name": {"ru":"Брускетта с помидорами"},
+    "description": {"ru":"Хрустящий хлеб с томатами и чесноком"},
+    "activeMinutes": 10,
+    "totalMinutes": 10,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🍅",
+    "photoQuery": "bruschetta pomodoro",
+    "ingredients": [
+      {"product":"baguette","amount":125,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},
+      {"product":"tomato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"garlic","amount":4,"unit":"g","measure":{"qty":1,"unit":"clove"}},
+      {"product":"basil","amount":10,"unit":"g","measure":{"qty":0.5,"unit":"bunch"}},
+      {"product":"olive_oil","amount":27.6,"unit":"g","measure":{"qty":2,"unit":"tbsp"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте багет ломтиками и подсушите на сухой сковороде или в тостере."}},
+      {"text":{"ru":"Натрите хлеб чесноком."}},
+      {"text":{"ru":"Мелко нарежьте помидоры, смешайте с базиликом, маслом и солью. Выложите на хлеб."}}
+    ]
+  },
+  {
+    "id": "polenta",
+    "cuisine": "italian",
+    "type": "side",
+    "name": {"ru":"Полента с пармезаном"},
+    "description": {"ru":"Кремовая кукурузная каша"},
+    "activeMinutes": 15,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🌽",
+    "photoQuery": "polenta",
+    "ingredients": [
+      {"product":"cornmeal","amount":200,"unit":"g"},
+      {"product":"water","amount":700,"unit":"ml"},
+      {"product":"milk","amount":300,"unit":"ml"},
+      {"product":"parmesan","amount":50,"unit":"g"},
+      {"product":"butter","amount":30,"unit":"g"},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Доведите воду с молоком и солью до кипения."}},
+      {"text":{"ru":"Всыпайте крупу тонкой струйкой, мешая венчиком."}},
+      {"text":{"ru":"Варите на слабом огне 15 минут, часто помешивая."},"timerMinutes":15},
+      {"text":{"ru":"Вмешайте масло и пармезан."}}
+    ]
+  },
+  {
+    "id": "verdure-grigliate",
+    "cuisine": "italian",
+    "type": "side",
+    "name": {"ru":"Овощи на сковороде-гриль"},
+    "description": {"ru":"Кабачки, перец и баклажаны с чесноком"},
+    "activeMinutes": 20,
+    "totalMinutes": 20,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": [],
+    "emoji": "🍆",
+    "photoQuery": "grilled vegetables",
+    "ingredients": [
+      {"product":"zucchini","amount":250,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"eggplant","amount":300,"unit":"g","measure":{"qty":1,"unit":"pc"}},
+      {"product":"bell_pepper","amount":320,"unit":"g","measure":{"qty":2,"unit":"pc"}},
+      {"product":"olive_oil","amount":41.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"garlic","amount":8,"unit":"g","measure":{"qty":2,"unit":"clove"}},
+      {"product":"balsamic","amount":16.5,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"parsley","amount":7.5,"unit":"g","measure":{"qty":0.25,"unit":"bunch"}},
+      {"product":"salt","amount":3,"unit":"g","measure":{"qty":0.5,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Нарежьте овощи пластинами толщиной 5 мм, смажьте половиной масла."}},
+      {"text":{"ru":"Жарьте на раскалённой сковороде по 2–3 минуты с каждой стороны."}},
+      {"text":{"ru":"Смешайте оставшееся масло с чесноком, бальзамиком и петрушкой, полейте овощи."}}
+    ]
+  },
+  {
+    "id": "patate-al-forno",
+    "cuisine": "italian",
+    "type": "side",
+    "name": {"ru":"Картофель с розмарином в духовке"},
+    "description": {"ru":"Хрустящие дольки с чесноком"},
+    "activeMinutes": 10,
+    "totalMinutes": 50,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["oven"],
+    "emoji": "🥔",
+    "photoQuery": "roasted potatoes rosemary",
+    "ingredients": [
+      {"product":"potato","amount":1000,"unit":"g"},
+      {"product":"olive_oil","amount":41.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
+      {"product":"rosemary","amount":6,"unit":"g","measure":{"qty":3,"unit":"pc"}},
+      {"product":"garlic","amount":16,"unit":"g","measure":{"qty":4,"unit":"clove"}},
+      {"product":"salt","amount":6,"unit":"g","measure":{"qty":1,"unit":"tsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Разогрейте духовку до 210 °C."}},
+      {"text":{"ru":"Нарежьте картофель дольками, смешайте с маслом, солью, розмарином и неочищенным чесноком."}},
+      {"text":{"ru":"Запекайте 40 минут, один раз перемешав."},"timerMinutes":40}
+    ]
+  },
+  {
+    "id": "tiramisu",
+    "cuisine": "italian",
+    "type": "dessert",
+    "name": {"ru":"Тирамису"},
+    "description": {"ru":"Кофейный десерт с маскарпоне"},
+    "activeMinutes": 25,
+    "totalMinutes": 265,
+    "difficulty": 2,
+    "servings": 6,
+    "equipment": [],
+    "emoji": "🍰",
+    "photoQuery": "tiramisu",
+    "ingredients": [
+      {"product":"mascarpone","amount":500,"unit":"g"},
+      {"product":"egg","amount":220,"unit":"g","measure":{"qty":4,"unit":"pc"}},
+      {"product":"sugar","amount":100,"unit":"g"},
+      {"product":"ladyfingers","amount":192,"unit":"g","measure":{"qty":24,"unit":"pc"}},
+      {"product":"coffee","amount":300,"unit":"ml"},
+      {"product":"cocoa","amount":13.5,"unit":"g","measure":{"qty":2,"unit":"tbsp"}}
+    ],
+    "steps": [
+      {"text":{"ru":"Разотрите желтки с сахаром добела, вмешайте маскарпоне."}},
+      {"text":{"ru":"Взбейте белки в крепкую пену и аккуратно введите в крем."}},
+      {"text":{"ru":"Быстро окунайте савоярди в остывший кофе и выкладывайте слоем в форму."}},
+      {"text":{"ru":"Чередуйте слои печенья и крема. Уберите в холодильник на 4 часа и посыпьте какао."},"timerMinutes":240}
+    ]
+  },
+  {
+    "id": "panna-cotta",
+    "cuisine": "italian",
+    "type": "dessert",
+    "name": {"ru":"Панна-котта с ягодами"},
+    "description": {"ru":"Сливочное желе с ягодным соусом"},
+    "activeMinutes": 15,
+    "totalMinutes": 255,
+    "difficulty": 1,
+    "servings": 4,
+    "equipment": ["onepan"],
+    "emoji": "🍮",
+    "photoQuery": "panna cotta",
+    "ingredients": [
+      {"product":"cream","amount":400,"unit":"ml"},
+      {"product":"milk","amount":100,"unit":"ml"},
+      {"product":"sugar","amount":60,"unit":"g"},
+      {"product":"gelatin","amount":6,"unit":"g"},
+      {"product":"vanilla_sugar","amount":8.5,"unit":"g","measure":{"qty":2,"unit":"tsp"}},
+      {"product":"berries_frozen","amount":200,"unit":"g"}
+    ],
+    "steps": [
+      {"text":{"ru":"Замочите желатин в 3 ст. л. холодной воды."}},
+      {"text":{"ru":"Нагрейте сливки с молоком, 40 г сахара и ванилью, не доводя до кипения."}},
+      {"text":{"ru":"Растворите желатин в горячих сливках, разлейте по формочкам и охладите 4 часа."},"timerMinutes":240},
+      {"text":{"ru":"Прогрейте ягоды с оставшимся сахаром 5 минут и подавайте как соус."}}
+    ]
+  },
+  {
+    "id": "ricotta-toast",
+    "cuisine": "italian",
+    "type": "breakfast",
+    "name": {"ru":"Тост с рикоттой и мёдом"},
+    "description": {"ru":"Завтрак за пять минут"},
+    "activeMinutes": 5,
+    "totalMinutes": 5,
+    "difficulty": 1,
+    "servings": 1,
+    "equipment": [],
+    "emoji": "🍯",
+    "photoQuery": "ricotta toast honey",
+    "ingredients": [
+      {"product":"white_bread","amount":60,"unit":"g","measure":{"qty":2,"unit":"slice"}},
+      {"product":"ricotta","amount":80,"unit":"g"},
+      {"product":"honey","amount":21,"unit":"g","measure":{"qty":1,"unit":"tbsp"}},
+      {"product":"walnuts","amount":15,"unit":"g"},
+      {"product":"pear","amount":85,"unit":"g","measure":{"qty":0.5,"unit":"pc"},"optional":true}
+    ],
+    "steps": [
+      {"text":{"ru":"Подсушите хлеб в тостере."}},
+      {"text":{"ru":"Намажьте рикоттой, выложите ломтики груши."}},
+      {"text":{"ru":"Полейте мёдом и посыпьте орехами."}}
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+node_modules
+dist
+dev-dist
+public/data
+scripts/.photo-cache.json
+scripts/.sheets
+.claude
+*.log

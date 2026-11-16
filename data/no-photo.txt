@@ -1,0 +1,37 @@
+scallion-pancakes	Лепёшки с зелёным луком
+black-pepper-beef	Говядина с чёрным перцем
+sesame-noodles	Холодная кунжутная лапша
+tofu-veg-stir-fry	Тофу с овощами в воке
+kartoffelsalat-sued	Картофельный салат по-швабски
+bircher-muesli	Бирхер-мюсли
+dal	Дал из красной чечевицы
+fish-curry	Рыбное карри с кокосом
+chia-pudding	Чиа-пудинг с манго
+gnocchi-spinaci	Ньокки со шпинатом и горгонзолой
+pesce-al-forno	Рыба, запечённая с томатами и оливками
+ricotta-toast	Тост с рикоттой и мёдом
+tzatziki	Дзадзики
+greek-lemon-chicken	Курица с лимоном и картофелем по-гречески
+couscous-salad	Салат с кускусом и фетой
+zucchini-boats	Лодочки из кабачков с фаршем
+tacos-fish	Тако с рыбой
+menemen	Менемен
+kharcho-ru	Суп с рисом и говядиной
+lenivye-golubtsy	Ленивые голубцы
+kurinye-kotlety	Куриные котлеты
+kurica-v-smetane	Курица в сметанном соусе
+myaso-po-francuzski	Мясо по-французски
+ryba-pod-marinadom	Рыба под маринадом
+kartoshka-s-gribami	Жареная картошка с грибами
+zapekanka	Творожная запеканка
+salat-s-pechenyu-treski	Салат с тунцом и яйцом
+kartoshka-otvarnaya	Картофель отварной с укропом
+tushenaya-kapusta	Тушёная капуста
+kapusta-s-sosiskami	Тушёная капуста с сосисками
+ris-otvarnoj	Рис рассыпчатый
+kurica-s-grechkoj-v-duhovke	Курица с гречкой в духовке
+bliny-s-myasom	Блинчики с мясом
+buterbrody-so-shprotami	Бутерброды со шпротами
+forshmak	Форшмак
+lagman	Лагман
+deruny-s-myasom	Колдуны
