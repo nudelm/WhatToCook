@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "description": "PWA «Что приготовить сегодня»: подбор блюд, поиск по продуктам, рецепты офлайн",
+  "description": "PWA WhatToCook: подбор блюд, поиск по продуктам, рецепты офлайн",
   "scripts": {
     "dev": "npm run data && vite",
     "start": "npm run dev",

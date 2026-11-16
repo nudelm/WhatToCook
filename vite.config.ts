@@ -13,8 +13,8 @@ export default defineConfig({
       includeAssets: ['favicon.svg', 'icons/*.png'],
       manifest: {
         id: './',
-        name: 'Что приготовить сегодня',
-        short_name: 'Что готовим',
+        name: 'WhatToCook',
+        short_name: 'WhatToCook',
         description: 'Подбор блюд на сегодня, поиск рецептов по продуктам, список покупок. Работает офлайн.',
         lang: 'ru',
         dir: 'ltr',
