@@ -308,3 +308,22 @@ button { border: 0; background: none; padding: 0; cursor: pointer; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
 }
+
+/* ---------- план на неделю ---------- */
+.plan-day { padding: 12px 14px; background: var(--surface); border-radius: var(--radius); box-shadow: var(--shadow); gap: 6px; }
+.plan-day.is-today { outline: 2px solid var(--accent-soft); }
+.plan-day h2 { display: flex; align-items: center; gap: 8px; font-size: 1.05rem; }
+.plan-day .link { display: inline-flex; align-items: center; gap: 4px; min-height: 40px; font-size: .9rem; }
+.plan-empty { color: var(--muted); font-size: .88rem; padding-bottom: 4px; }
+.plan-dish { display: flex; align-items: center; gap: 2px; border-top: 1px solid var(--line); padding-top: 8px; }
+.plan-dish a { flex: 1; min-width: 0; display: flex; align-items: center; gap: 12px; }
+.plan-dish .photo { width: 60px; height: 60px; aspect-ratio: auto; border-radius: 12px; flex: none; }
+.plan-dish .photo-fallback span { font-size: 28px; }
+.plan-dish h3 { font-size: .98rem; line-height: 1.25; margin-bottom: 4px; }
+.pick-list li + li { border-top: 1px solid var(--line); }
+.pick-list button { width: 100%; display: flex; align-items: center; gap: 12px; min-height: 60px; padding: 8px 2px; text-align: left; }
+.pick-list .grow { display: grid; gap: 3px; min-width: 0; }
+.pick-list b { font-weight: 600; }
+.pick-emoji { width: 44px; height: 44px; flex: none; display: grid; place-items: center; border-radius: 12px; background: var(--surface-2); font-size: 24px; }
+.pick-emoji.day { font-size: .9rem; font-weight: 700; color: var(--accent-text); }
+.chip.more { border-style: dashed; color: var(--accent-text); }

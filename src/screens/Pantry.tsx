@@ -2,12 +2,12 @@ import { useMemo, useState } from 'react';
 import { CATEGORIES } from '../constants';
 import { useDb } from '../data';
 import { activeGroups, selectRecipes } from '../engine/filters';
-import { isStaple, rankByPantry, type Ranked } from '../engine/pantry';
+import { rankByPantry, type Ranked } from '../engine/pantry';
 import { t, tn } from '../i18n';
 import { toast } from '../pwa';
-import { addToShopping, togglePantry, update, useStore } from '../store';
+import { addToShopping, toggle, togglePantry, update, useStore } from '../store';
 import type { Product } from '../types';
-import { Chip, FilterButton, FilterSheet, Icon, NoResults, ProductSearch, RecipeCard, Segmented, productName, useIncremental } from '../ui';
+import { Chip, FilterButton, FilterSheet, Icon, NoResults, ProductSearch, RecipeCard, Segmented, productName, useAlways, useIncremental } from '../ui';
 
 const POPULAR = 72;
 
@@ -16,25 +16,31 @@ export function Pantry() {
   const s = useStore();
   const [tab, setTab] = useState<'products' | 'recipes'>('products');
   const [sheet, setSheet] = useState(false);
+  const [open, setOpen] = useState<string[]>([]);
+  const always = useAlways();
 
   const pantry = useMemo(() => new Set(s.pantry), [s.pantry]);
   const hidden = useMemo(() => new Set(s.hidden), [s.hidden]);
   const pool = useMemo(() => selectRecipes(recipes, s.prefs, s.filters, hidden), [recipes, s.prefs, s.filters, hidden]);
-  const ranked = useMemo(() => rankByPantry(pool, pantry, productMap), [pool, pantry, productMap]);
+  const ranked = useMemo(() => rankByPantry(pool, pantry, productMap, always), [pool, pantry, productMap, always]);
   const inc = useIncremental(ranked.length, 20, s.pantry.join());
 
   // Самые частые продукты в базе, сгруппированные по отделам, — чтобы отмечать одним касанием.
   const popular = useMemo(() => {
     const count = new Map<string, number>();
     for (const r of recipes) for (const i of r.ing) count.set(i.p, (count.get(i.p) ?? 0) + 1);
-    const top = products
-      .filter((p) => !isStaple(p) && !s.prefs.excluded.includes(p.id))
-      .sort((a, b) => (count.get(b.id) ?? 0) - (count.get(a.id) ?? 0))
-      .slice(0, POPULAR);
-    return CATEGORIES.map((cat) => ({ cat, items: top.filter((p) => p.cat === cat) })).filter((g) => g.items.length);
-  }, [recipes, products, s.prefs.excluded]);
+    const all = products
+      .filter((p) => !always.has(p.id) && !s.prefs.excluded.includes(p.id))
+      .sort((a, b) => (count.get(b.id) ?? 0) - (count.get(a.id) ?? 0));
+    const top = new Set(all.slice(0, POPULAR));
+    // В каждом отделе сначала популярные продукты, остальные раскрываются кнопкой «Все продукты».
+    return CATEGORIES.map((cat) => {
+      const inCat = all.filter((p) => p.cat === cat);
+      return { cat, items: inCat.filter((p) => top.has(p)), all: inCat };
+    }).filter((g) => g.all.length);
+  }, [recipes, products, s.prefs.excluded, always]);
 
-  const staples = useMemo(() => products.filter(isStaple).map(productName).join(', '), [products]);
+  const staples = useMemo(() => products.filter((p) => always.has(p.id)).map(productName).join(', '), [products, always]);
   const selected = s.pantry.map((id) => productMap.get(id)).filter((p): p is Product => !!p);
 
   const addMissing = (x: Ranked) => {
@@ -71,13 +77,18 @@ export function Pantry() {
             </section>
           )}
 
-          <p className="hint">{t('pantry.staples', { list: staples })}</p>
+          <p className="hint">{t('pantry.staples', { list: staples })} <a className="link" href="#/profile">{t('pantry.staplesEdit')}</a></p>
 
           {popular.map((g) => (
             <section className="block" key={g.cat}>
               <h2>{t(`categories.${g.cat}`)}</h2>
               <div className="chips">
-                {g.items.map((p) => <Chip key={p.id} on={pantry.has(p.id)} onClick={() => togglePantry(p.id)}>{productName(p)}</Chip>)}
+                {(open.includes(g.cat) ? g.all : g.items).map((p) => <Chip key={p.id} on={pantry.has(p.id)} onClick={() => togglePantry(p.id)}>{productName(p)}</Chip>)}
+                {g.all.length > g.items.length && (
+                  <button className="chip more" aria-expanded={open.includes(g.cat)} onClick={() => setOpen(toggle(open, g.cat))}>
+                    {open.includes(g.cat) ? t('pantry.showLess') : t('pantry.showAll', { n: g.all.length })}
+                  </button>
+                )}
               </div>
             </section>
           ))}

@@ -4,6 +4,7 @@ import { ALLERGENS, CUISINES, FILTER_DIETS, KCAL_OPTIONS, TIME_OPTIONS, TYPES } 
 import { BASE, useDb } from './data';
 import { activeGroups, clearGroup, emptyFilters, nearest, relaxOptions, type Filters, type FilterGroup } from './engine/filters';
 import { formatMinutes } from './engine/format';
+import { alwaysHave } from './engine/pantry';
 import { searchProducts } from './engine/search';
 import { L, getLang, t, tn } from './i18n';
 import { promptInstall, useCanInstall, useToast } from './pwa';
@@ -39,6 +40,9 @@ const ICONS: Record<string, string> = {
   info: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM12 11v5M12 8h.01',
   shield: 'M12 3l7 3v5c0 5-3.5 8-7 10-3.5-2-7-5-7-10V6z',
   list: 'M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01',
+  calendar: 'M5 6h14v14H5zM5 10h14M9 3v4M15 3v4',
+  wand: 'M5 19L16 8M14 6l4 4M18 3v3M16.5 4.5h3M6 5v2M5 6h2M19 14v2M18 15h2',
+  swap: 'M7 7h12l-3-3M17 17H5l3 3',
 };
 
 export function Icon({ name, size = 20, fill }: { name: string; size?: number; fill?: boolean }) {
@@ -53,6 +57,13 @@ export function Icon({ name, size = 20, fill }: { name: string; size?: number; f
 const unit = (u: string) => t(`units.${u}`);
 export const minutes = (m: number) => formatMinutes(m, unit('min'), unit('h'));
 export const productName = (p: Product | undefined) => (p ? L(p.name) : '');
+
+/** Продукты «Есть всегда» с учётом настроек профиля. */
+export function useAlways(): Set<string> {
+  const { products } = useDb();
+  const prefs = useStore().always;
+  return useMemo(() => alwaysHave(products, prefs), [products, prefs]);
+}
 
 // ---------- фото блюда ----------
 /** Фото с ленивой загрузкой. Если фото нет или оно не загрузилось (офлайн) — цветная плашка с эмодзи. */

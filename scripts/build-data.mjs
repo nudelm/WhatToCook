@@ -10,7 +10,10 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const checkOnly = process.argv.includes('--check');
 
 // ---- настройки расчёта ----
-export const FRY_OIL_ABSORBED = 0.5; // доля масла, которая остаётся в блюде при жарке на сковороде
+// Жарка на сковороде: тонкий слой масла (до 10 г на порцию, около 2 ч. л.) целиком остаётся на еде;
+// из налитого сверх этого в блюдо попадает половина, остальное остаётся на сковороде.
+export const FRY_FULL_G_PER_SERVING = 10;
+export const FRY_OIL_ABSORBED = 0.5;
 export const DEEPFRY_OIL_ABSORBED = 0.12; // то же для фритюра
 const KCAL_MIN = 50;
 const KCAL_MAX = 1500;
@@ -113,7 +116,10 @@ for (const file of fs.readdirSync(recipesDir).filter((f) => f.endsWith('.json'))
       const grams = ing.unit === 'ml' ? ing.amount * (p.density ?? 1) : ing.amount;
       for (const f of p.flags || []) flags.add(f);
       if (!ing.optional) {
-        const k = (ing.use === 'fry' ? FRY_OIL_ABSORBED : ing.use === 'deepfry' ? DEEPFRY_OIL_ABSORBED : 1) * grams / 100;
+        let counted = grams;
+        if (ing.use === 'deepfry') counted = grams * DEEPFRY_OIL_ABSORBED;
+        else if (ing.use === 'fry') { const full = Math.min(grams, FRY_FULL_G_PER_SERVING * (r.servings || 1)); counted = full + (grams - full) * FRY_OIL_ABSORBED; }
+        const k = counted / 100;
         total.kcal += p.kcal * k; total.protein += p.protein * k; total.fat += p.fat * k; total.carbs += p.carbs * k;
       }
       const o = { p: p.id, g: r1(grams) };

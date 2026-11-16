@@ -63,7 +63,7 @@ export function App() {
   switch (section) {
     case 'pantry': tab = 'pantry'; screen = <Pantry />; break;
     case 'catalog': tab = 'catalog'; screen = <Catalog />; break;
-    case 'saved': tab = 'saved'; screen = <Saved tab={arg === 'shopping' ? 'shopping' : 'favorites'} />; break;
+    case 'saved': tab = 'saved'; screen = <Saved tab={arg === 'shopping' || arg === 'plan' ? arg : 'favorites'} />; break;
     case 'profile': tab = 'profile'; screen = <Profile />; break;
     case 'about': tab = 'profile'; screen = <About />; break;
     case 'privacy': tab = 'profile'; screen = <Privacy />; break;

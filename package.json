@@ -1,7 +1,7 @@
 {
   "name": "chto-prigotovit",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.1.0",
   "type": "module",
   "description": "PWA WhatToCook: подбор блюд, поиск по продуктам, рецепты офлайн",
   "scripts": {
@@ -9,10 +9,11 @@
     "start": "npm run dev",
     "data": "node scripts/build-data.mjs",
     "validate": "node scripts/build-data.mjs --check",
+    "audit": "node scripts/audit-nutrition.mjs",
     "photos": "node scripts/fetch-photos.mjs",
     "icons": "node scripts/make-icons.mjs",
-    "test": "vitest run",
-    "build": "npm run data && tsc --noEmit && vite build",
+    "test": "npm run data && vitest run",
+    "build": "npm run data && npm run audit && tsc --noEmit && vite build",
     "preview": "vite preview"
   },
   "dependencies": {

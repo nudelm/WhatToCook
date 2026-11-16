@@ -1,16 +1,11 @@
 // Всё, что приложение помнит о пользователе, лежит здесь и сохраняется только на устройстве (localStorage).
 import { useSyncExternalStore } from 'react';
 import { emptyFilters, emptyPrefs, type Filters, type Prefs } from './engine/filters';
+import { emptyAlways, type AlwaysPrefs } from './engine/pantry';
+import { addToPlan, emptyPlan, normalizePlan, removeFromPlan, replaceInPlan, type ShoppingItem, type WeekPlan } from './engine/plan';
 
-export interface ShoppingItem {
-  /** id продукта */
-  p: string;
-  /** граммы; 0 — количество не указано */
-  g: number;
-  done: boolean;
-  /** из каких рецептов добавлено */
-  from: string[];
-}
+export type { ShoppingItem };
+
 
 export interface TodayState {
   /** ключ: день + время суток + фильтры + профиль; если изменился, подборка собирается заново */
@@ -33,6 +28,10 @@ export interface State {
   favorites: string[];
   hidden: string[];
   pantry: string[];
+  /** «Есть всегда»: что добавлено к списку по умолчанию и что из него выключено */
+  always: AlwaysPrefs;
+  /** план на неделю: 7 дней (пн–вс), в каждом id блюд */
+  plan: WeekPlan;
   shopping: ShoppingItem[];
   /** id рецепта → номер дня, когда он последний раз был в подборке «Сегодня» */
   shown: Record<string, number>;
@@ -44,7 +43,7 @@ const KEY = 'chto-prigotovit:v1';
 
 const defaults: State = {
   onboarded: false, theme: 'auto', lang: 'ru', prefs: emptyPrefs, kcalGoal: 0, filters: emptyFilters,
-  favorites: [], hidden: [], pantry: [], shopping: [], shown: {}, today: null, installDismissed: false,
+  favorites: [], hidden: [], pantry: [], always: emptyAlways, plan: emptyPlan(), shopping: [], shown: {}, today: null, installDismissed: false,
 };
 
 function load(): State {
@@ -52,7 +51,7 @@ function load(): State {
     const raw = localStorage.getItem(KEY);
     if (!raw) return defaults;
     const p = JSON.parse(raw) as Partial<State>;
-    return { ...defaults, ...p, prefs: { ...emptyPrefs, ...p.prefs }, filters: { ...emptyFilters, ...p.filters } };
+    return { ...defaults, ...p, prefs: { ...emptyPrefs, ...p.prefs }, filters: { ...emptyFilters, ...p.filters }, always: { ...emptyAlways, ...p.always }, plan: normalizePlan(p.plan) };
   } catch {
     return defaults;
   }
@@ -87,6 +86,13 @@ export const toggleFavorite = (id: string) => update((s) => ({ favorites: toggle
 export const hideRecipe = (id: string) => update((s) => ({ hidden: s.hidden.includes(id) ? s.hidden : [...s.hidden, id], favorites: s.favorites.filter((x) => x !== id) }));
 export const unhideRecipe = (id: string) => update((s) => ({ hidden: s.hidden.filter((x) => x !== id) }));
 export const togglePantry = (id: string) => update((s) => ({ pantry: toggle(s.pantry, id) }));
+/** Включает или выключает продукт в «Есть всегда». isDefault — входит ли он в список по умолчанию. */
+export const toggleAlways = (id: string, isDefault: boolean) => update((s) => (isDefault
+  ? { always: { ...s.always, off: toggle(s.always.off, id) } }
+  : { always: { ...s.always, on: toggle(s.always.on, id) } }));
+export const planAdd = (day: number, id: string) => update((s) => ({ plan: addToPlan(s.plan, day, id) }));
+export const planRemove = (day: number, id: string) => update((s) => ({ plan: removeFromPlan(s.plan, day, id) }));
+export const planReplace = (day: number, oldId: string, newId: string) => update((s) => ({ plan: replaceInPlan(s.plan, day, oldId, newId) }));
 export const setFilters = (f: Filters) => update({ filters: f });
 export const setPrefs = (p: Partial<Prefs>) => update((s) => ({ prefs: { ...s.prefs, ...p } }));
 

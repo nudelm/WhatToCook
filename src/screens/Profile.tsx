@@ -2,13 +2,17 @@ import { ALLERGENS, FILTER_DIETS } from '../constants';
 import { useDb } from '../data';
 import { L, LANGS, setLang, t, tn } from '../i18n';
 import { promptInstall, toast, useCanInstall } from '../pwa';
-import { resetAll, setPrefs, toggle, unhideRecipe, update, useStore, type State } from '../store';
+import { isStaple } from '../engine/pantry';
+import { resetAll, setPrefs, toggle, toggleAlways, unhideRecipe, update, useStore, type State } from '../store';
 import type { Product, Recipe } from '../types';
-import { Chip, Icon, ProductSearch, Segmented, productName } from '../ui';
+import { Chip, Icon, ProductSearch, Segmented, productName, useAlways } from '../ui';
 
 export function Profile() {
-  const { byId, productMap } = useDb();
+  const { byId, products, productMap } = useDb();
+  const always = useAlways();
+  // «Есть всегда»: список по умолчанию из справочника (его можно выключать) плюс то, что добавил пользователь.
   const s = useStore();
+  const alwaysList = [...products.filter(isStaple), ...s.always.on.map((id) => productMap.get(id)).filter((p): p is Product => !!p && !isStaple(p))];
   const canInstall = useCanInstall();
   const excluded = s.prefs.excluded.map((id) => productMap.get(id)).filter((p): p is Product => !!p);
   const hidden = s.hidden.map((id) => byId.get(id)).filter((r): r is Recipe => !!r);
@@ -46,6 +50,15 @@ export function Profile() {
             ))}
           </div>
         )}
+      </section>
+
+      <section className="block">
+        <h2>{t('profile.always')}</h2>
+        <p className="hint">{t('profile.alwaysHint')}</p>
+        <div className="chips">
+          {alwaysList.map((p) => <Chip key={p.id} on={always.has(p.id)} onClick={() => toggleAlways(p.id, isStaple(p))}>{productName(p)}</Chip>)}
+        </div>
+        <ProductSearch onPick={(p) => { if (!always.has(p.id)) toggleAlways(p.id, isStaple(p)); }} exclude={[...always]} placeholder={t('profile.alwaysPlaceholder')} />
       </section>
 
       <section className="block">

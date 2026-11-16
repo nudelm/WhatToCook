@@ -8,6 +8,9 @@ import { replace } from '../router';
 import { addToShopping, clearShopping, removeBought, toggleShopping, useStore, type ShoppingItem } from '../store';
 import type { Product, Recipe } from '../types';
 import { Icon, ProductSearch, RecipeCard, Segmented, productName } from '../ui';
+import { PlanTab } from './Plan';
+
+type SavedTab = 'favorites' | 'plan' | 'shopping';
 
 /** «≈ 2 шт.» для штучных продуктов, миллилитры для жидкостей, иначе граммы. */
 function amountText(p: Product, g: number): string {
@@ -20,7 +23,10 @@ function amountText(p: Product, g: number): string {
   return formatWeight(g, t('units.g'), t('units.kg'));
 }
 
-export function Saved({ tab }: { tab: 'favorites' | 'shopping' }) {
+/** Блюда, для которых нужен продукт: добавленные со страницы рецепта и из плана на неделю. */
+const sources = (it: ShoppingItem): string[] => [...new Set([...it.from, ...(it.planFrom ?? [])])];
+
+export function Saved({ tab }: { tab: SavedTab }) {
   const { byId, productMap } = useDb();
   const s = useStore();
   const hidden = useMemo(() => new Set(s.hidden), [s.hidden]);
@@ -32,15 +38,22 @@ export function Saved({ tab }: { tab: 'favorites' | 'shopping' }) {
   }, [s.shopping, productMap]);
   const left = s.shopping.filter((x) => !x.done).length;
   const bought = s.shopping.length - left;
+  const planned = s.plan.flat().filter((id) => byId.has(id)).length;
 
   return (
     <div className="page">
       <header className="hello"><h1>{t('saved.title')}</h1></header>
-      <Segmented
+      <Segmented<SavedTab>
         value={tab}
-        onChange={(v) => replace(v === 'shopping' ? '/saved/shopping' : '/saved')}
-        options={[{ id: 'favorites', label: `${t('saved.favorites')}${favorites.length ? ` · ${favorites.length}` : ''}` }, { id: 'shopping', label: `${t('saved.shopping')}${left ? ` · ${left}` : ''}` }]}
+        onChange={(v) => replace(v === 'favorites' ? '/saved' : `/saved/${v}`)}
+        options={[
+          { id: 'favorites', label: `${t('saved.favorites')}${favorites.length ? ` · ${favorites.length}` : ''}` },
+          { id: 'plan', label: `${t('saved.plan')}${planned ? ` · ${planned}` : ''}` },
+          { id: 'shopping', label: `${t('saved.shopping')}${left ? ` · ${left}` : ''}` },
+        ]}
       />
+
+      {tab === 'plan' && <PlanTab />}
 
       {tab === 'favorites' && (
         favorites.length ? (
@@ -78,7 +91,7 @@ export function Saved({ tab }: { tab: 'favorites' | 'shopping' }) {
                           <span className="box"><Icon name="check" size={16} /></span>
                           <span className="grow">
                             <span className="name">{productName(p)}</span>
-                            {it.from.length > 0 && <small>{it.from.map((id) => L(byId.get(id)?.name)).filter(Boolean).join(', ')}</small>}
+                            {sources(it).length > 0 && <small>{sources(it).map((id) => L(byId.get(id)?.name)).filter(Boolean).join(', ')}</small>}
                           </span>
                           <span className="amount">{amountText(p, it.g)}</span>
                         </label>

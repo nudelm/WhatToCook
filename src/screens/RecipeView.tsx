@@ -1,14 +1,14 @@
 import { useEffect, useMemo, useState } from 'react';
 import { loadCredits, useDb } from '../data';
 import { formatIngredient } from '../engine/format';
-import { isStaple } from '../engine/pantry';
 import { L, t, tn } from '../i18n';
 import { toast } from '../pwa';
 import { back, go } from '../router';
 import { addToShopping, hideRecipe, toggleFavorite, togglePantry, unhideRecipe, useStore } from '../store';
 import { formatLeft, startTimer, stopTimer, timerKey, useTimers } from '../timers';
 import type { PhotoCredit, Recipe } from '../types';
-import { Icon, Photo, minutes, productName } from '../ui';
+import { Icon, Photo, minutes, productName, useAlways } from '../ui';
+import { AddToPlanButton } from './Plan';
 
 // Выбранное число порций помним, пока открыто приложение, — оно нужно и в режиме «готовлю».
 const chosenServings = new Map<string, number>();
@@ -44,16 +44,17 @@ export function IngredientList({ r, servings }: { r: Recipe; servings: number })
   const { productMap } = useDb();
   const pantryList = useStore().pantry;
   const pantry = useMemo(() => new Set(pantryList), [pantryList]);
+  const always = useAlways();
   const factor = servings / r.servings;
   return (
     <ul className="ingredients">
       {r.ing.map((i) => {
         const p = productMap.get(i.p);
-        const have = pantry.has(i.p) || isStaple(p);
+        const staple = always.has(i.p);
+        const have = pantry.has(i.p) || staple;
         const text = formatIngredient(i, factor, unit);
         // Нажатие на строку отмечает продукт как «есть дома» — то же самое, что отметить его во вкладке «Продукты».
-        // Базовые продукты (соль, вода, масло…) считаются имеющимися всегда, поэтому не переключаются.
-        const staple = isStaple(p);
+        // Продукты из «Есть всегда» (настраиваются в профиле) считаются имеющимися, поэтому не переключаются.
         return (
           <li key={i.p} className={have ? 'have' : ''}>
             <button type="button" role="checkbox" aria-checked={have} disabled={staple} onClick={() => togglePantry(i.p)}>
@@ -69,11 +70,12 @@ export function IngredientList({ r, servings }: { r: Recipe; servings: number })
 }
 
 export function RecipeView({ id }: { id: string }) {
-  const { byId, productMap } = useDb();
+  const { byId } = useDb();
   const s = useStore();
   const r = byId.get(id);
   const [servings, setServingsState] = useState(r ? servingsFor(r) : 2);
   const [credit, setCredit] = useState<PhotoCredit | null>(null);
+  const always = useAlways();
 
   useEffect(() => {
     let alive = true;
@@ -98,7 +100,7 @@ export function RecipeView({ id }: { id: string }) {
   const fav = s.favorites.includes(r.id);
   const isHidden = s.hidden.includes(r.id);
   const pantry = new Set(s.pantry);
-  const need = r.ing.filter((i) => !i.opt && !isStaple(productMap.get(i.p)) && !pantry.has(i.p));
+  const need = r.ing.filter((i) => !i.opt && !always.has(i.p) && !pantry.has(i.p));
 
   const addNeed = () => {
     addToShopping(need.map((i) => ({ p: i.p, g: Math.round(i.g * factor) })), r.id);
@@ -161,6 +163,7 @@ export function RecipeView({ id }: { id: string }) {
           ) : (
             <p className="hint ok"><Icon name="check" size={16} /> {t('recipe.haveAll')}</p>
           )}
+          <AddToPlanButton id={r.id} />
         </section>
 
         <section className="block">
