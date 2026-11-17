@@ -11,7 +11,7 @@
     "servings": 2,
     "equipment": [],
     "emoji": "🍚",
-    "photoQuery": "bibimbap",
+    "photoQuery": "dolsot bibimbap",
     "ingredients": [
       {"product":"round_rice","amount":180,"unit":"g"},
       {"product":"beef_mince","amount":200,"unit":"g"},
@@ -179,7 +179,7 @@
     "servings": 4,
     "equipment": [],
     "emoji": "🍗",
-    "photoQuery": "korean fried chicken yangnyeom",
+    "photoQuery": "yangnyeom chicken",
     "ingredients": [
       {"product":"chicken_wings","amount":1000,"unit":"g"},
       {"product":"starch","amount":48.8,"unit":"g","measure":{"qty":5,"unit":"tbsp"}},

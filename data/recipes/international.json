@@ -273,7 +273,7 @@
     "servings": 2,
     "equipment": [],
     "emoji": "🥭",
-    "photoQuery": "chia pudding mango",
+    "photoQuery": "chia pudding jar",
     "ingredients": [
       {"product":"chia","amount":42,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
       {"product":"coconut_milk","amount":200,"unit":"ml"},
@@ -534,7 +534,7 @@
     "servings": 4,
     "equipment": ["onepan","multicooker"],
     "emoji": "🥦",
-    "photoQuery": "broccoli cheese soup",
+    "photoQuery": "broccoli cream soup",
     "ingredients": [
       {"product":"broccoli","amount":500,"unit":"g"},
       {"product":"potato","amount":120,"unit":"g","measure":{"qty":1,"unit":"pc"}},
@@ -564,7 +564,7 @@
     "servings": 2,
     "equipment": ["oven"],
     "emoji": "🥔",
-    "photoQuery": "baked potato sour cream bacon",
+    "photoQuery": "jacket potato",
     "ingredients": [
       {"product":"potato","amount":600,"unit":"g"},
       {"product":"sour_cream","amount":100,"unit":"g"},

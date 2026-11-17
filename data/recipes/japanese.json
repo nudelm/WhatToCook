@@ -514,7 +514,7 @@
     "servings": 2,
     "equipment": [],
     "emoji": "🥗",
-    "photoQuery": "cold soba noodle salad",
+    "photoQuery": "zaru soba",
     "ingredients": [
       {"product":"soba","amount":180,"unit":"g"},
       {"product":"cucumber","amount":75,"unit":"g","measure":{"qty":0.5,"unit":"pc"}},

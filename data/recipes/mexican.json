@@ -606,7 +606,7 @@
     "servings": 3,
     "equipment": [],
     "emoji": "🌮",
-    "photoQuery": "fish tacos",
+    "photoQuery": "fish taco",
     "ingredients": [
       {"product":"white_fish","amount":400,"unit":"g"},
       {"product":"tortilla","amount":360,"unit":"g","measure":{"qty":6,"unit":"pc"}},
@@ -733,7 +733,7 @@
     "servings": 6,
     "equipment": ["onepan","multicooker"],
     "emoji": "🐖",
-    "photoQuery": "carnitas",
+    "photoQuery": "carnitas tacos",
     "ingredients": [
       {"product":"pork","amount":1200,"unit":"g"},
       {"product":"orange_juice","amount":150,"unit":"ml"},

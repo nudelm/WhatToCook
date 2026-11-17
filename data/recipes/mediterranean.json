@@ -207,7 +207,7 @@
     "servings": 4,
     "equipment": ["oven"],
     "emoji": "🍋",
-    "photoQuery": "greek lemon chicken potatoes",
+    "photoQuery": "roast chicken potatoes lemon",
     "ingredients": [
       {"product":"chicken_legs","amount":1000,"unit":"g"},
       {"product":"potato","amount":800,"unit":"g"},
@@ -492,7 +492,7 @@
     "servings": 4,
     "equipment": ["oven"],
     "emoji": "🥔",
-    "photoQuery": "patatas bravas",
+    "photoQuery": "patatas bravas tapas",
     "ingredients": [
       {"product":"potato","amount":800,"unit":"g"},
       {"product":"olive_oil","amount":55.2,"unit":"g","measure":{"qty":4,"unit":"tbsp"}},
@@ -870,7 +870,7 @@
     "servings": 2,
     "equipment": ["oven"],
     "emoji": "🐟",
-    "photoQuery": "baked trout lemon herbs",
+    "photoQuery": "Forelle Müllerin",
     "ingredients": [
       {"product":"trout","amount":500,"unit":"g"},
       {"product":"lemon","amount":100,"unit":"g","measure":{"qty":1,"unit":"pc"}},
@@ -923,7 +923,7 @@
     "servings": 4,
     "equipment": [],
     "emoji": "🥗",
-    "photoQuery": "couscous salad feta",
+    "photoQuery": "couscous salad",
     "ingredients": [
       {"product":"couscous","amount":200,"unit":"g"},
       {"product":"water","amount":250,"unit":"ml"},
@@ -1018,7 +1018,7 @@
     "servings": 4,
     "equipment": ["oven"],
     "emoji": "🥒",
-    "photoQuery": "stuffed zucchini boats",
+    "photoQuery": "zucchini boats",
     "ingredients": [
       {"product":"zucchini","amount":1000,"unit":"g","measure":{"qty":4,"unit":"pc"}},
       {"product":"beef_mince","amount":400,"unit":"g"},

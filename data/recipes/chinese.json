@@ -76,7 +76,7 @@
     "servings": 3,
     "equipment": ["onepan"],
     "emoji": "🍍",
-    "photoQuery": "sweet and sour chicken",
+    "photoQuery": "sweet and sour chicken rice",
     "ingredients": [
       {"product":"chicken_breast","amount":450,"unit":"g"},
       {"product":"pineapple_canned","amount":150,"unit":"g"},
@@ -205,7 +205,7 @@
     "servings": 4,
     "equipment": ["onepan"],
     "emoji": "🥣",
-    "photoQuery": "hot and sour soup",
+    "photoQuery": "suan la tang",
     "ingredients": [
       {"product":"chicken_broth","amount":1000,"unit":"ml"},
       {"product":"tofu","amount":200,"unit":"g"},
@@ -457,7 +457,7 @@
     "servings": 4,
     "equipment": [],
     "emoji": "🥞",
-    "photoQuery": "scallion pancakes",
+    "photoQuery": "scallion pancake",
     "ingredients": [
       {"product":"flour","amount":300,"unit":"g"},
       {"product":"water","amount":170,"unit":"ml"},
@@ -604,7 +604,7 @@
     "servings": 3,
     "equipment": ["onepan"],
     "emoji": "🥩",
-    "photoQuery": "black pepper beef stir fry",
+    "photoQuery": "beef stir fry peppers onions",
     "ingredients": [
       {"product":"beef_steak","amount":400,"unit":"g"},
       {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
@@ -700,7 +700,7 @@
     "servings": 4,
     "equipment": ["onepan"],
     "emoji": "🌽",
-    "photoQuery": "chicken sweet corn soup",
+    "photoQuery": "sweet corn soup",
     "ingredients": [
       {"product":"chicken_breast","amount":250,"unit":"g"},
       {"product":"corn_canned","amount":285,"unit":"g","measure":{"qty":1,"unit":"can"}},

@@ -343,7 +343,7 @@
     "servings": 2,
     "equipment": ["onepan"],
     "emoji": "🍳",
-    "photoQuery": "menemen",
+    "photoQuery": "menemen turkish eggs",
     "ingredients": [
       {"product":"egg","amount":220,"unit":"g","measure":{"qty":4,"unit":"pc"}},
       {"product":"tomato","amount":360,"unit":"g","measure":{"qty":3,"unit":"pc"}},

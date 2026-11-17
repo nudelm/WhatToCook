@@ -301,7 +301,7 @@
     "servings": 4,
     "equipment": ["onepan","multicooker"],
     "emoji": "🍛",
-    "photoQuery": "chicken curry",
+    "photoQuery": "chicken masala curry",
     "ingredients": [
       {"product":"chicken_breast","amount":600,"unit":"g"},
       {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
@@ -625,7 +625,7 @@
     "servings": 6,
     "equipment": ["oven"],
     "emoji": "🥟",
-    "photoQuery": "samosa",
+    "photoQuery": "samosa chutney",
     "ingredients": [
       {"product":"puff_pastry","amount":550,"unit":"g","measure":{"qty":2,"unit":"pc"}},
       {"product":"potato","amount":500,"unit":"g"},
@@ -842,7 +842,7 @@
     "servings": 3,
     "equipment": ["onepan"],
     "emoji": "🐟",
-    "photoQuery": "goan fish curry",
+    "photoQuery": "fish curry",
     "ingredients": [
       {"product":"white_fish","amount":500,"unit":"g"},
       {"product":"coconut_milk","amount":400,"unit":"g","measure":{"qty":1,"unit":"can"}},

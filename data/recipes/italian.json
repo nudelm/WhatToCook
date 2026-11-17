@@ -133,7 +133,7 @@
     "servings": 2,
     "equipment": [],
     "emoji": "🍝",
-    "photoQuery": "pasta pesto genovese",
+    "photoQuery": "trofie al pesto",
     "ingredients": [
       {"product":"pasta","amount":200,"unit":"g"},
       {"product":"pesto","amount":80,"unit":"g"},
@@ -1523,7 +1523,7 @@
     "servings": 4,
     "equipment": ["oven"],
     "emoji": "🥔",
-    "photoQuery": "roasted potatoes rosemary",
+    "photoQuery": "Rosmarinkartoffeln",
     "ingredients": [
       {"product":"potato","amount":1000,"unit":"g"},
       {"product":"olive_oil","amount":41.4,"unit":"g","measure":{"qty":3,"unit":"tbsp"}},
@@ -1605,7 +1605,7 @@
     "servings": 1,
     "equipment": [],
     "emoji": "🍯",
-    "photoQuery": "ricotta toast honey",
+    "photoQuery": "ricotta crostini",
     "ingredients": [
       {"product":"white_bread","amount":60,"unit":"g","measure":{"qty":2,"unit":"slice"}},
       {"product":"ricotta","amount":80,"unit":"g"},

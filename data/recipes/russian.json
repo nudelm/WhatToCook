@@ -214,7 +214,7 @@
     "servings": 6,
     "equipment": ["onepan","multicooker"],
     "emoji": "🥣",
-    "photoQuery": "pea soup smoked pork",
+    "photoQuery": "split pea soup",
     "ingredients": [
       {"product":"split_peas","amount":300,"unit":"g"},
       {"product":"smoked_pork","amount":300,"unit":"g"},
@@ -369,7 +369,7 @@
     "servings": 6,
     "equipment": ["onepan","multicooker"],
     "emoji": "🍲",
-    "photoQuery": "beef rice soup",
+    "photoQuery": "kharcho soup",
     "ingredients": [
       {"product":"beef","amount":500,"unit":"g"},
       {"product":"water","amount":2500,"unit":"ml"},
@@ -498,7 +498,7 @@
     "servings": 6,
     "equipment": ["onepan","multicooker"],
     "emoji": "🥘",
-    "photoQuery": "lazy cabbage rolls",
+    "photoQuery": "cabbage rolls tomato sauce",
     "ingredients": [
       {"product":"mixed_mince","amount":500,"unit":"g"},
       {"product":"cabbage","amount":500,"unit":"g"},
@@ -564,7 +564,7 @@
     "servings": 4,
     "equipment": [],
     "emoji": "🍗",
-    "photoQuery": "chicken cutlets patties",
+    "photoQuery": "chicken cutlets mashed potatoes",
     "ingredients": [
       {"product":"chicken_mince","amount":500,"unit":"g"},
       {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
@@ -846,7 +846,7 @@
     "servings": 4,
     "equipment": ["onepan"],
     "emoji": "🍗",
-    "photoQuery": "chicken sour cream sauce",
+    "photoQuery": "chicken cream sauce",
     "ingredients": [
       {"product":"chicken_breast","amount":600,"unit":"g"},
       {"product":"sour_cream","amount":200,"unit":"g"},
@@ -907,7 +907,7 @@
     "servings": 6,
     "equipment": ["oven"],
     "emoji": "🧀",
-    "photoQuery": "meat french style baked cheese",
+    "photoQuery": "pork baked cheese",
     "ingredients": [
       {"product":"pork_loin","amount":800,"unit":"g"},
       {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
@@ -937,7 +937,7 @@
     "servings": 4,
     "equipment": ["onepan"],
     "emoji": "🥘",
-    "photoQuery": "chicken liver sour cream",
+    "photoQuery": "liver stroganoff",
     "ingredients": [
       {"product":"chicken_liver","amount":600,"unit":"g"},
       {"product":"onion","amount":220,"unit":"g","measure":{"qty":2,"unit":"pc"}},
@@ -966,7 +966,7 @@
     "servings": 4,
     "equipment": [],
     "emoji": "🐟",
-    "photoQuery": "fish under marinade carrots",
+    "photoQuery": "escabeche fish",
     "ingredients": [
       {"product":"white_fish","amount":600,"unit":"g"},
       {"product":"carrot","amount":300,"unit":"g","measure":{"qty":3,"unit":"pc"}},
@@ -1085,7 +1085,7 @@
     "servings": 5,
     "equipment": [],
     "emoji": "🥞",
-    "photoQuery": "blini thin pancakes",
+    "photoQuery": "blini",
     "ingredients": [
       {"product":"milk","amount":500,"unit":"ml"},
       {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
@@ -1329,7 +1329,7 @@
     "servings": 2,
     "equipment": ["oven"],
     "emoji": "🥪",
-    "photoQuery": "hot sandwiches cheese baked",
+    "photoQuery": "cheese on toast",
     "ingredients": [
       {"product":"white_bread","amount":120,"unit":"g","measure":{"qty":4,"unit":"slice"}},
       {"product":"boiled_sausage","amount":100,"unit":"g"},
@@ -1355,7 +1355,7 @@
     "servings": 2,
     "equipment": [],
     "emoji": "🍞",
-    "photoQuery": "sweet french toast",
+    "photoQuery": "french toast",
     "ingredients": [
       {"product":"white_bread","amount":180,"unit":"g","measure":{"qty":6,"unit":"slice"}},
       {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
@@ -1634,7 +1634,7 @@
     "servings": 3,
     "equipment": [],
     "emoji": "🥗",
-    "photoQuery": "tuna egg salad",
+    "photoQuery": "tuna salad egg",
     "ingredients": [
       {"product":"tuna_canned","amount":140,"unit":"g","measure":{"qty":1,"unit":"can"}},
       {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
@@ -1737,7 +1737,7 @@
     "servings": 4,
     "equipment": ["onepan","multicooker"],
     "emoji": "🥬",
-    "photoQuery": "braised cabbage",
+    "photoQuery": "stewed cabbage carrot",
     "ingredients": [
       {"product":"cabbage","amount":800,"unit":"g"},
       {"product":"onion","amount":110,"unit":"g","measure":{"qty":1,"unit":"pc"}},
@@ -1768,7 +1768,7 @@
     "servings": 4,
     "equipment": ["onepan","multicooker"],
     "emoji": "🌭",
-    "photoQuery": "braised cabbage sausages",
+    "photoQuery": "bigos",
     "ingredients": [
       {"product":"cabbage","amount":800,"unit":"g"},
       {"product":"wieners","amount":300,"unit":"g","measure":{"qty":6,"unit":"pc"}},
@@ -1797,7 +1797,7 @@
     "servings": 4,
     "equipment": ["onepan","multicooker"],
     "emoji": "🍚",
-    "photoQuery": "steamed white rice",
+    "photoQuery": "steamed rice bowl",
     "ingredients": [
       {"product":"rice","amount":250,"unit":"g"},
       {"product":"water","amount":450,"unit":"ml"},
@@ -1883,7 +1883,7 @@
     "servings": 4,
     "equipment": ["onepan","oven"],
     "emoji": "🦔",
-    "photoQuery": "porcupine meatballs rice",
+    "photoQuery": "meatballs in tomato sauce",
     "ingredients": [
       {"product":"mixed_mince","amount":500,"unit":"g"},
       {"product":"rice","amount":100,"unit":"g"},
@@ -1914,7 +1914,7 @@
     "servings": 4,
     "equipment": ["oven"],
     "emoji": "🍗",
-    "photoQuery": "baked chicken buckwheat",
+    "photoQuery": "buckwheat with meat",
     "ingredients": [
       {"product":"chicken_legs","amount":800,"unit":"g"},
       {"product":"buckwheat","amount":250,"unit":"g"},
@@ -2117,7 +2117,7 @@
     "servings": 5,
     "equipment": [],
     "emoji": "🌯",
-    "photoQuery": "blini stuffed meat",
+    "photoQuery": "nalesniki z mięsem",
     "ingredients": [
       {"product":"milk","amount":500,"unit":"ml"},
       {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
@@ -2230,7 +2230,7 @@
     "servings": 6,
     "equipment": [],
     "emoji": "🐟",
-    "photoQuery": "forshmak herring",
+    "photoQuery": "forshmak",
     "ingredients": [
       {"product":"herring","amount":300,"unit":"g"},
       {"product":"egg","amount":110,"unit":"g","measure":{"qty":2,"unit":"pc"}},
@@ -2287,7 +2287,7 @@
     "servings": 5,
     "equipment": [],
     "emoji": "🥞",
-    "photoQuery": "blintzes cheese",
+    "photoQuery": "nalesniki z serem",
     "ingredients": [
       {"product":"milk","amount":500,"unit":"ml"},
       {"product":"egg","amount":165,"unit":"g","measure":{"qty":3,"unit":"pc"}},
@@ -2370,7 +2370,7 @@
     "servings": 5,
     "equipment": ["onepan"],
     "emoji": "🍜",
-    "photoQuery": "lagman noodles",
+    "photoQuery": "laghman noodles",
     "ingredients": [
       {"product":"beef","amount":500,"unit":"g"},
       {"product":"wheat_noodles","amount":400,"unit":"g"},
@@ -2469,7 +2469,7 @@
     "servings": 6,
     "equipment": [],
     "emoji": "🍖",
-    "photoQuery": "beshbarmak",
+    "photoQuery": "beshbarmak kazakh",
     "ingredients": [
       {"product":"beef","amount":1000,"unit":"g"},
       {"product":"water","amount":3000,"unit":"ml"},
@@ -2566,7 +2566,7 @@
     "servings": 4,
     "equipment": [],
     "emoji": "🥔",
-    "photoQuery": "kolduny potato pancakes meat",
+    "photoQuery": "potato pancakes sour cream",
     "ingredients": [
       {"product":"potato","amount":1000,"unit":"g"},
       {"product":"mixed_mince","amount":300,"unit":"g"},
