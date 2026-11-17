@@ -1,7 +1,7 @@
 {
   "name": "chto-prigotovit",
   "private": true,
-  "version": "1.1.0",
+  "version": "1.2.0",
   "type": "module",
   "description": "PWA WhatToCook: подбор блюд, поиск по продуктам, рецепты офлайн",
   "scripts": {

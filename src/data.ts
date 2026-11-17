@@ -1,9 +1,14 @@
 // Загрузка базы рецептов и продуктов (файлы собирает scripts/build-data.mjs в public/data).
 import { createContext, useContext } from 'react';
+import { isSauce } from './engine/filters';
 import type { PhotoCredit, Product, Recipe } from './types';
 
 export interface Db {
+  /** только самостоятельные блюда — на них работают «Сегодня», каталог, «У меня есть» и автоплан */
   recipes: Recipe[];
+  /** соусы (type: 'sauce') — отдельно, чтобы не смешивались с блюдами */
+  sauces: Recipe[];
+  /** все рецепты по id, и блюда, и соусы: избранное, план, покупки, страница рецепта */
   byId: Map<string, Recipe>;
   products: Product[];
   productMap: Map<string, Product>;
@@ -18,8 +23,11 @@ async function getJson<T>(file: string): Promise<T> {
 }
 
 export async function loadDb(): Promise<Db> {
-  const [recipes, products] = await Promise.all([getJson<Recipe[]>('recipes.json'), getJson<Product[]>('products.json')]);
-  return { recipes, byId: new Map(recipes.map((r) => [r.id, r])), products, productMap: new Map(products.map((p) => [p.id, p])) };
+  const [all, products] = await Promise.all([getJson<Recipe[]>('recipes.json'), getJson<Product[]>('products.json')]);
+  return {
+    recipes: all.filter((r) => !isSauce(r)), sauces: all.filter(isSauce), byId: new Map(all.map((r) => [r.id, r])),
+    products, productMap: new Map(products.map((p) => [p.id, p])),
+  };
 }
 
 let creditsPromise: Promise<PhotoCredit[]> | null = null;

@@ -453,5 +453,7 @@
   {"id":"cola","name":{"ru":"кола","uk":"кола"},"synonyms":{"ru":[]},"category":"drinks","kcal":42,"protein":0,"fat":0,"carbs":10.6,"density":1.04},
   {"id":"tomato_juice","name":{"ru":"сок томатный","uk":"сік томатний"},"synonyms":{"ru":["томатный сок"]},"category":"drinks","kcal":17,"protein":0.8,"fat":0.1,"carbs":3.5,"density":1.03},
   {"id":"grape_juice","name":{"ru":"сок виноградный","uk":"сік виноградний"},"synonyms":{"ru":["виноградный сок"]},"category":"drinks","kcal":60,"protein":0.4,"fat":0.1,"carbs":14.8,"density":1.05},
-  {"id":"kvass","name":{"ru":"квас","uk":"квас"},"synonyms":{"ru":[]},"category":"drinks","kcal":27,"protein":0.2,"fat":0,"carbs":5.2,"density":1.01,"flags":["gluten"]}
+  {"id":"kvass","name":{"ru":"квас","uk":"квас"},"synonyms":{"ru":[]},"category":"drinks","kcal":27,"protein":0.2,"fat":0,"carbs":5.2,"density":1.01,"flags":["gluten"]},
+  {"id":"green_sauce_herbs","name":{"ru":"травы для зелёного соуса","uk":"трави для зеленого соусу"},"synonyms":{"ru":["франкфуртские травы","грюне зосе","травы для франкфуртского соуса"]},"category":"herbs","kcal":40,"protein":3,"fat":0.6,"carbs":5,"piece":{"unit":"bunch","grams":250},"substitutes":["parsley","chives","dill"]},
+  {"id":"sambal_oelek","name":{"ru":"самбал олек","uk":"самбал олек"},"synonyms":{"ru":["самбал","паста из чили"]},"category":"sauces","kcal":45,"protein":1.5,"fat":0.8,"carbs":6.5,"density":1.1,"substitutes":["hot_sauce","chili"]}
 ]

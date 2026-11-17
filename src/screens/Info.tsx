@@ -41,14 +41,14 @@ export function Onboarding() {
 }
 
 export function About() {
-  const { recipes, products, byId } = useDb();
+  const { recipes, sauces, products, byId } = useDb();
   const [credits, setCredits] = useState<PhotoCredit[] | null>(null);
   useEffect(() => { void loadCredits().then(setCredits); }, []);
   return (
     <div className="page text-page">
       <TopBar title={t('about.title')} onBack={() => back('/profile')} />
       <p className="lead">{t('about.intro')}</p>
-      <p>{tn('about.stats', recipes.length, { products: products.length })}</p>
+      <p>{tn('about.stats', recipes.length, { products: products.length })} {tn('about.sauces', sauces.length)}</p>
       <h2>{t('about.kcalTitle')}</h2>
       <p>{t('about.kcalText')}</p>
       <p className="disclaimer">{t('profile.disclaimer')}</p>

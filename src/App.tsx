@@ -10,6 +10,7 @@ import { Pantry } from './screens/Pantry';
 import { Profile } from './screens/Profile';
 import { RecipeView } from './screens/RecipeView';
 import { Saved } from './screens/Saved';
+import { Sauces } from './screens/Sauces';
 import { Today } from './screens/Today';
 import { useStore } from './store';
 import { setTimerDoneHandler } from './timers';
@@ -63,6 +64,7 @@ export function App() {
   switch (section) {
     case 'pantry': tab = 'pantry'; screen = <Pantry />; break;
     case 'catalog': tab = 'catalog'; screen = <Catalog />; break;
+    case 'sauces': screen = <Sauces />; break;
     case 'saved': tab = 'saved'; screen = <Saved tab={arg === 'shopping' || arg === 'plan' ? arg : 'favorites'} />; break;
     case 'profile': tab = 'profile'; screen = <Profile />; break;
     case 'about': tab = 'profile'; screen = <About />; break;

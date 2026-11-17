@@ -3,9 +3,11 @@ import react from '@vitejs/plugin-react';
 import { VitePWA } from 'vite-plugin-pwa';
 
 // base: './' — приложение работает из любой папки (GitHub Pages, Netlify, Cloudflare Pages) без настройки.
+const APP_VERSION = process.env.npm_package_version ?? '1.2.0';
+
 export default defineConfig({
   base: './',
-  define: { __APP_VERSION__: JSON.stringify(process.env.npm_package_version ?? '1.1.0') },
+  define: { __APP_VERSION__: JSON.stringify(APP_VERSION) },
   plugins: [
     react(),
     VitePWA({
@@ -36,6 +38,9 @@ export default defineConfig({
         // Оболочка приложения и вся база рецептов кладутся в кэш сразу; фото — по мере просмотра.
         globPatterns: ['**/*.{js,css,html,svg,png,json,webmanifest}'],
         globIgnores: ['photos/**'],
+        // Версия кэша = версия приложения: при выходе новой версии (1.2.0 — соусы) кэш оболочки и базы
+        // создаётся заново, а старый удаляется (cleanupOutdatedCaches). Кэш фото не трогается.
+        cacheId: `whattocook-${APP_VERSION}`,
         maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
         cleanupOutdatedCaches: true,
         // При первой установке SW сразу берёт страницу под контроль (фото кэшируются с первого визита).

@@ -20,8 +20,16 @@ const KCAL_MAX = 1500;
 const HIGH_PROTEIN_G = 30; // «высокий белок»: от 30 г белка на порцию
 const LOW_CARB_G = 20; // «низкие углеводы»: до 20 г углеводов на порцию
 
+// Соусы (type: "sauce"): калории и БЖУ — на порцию соуса 2–3 ст. л.; порцию задаёт число порций в рецепте.
+const SAUCE_KCAL_MIN = 10;
+const SAUCE_KCAL_MAX = 450;
+const SAUCE_PORTION_G = [30, 70]; // допустимый вес одной порции соуса, г
+const SAUCE_NOCOOK_MAX_MIN = 10; // «без готовки» — смешать за 10 минут
+// К чему подходит соус. Те же теги автоматически вычисляются для обычных блюд (поле base) по их ингредиентам.
+const PAIRS = ['meat', 'chicken', 'fish', 'seafood', 'rice', 'pasta', 'noodles', 'potato', 'grains', 'dumplings', 'veg', 'eggs', 'bread'];
+
 const CUISINES = ['russian', 'german', 'italian', 'japanese', 'chinese', 'thai', 'korean', 'mexican', 'mideast', 'georgian', 'indian', 'mediterranean', 'international'];
-const TYPES = ['breakfast', 'main', 'soup', 'salad', 'side', 'snack', 'dessert'];
+const TYPES = ['breakfast', 'main', 'soup', 'salad', 'side', 'snack', 'dessert', 'sauce'];
 const CATEGORIES = ['veg', 'fruit', 'herbs', 'meat', 'fish', 'dairy', 'grocery', 'bakery', 'canned', 'sauces', 'spices', 'nuts', 'baking', 'frozen', 'drinks'];
 const EQUIPMENT = ['oven', 'onepan', 'multicooker'];
 const MEASURE_UNITS = ['pc', 'clove', 'tbsp', 'tsp', 'cup', 'bunch', 'pinch', 'can', 'slice'];
@@ -60,6 +68,39 @@ for (const p of products) {
   }
 }
 for (const p of products) for (const s of p.substitutes || []) if (!byId.has(s)) err(`продукт ${p.id}: замена «${s}» не найдена`);
+
+// ---------- основа блюда для подбора соуса ----------
+// Какие теги PAIRS есть у блюда: смотрим на ингредиенты с заметным весом на порцию.
+const BASE_BY_ID = {
+  rice: ['rice', 'round_rice', 'arborio', 'brown_rice'],
+  pasta: ['spaghetti', 'pasta', 'lasagna_sheets', 'tortellini', 'gnocchi', 'spaetzle'],
+  noodles: ['egg_noodles', 'wheat_noodles', 'rice_noodles', 'soba', 'glass_noodles', 'instant_noodles'],
+  potato: ['potato', 'sweet_potato', 'french_fries', 'croquettes', 'rosti', 'potato_dumplings', 'schupfnudeln'],
+  grains: ['buckwheat', 'bulgur', 'couscous', 'quinoa', 'millet', 'pearl_barley'],
+  dumplings: ['pelmeni', 'vareniki', 'maultaschen'],
+  bread: ['white_bread', 'rye_bread', 'baguette', 'bun', 'tortilla', 'lavash', 'pita', 'whole_grain_bread', 'naan', 'bagel', 'pretzel'],
+  eggs: ['egg'],
+};
+const BASE_MIN_G = { rice: 40, pasta: 50, noodles: 40, potato: 100, grains: 40, dumplings: 100, bread: 50, eggs: 50, meat: 50, chicken: 50, fish: 50, seafood: 40, veg: 150 };
+const productBase = new Map();
+for (const [tag, ids] of Object.entries(BASE_BY_ID)) for (const id of ids) productBase.set(id, tag);
+function baseTagOf(p) {
+  if (productBase.has(p.id)) return productBase.get(p.id);
+  if (/broth|stock|sauce/.test(p.id)) return null;
+  if (/^(chicken|turkey)_/.test(p.id) && p.id !== 'chicken_liver') return 'chicken';
+  if (p.flags?.includes('shellfish')) return 'seafood';
+  if (p.flags?.includes('fish')) return 'fish';
+  if (p.flags?.includes('meat')) return 'meat';
+  if (p.category === 'veg' || p.id === 'tofu' || p.id === 'frozen_veg') return 'veg';
+  return null;
+}
+// Продукты, которые сами по себе — соус или подлива: если их в блюде много, блюдо уже «с соусом».
+const SAUCE_BASE = new Set(['passata', 'canned_tomato', 'tomato_sauce', 'coconut_milk', 'cream', 'cooking_cream', 'sour_cream', 'bechamel_ready', 'pesto', 'pesto_rosso', 'curry_paste', 'hollandaise', 'mayonnaise', 'teriyaki', 'bbq_sauce', 'hoisin', 'oyster_sauce', 'sweet_chili', 'tomato_paste', 'yogurt', 'greek_yogurt', 'tzatziki', 'aioli', 'remoulade', 'salsa', 'peanut_butter', 'tahini']);
+const SAUCED_WORDS = /соус|подлив|заправк|карри|рагу|гуляш|строганов|сметан|сливочн|томатн|песто|чили кон|фрикасе|тушен/i;
+// в шагах: соус готовят прямо в блюде («влейте соус», «для соуса», «полейте соусом»); «добавьте соевый соус» не считается
+const SAUCED_STEPS = /(влейте|залейте|полейте|вмешайте|добавьте|приготовьте|смешайте)\s+(готовый\s+)?соус(?!\s+соев)|для\s+соуса|соусом|в\s+соусе|подлив/i;
+const NO_SAUCE_TYPES = new Set(['soup', 'dessert', 'salad']);
+const SWEET = new Set(['sugar', 'brown_sugar', 'powdered_sugar', 'vanilla_sugar', 'honey', 'maple_syrup', 'agave_syrup', 'jam', 'condensed_milk', 'choc_spread', 'dark_chocolate', 'milk_chocolate', 'white_chocolate', 'vanilla_pudding', 'pudding_powder', 'marzipan']);
 
 // ---------- рецепты ----------
 const recipesDir = path.join(root, 'data', 'recipes');
@@ -134,7 +175,43 @@ for (const file of fs.readdirSync(recipesDir).filter((f) => f.endsWith('.json'))
 
     const s = r.servings || 1;
     const kcal = Math.round(total.kcal / s);
-    if (!(kcal >= KCAL_MIN && kcal <= KCAL_MAX)) e(`нереалистичные калории: ${kcal} ккал на порцию (допустимо ${KCAL_MIN}–${KCAL_MAX})`);
+    const isSauce = r.type === 'sauce';
+    const [kMin, kMax] = isSauce ? [SAUCE_KCAL_MIN, SAUCE_KCAL_MAX] : [KCAL_MIN, KCAL_MAX];
+    if (!(kcal >= kMin && kcal <= kMax)) e(`нереалистичные калории: ${kcal} ккал на порцию${isSauce ? ' соуса' : ''} (допустимо ${kMin}–${kMax})`);
+
+    // соусы: к чему подходит, «без готовки», вес порции
+    let sauceOut = {};
+    if (isSauce) {
+      const pairs = r.pairsWith;
+      if (!Array.isArray(pairs) || pairs.length === 0) e('соус: пустой список «подходит к» (pairsWith)');
+      for (const x of pairs || []) if (!PAIRS.includes(x)) e(`соус: неизвестный тег «подходит к» «${x}» (допустимо: ${PAIRS.join(', ')})`);
+      if (typeof r.noCook !== 'boolean') e('соус: поле noCook должно быть true или false');
+      if (r.noCook && r.totalMinutes > SAUCE_NOCOOK_MAX_MIN) e(`соус «без готовки» готовится ${r.totalMinutes} мин — должно быть не больше ${SAUCE_NOCOOK_MAX_MIN}`);
+      const rawG = r.ingredients.filter((i) => !i.optional).reduce((a, i) => { const p = byId.get(i.product); return a + (i.unit === 'ml' ? i.amount * (p?.density ?? 1) : i.amount); }, 0);
+      const portion = (r.yieldGrams ?? rawG) / s;
+      if (portion < SAUCE_PORTION_G[0] || portion > SAUCE_PORTION_G[1]) e(`соус: порция ${Math.round(portion)} г — должна быть ${SAUCE_PORTION_G[0]}–${SAUCE_PORTION_G[1]} г (2–3 ст. л.), поправьте servings или yieldGrams`);
+      sauceOut = { pairs: [...new Set(pairs || [])], nocook: !!r.noCook, portion: Math.round(portion) };
+    } else {
+      if (r.pairsWith || r.noCook != null) e('поля pairsWith и noCook бывают только у соусов (type: "sauce")');
+      // основа блюда: теги PAIRS по ингредиентам с заметным весом на порцию
+      const perTag = new Map();
+      let sauceBaseG = 0, sweetG = 0;
+      for (const ing of r.ingredients || []) {
+        const p = byId.get(ing.product);
+        if (!p || ing.optional) continue;
+        const g = (ing.unit === 'ml' ? ing.amount * (p.density ?? 1) : ing.amount) / s;
+        if (SAUCE_BASE.has(p.id)) sauceBaseG += g;
+        if (SWEET.has(p.id)) sweetG += g;
+        const tag = baseTagOf(p);
+        if (tag) perTag.set(tag, (perTag.get(tag) ?? 0) + g);
+      }
+      // сладким блюдам (блины с яблоком, молочный рис) соус к мясу и рису не предлагаем
+      const noSauce = NO_SAUCE_TYPES.has(r.type) || sweetG >= 10;
+      const base = noSauce ? [] : PAIRS.filter((tg) => (perTag.get(tg) ?? 0) >= BASE_MIN_G[tg]);
+      const sauced = noSauce || sauceBaseG >= 30 || SAUCED_WORDS.test(`${r.name?.ru} ${r.description?.ru}`)
+        || (r.steps || []).some((st) => SAUCED_STEPS.test(st?.text?.ru || ''));
+      sauceOut = { base, ...(sauced ? { sauced: true } : {}) };
+    }
     const protein = r1(total.protein / s), fat = r1(total.fat / s), carbs = r1(total.carbs / s);
 
     const diets = [];
@@ -154,6 +231,7 @@ for (const file of fs.readdirSync(recipesDir).filter((f) => f.endsWith('.json'))
       active: r.activeMinutes, total: r.totalMinutes, diff: r.difficulty, servings: s,
       equip: r.equipment || [], emoji: r.emoji || '🍽️',
       kcal, protein, fat, carbs, diets, allergens: ALLERGENS.filter((a) => flags.has(a)),
+      ...sauceOut,
       ing: ingredients,
       steps: r.steps.map((st) => (st.timerMinutes ? { t: st.text, timer: st.timerMinutes } : { t: st.text })),
       ...(photo && fs.existsSync(path.join(root, 'public', 'photos', photo.file)) ? { photo: photo.file } : {}),
@@ -161,7 +239,11 @@ for (const file of fs.readdirSync(recipesDir).filter((f) => f.endsWith('.json'))
   }
 }
 
-if (out.length < 400) warn(`в базе ${out.length} рецептов — по ТЗ нужно не меньше 400`);
+const sauceCount = out.filter((r) => r.type === 'sauce').length;
+const dishCount = out.length - sauceCount;
+if (dishCount < 400) warn(`в базе ${dishCount} блюд — по ТЗ нужно не меньше 400`);
+if (sauceCount < 50) warn(`в базе ${sauceCount} соусов — по ТЗ нужно не меньше 50`);
+for (const tag of PAIRS) if (!out.some((r) => r.type === 'sauce' && r.pairs.includes(tag))) warn(`нет ни одного соуса к «${tag}»`);
 
 // ---------- итог ----------
 for (const w of warnings) console.warn('предупреждение:', w);
@@ -171,7 +253,7 @@ if (errors.length) {
   process.exit(1);
 }
 const withPhoto = out.filter((r) => r.photo).length;
-console.log(`База в порядке: ${out.length} рецептов, ${products.length} продуктов, с фото: ${withPhoto}, предупреждений: ${warnings.length}.`);
+console.log(`База в порядке: ${dishCount} блюд и ${sauceCount} соусов, ${products.length} продуктов, с фото: ${withPhoto}, предупреждений: ${warnings.length}.`);
 
 if (!checkOnly) {
   const dest = path.join(root, 'public', 'data');

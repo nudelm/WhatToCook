@@ -24,6 +24,9 @@ export interface Filters {
 
 export const HIGH_PROTEIN_G = 30;
 
+/** Соус — не самостоятельное блюдо: не попадает в «Сегодня», «Удиви меня» и автоплан. */
+export const isSauce = (r: Recipe): boolean => r.type === 'sauce';
+
 export const emptyFilters: Filters = {
   maxTime: 0, maxKcal: 0, highProtein: false, diets: [], cuisines: [], types: [], difficulty: [],
   noOven: false, onePan: false, multicooker: false,

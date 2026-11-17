@@ -35,3 +35,53 @@ buterbrody-so-shprotami	Бутерброды со шпротами
 forshmak	Форшмак
 lagman	Лагман
 deruny-s-myasom	Колдуны
+creamy-garlic-sauce	Сливочно-чесночный соус
+creamy-mushroom-sauce	Грибной сливочный соус
+creamy-dill-sauce	Сливочный соус с укропом
+cream-mustard-sauce	Горчично-сливочный соус
+pepper-cream-sauce	Перечный соус к стейку
+bechamel-sauce	Соус бешамель
+herb-sour-cream-sauce	Сметанный соус с зеленью
+quick-tomato-sauce	Быстрый томатный соус
+bbq-sauce-home	Домашний соус барбекю
+salsa-fresca	Сальса из свежих помидоров
+tomato-cream-sauce	Томатно-сливочный соус
+sundried-tomato-sauce	Соус из вяленых томатов
+yogurt-garlic-sauce	Йогуртовый соус с чесноком
+yogurt-cucumber-mint	Йогуртовый соус с огурцом и мятой
+yogurt-tahini-sauce	Йогуртово-тахинный соус
+ranch-sauce	Соус ранч
+herb-quark-sauce	Творожный соус с травами
+spicy-mayo	Острый майонез
+harissa-yogurt	Йогуртовый соус с хариссой
+chimichurri	Чимичурри
+pepper-adjika	Быстрая аджика из печёного перца
+teriyaki-home	Домашний соус терияки
+peanut-sauce	Арахисовый соус
+soy-ginger-dip	Соево-имбирный соус для макания
+sweet-chili-lime-dip	Сладкий чили с лаймом
+sesame-miso-sauce	Кунжутный соус с мисо
+gochujang-sauce	Соус с кочхуджаном
+nuoc-cham	Соус нуок чам
+coconut-curry-sauce	Кокосовый соус карри
+garlic-dill-sauce	Чесночный соус с укропом
+garlic-herb-butter	Чесночное масло с зеленью
+honey-garlic-sauce	Медово-чесночный соус
+porcini-sour-cream	Соус из сушёных грибов со сметаной
+mushroom-gravy	Грибная подлива
+cheese-sauce	Сырный соус
+blue-cheese-sauce	Соус с голубым сыром
+caesar-sauce	Соус цезарь
+feta-yogurt-dip	Соус из феты с йогуртом
+sweet-sour-sauce	Кисло-сладкий соус
+honey-mustard	Медово-горчичный соус
+cranberry-sauce	Клюквенный соус
+plum-sauce	Сливовый соус в стиле ткемали
+apple-horseradish	Яблочный хрен
+green-sauce	Франкфуртский зелёный соус
+tartar-sauce	Соус тартар
+pesto-sauce	Соус песто
+avocado-lime-sauce	Сливочный соус из авокадо
+walnut-garlic-sauce	Ореховый соус с чесноком
+lemon-butter-sauce	Лимонно-масляный соус
+mustard-dill-sauce	Горчично-укропный соус к лососю

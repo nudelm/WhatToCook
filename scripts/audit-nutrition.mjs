@@ -25,6 +25,7 @@ const read = (p) => JSON.parse(fs.readFileSync(path.join(root, p), 'utf8'));
 // ---- модель расчёта (своя, не из build-data.mjs) ----
 const TOLERANCE = 0.1; // 10 %
 const KCAL_RANGE = [80, 1500];
+const SAUCE_KCAL_RANGE = [10, 450]; // соусы: на порцию 2–3 ст. л. (≈40–50 г)
 // Проверено вручную: лёгкие овощные салаты и закуски без калорийных продуктов (огурцы, помидоры, йогурт).
 // Их калорийность ниже 80 ккал — правда, а не ошибка данных, поэтому в отчёте они идут отдельной строкой.
 const LIGHT_OK = new Set(['smashed-cucumber', 'raita', 'sunomono', 'oi-muchim', 'salat-iz-svezhih-ovoshchej']);
@@ -103,7 +104,10 @@ for (const r of source) {
     if (diff(saved[key], mine[key]) > TOLERANCE && Math.abs(saved[key] - mine[key]) > 2) bad.push(`${label} ${saved[key]} → ${mine[key].toFixed(1)}`);
   }
   if (bad.length) mismatches.push(`${r.id} «${name}» (${r.file}): ${bad.join('; ')}`);
-  if (mine.kcal < KCAL_RANGE[0] && mine.kcal >= 40 && LIGHT_OK.has(r.id)) lightOk.push(`${r.id} «${name}»: ${mine.kcal} ккал`);
+  if (r.type === 'sauce') {
+    // соус считается на порцию 2–3 ст. л., поэтому у него свой диапазон
+    if (mine.kcal < SAUCE_KCAL_RANGE[0] || mine.kcal > SAUCE_KCAL_RANGE[1]) outOfRange.push(`${r.id} «${name}» (${r.file}): ${mine.kcal} ккал на порцию соуса (допустимо ${SAUCE_KCAL_RANGE.join('–')})`);
+  } else if (mine.kcal < KCAL_RANGE[0] && mine.kcal >= 40 && LIGHT_OK.has(r.id)) lightOk.push(`${r.id} «${name}»: ${mine.kcal} ккал`);
   else if (mine.kcal < KCAL_RANGE[0] || mine.kcal > KCAL_RANGE[1]) outOfRange.push(`${r.id} «${name}» (${r.file}): ${mine.kcal} ккал на порцию`);
 
   for (const ing of r.ingredients) {

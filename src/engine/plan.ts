@@ -1,5 +1,6 @@
 // План на неделю: автозаполнение и сбор списка покупок. Чистые функции без React и хранилища — их удобно тестировать.
 import type { Recipe } from '../types';
+import { isSauce } from './filters';
 import { rng, shuffle } from './today';
 
 export interface ShoppingItem {
@@ -75,7 +76,8 @@ export function autoFillWeek(pool: readonly Recipe[], plan: WeekPlan, opts: Auto
   const cuisineOf = (id: string) => opts.byId?.get(id)?.cuisine ?? pool.find((r) => r.id === id)?.cuisine;
   for (const id of used) bump(cuisineOf(id));
 
-  const cands = shuffle(pool, rng(opts.seed));
+  // соус можно поставить в план вручную, но автозаполнение берёт только самостоятельные блюда
+  const cands = shuffle(pool.filter((r) => !isSauce(r)), rng(opts.seed));
   let prevCuisine: string | undefined;
   for (let d = 0; d < DAYS; d++) {
     if (result[d].length) { prevCuisine = cuisineOf(result[d][result[d].length - 1]); continue; }

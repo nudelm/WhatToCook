@@ -57,6 +57,18 @@ export interface Recipe {
   ing: Ingredient[];
   steps: Step[];
   photo?: string;
+  // ---- только у соусов (type: 'sauce'); калории и БЖУ — на порцию соуса ----
+  /** к чему подходит: meat, chicken, rice, pasta… */
+  pairs?: string[];
+  /** без готовки: смешать за 10 минут */
+  nocook?: boolean;
+  /** вес порции соуса, г */
+  portion?: number;
+  // ---- только у обычных блюд ----
+  /** основа блюда в тех же тегах (мясо, рис, паста…) — для подсказки соуса */
+  base?: string[];
+  /** блюдо уже с соусом — соус не предлагаем */
+  sauced?: boolean;
 }
 
 export interface PhotoCredit {

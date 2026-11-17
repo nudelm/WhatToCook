@@ -1,4 +1,5 @@
 import type { Recipe } from '../types';
+import { isSauce } from './filters';
 
 export type DayPart = 'morning' | 'day' | 'evening' | 'night';
 
@@ -64,7 +65,8 @@ export interface PickOptions {
  * Берём блюда под время суток, избегаем показанных за последние 7 дней, стараемся не повторять кухню
  * и не давать больше одного супа и одного салата.
  */
-export function pickToday(pool: readonly Recipe[], opts: PickOptions): Recipe[] {
+export function pickToday(allPool: readonly Recipe[], opts: PickOptions): Recipe[] {
+  const pool = allPool.filter((r) => !isSauce(r)); // соусы — не блюдо дня
   const count = opts.count ?? 4;
   const recent = opts.recent ?? new Set<string>();
   const rand = rng(opts.seed);
@@ -98,7 +100,8 @@ export function pickToday(pool: readonly Recipe[], opts: PickOptions): Recipe[] 
 }
 
 /** «Удиви меня»: случайное блюдо из подходящих, по возможности не из недавних. */
-export function surprise(pool: readonly Recipe[], recent: ReadonlySet<string>, rand: () => number = Math.random): Recipe | undefined {
+export function surprise(allPool: readonly Recipe[], recent: ReadonlySet<string>, rand: () => number = Math.random): Recipe | undefined {
+  const pool = allPool.filter((r) => !isSauce(r));
   if (!pool.length) return undefined;
   const fresh = pool.filter((r) => !recent.has(r.id));
   const from = fresh.length ? fresh : pool;

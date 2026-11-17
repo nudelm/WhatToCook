@@ -80,10 +80,12 @@ export function Photo({ r, eager }: { r: Recipe; eager?: boolean }) {
 }
 
 export function Meta({ r }: { r: Recipe }) {
+  const sauce = r.type === 'sauce';
   return (
     <div className="meta">
       <span><Icon name="clock" size={15} />{minutes(r.total)}</span>
-      <span><Icon name="flame" size={15} />{t('recipe.kcalApprox', { n: r.kcal })}</span>
+      <span><Icon name="flame" size={15} />{t('recipe.kcalApprox', { n: r.kcal })}{sauce && <small className="per-portion"> {t('sauces.perPortionShort')}</small>}</span>
+      {sauce && r.nocook && <span className="tag nocook">{t('sauces.noCook')}</span>}
     </div>
   );
 }
@@ -163,9 +165,11 @@ export function Sheet({ title, onClose, children, footer }: { title: string; onC
 }
 
 // ---------- фильтры ----------
-export function FilterSheet({ count, onClose }: { count: number; onClose: () => void }) {
+/** groups — какие группы фильтров показывать (для соусов кухня, тип блюда и оборудование не нужны); по умолчанию все. */
+export function FilterSheet({ count, onClose, groups }: { count: number; onClose: () => void; groups?: readonly FilterGroup[] }) {
   const f = useStore().filters;
   const set = (patch: Partial<Filters>) => setFilters({ ...f, ...patch });
+  const show = (g: FilterGroup) => !groups || groups.includes(g);
   return (
     <Sheet
       title={t('filters.title')}
@@ -196,34 +200,34 @@ export function FilterSheet({ count, onClose }: { count: number; onClose: () => 
           {FILTER_DIETS.map((d) => <Chip key={d} on={f.diets.includes(d)} onClick={() => set({ diets: toggle(f.diets, d) })}>{t(`diets.${d}`)}</Chip>)}
         </div>
       </section>
-      <section className="fgroup">
+      {show('type') && <section className="fgroup">
         <h3>{t('filters.type')}</h3>
         <div className="chips">{TYPES.map((x) => <Chip key={x} on={f.types.includes(x)} onClick={() => set({ types: toggle(f.types, x) })}>{t(`types.${x}`)}</Chip>)}</div>
-      </section>
-      <section className="fgroup">
+      </section>}
+      {show('cuisine') && <section className="fgroup">
         <h3>{t('filters.cuisine')}</h3>
         <div className="chips">{CUISINES.map((x) => <Chip key={x} on={f.cuisines.includes(x)} onClick={() => set({ cuisines: toggle(f.cuisines, x) })}>{t(`cuisines.${x}`)}</Chip>)}</div>
-      </section>
-      <section className="fgroup">
+      </section>}
+      {show('difficulty') && <section className="fgroup">
         <h3>{t('filters.difficulty')}</h3>
         <div className="chips">{[1, 2, 3].map((d) => <Chip key={d} on={f.difficulty.includes(d)} onClick={() => set({ difficulty: toggle(f.difficulty, d) })}>{t(`difficulty.${d}`)}</Chip>)}</div>
-      </section>
-      <section className="fgroup">
+      </section>}
+      {show('equipment') && <section className="fgroup">
         <h3>{t('filters.equipment')}</h3>
         <div className="chips">
           <Chip on={f.noOven} onClick={() => set({ noOven: !f.noOven })}>{t('filters.noOven')}</Chip>
           <Chip on={f.onePan} onClick={() => set({ onePan: !f.onePan })}>{t('filters.onePan')}</Chip>
           <Chip on={f.multicooker} onClick={() => set({ multicooker: !f.multicooker })}>{t('filters.multicooker')}</Chip>
         </div>
-      </section>
+      </section>}
       <p className="hint">{t('filters.profileNote')}</p>
     </Sheet>
   );
 }
 
 /** Кнопка «Фильтры» с числом включённых групп. */
-export function FilterButton({ onClick }: { onClick: () => void }) {
-  const n = activeGroups(useStore().filters).length;
+export function FilterButton({ onClick, groups }: { onClick: () => void; groups?: readonly FilterGroup[] }) {
+  const n = activeGroups(useStore().filters).filter((g) => !groups || groups.includes(g)).length;
   return (
     <button className={`chip filter-btn${n ? ' on' : ''}`} onClick={onClick}>
       <Icon name="filter" size={16} />{t('filters.title')}{n > 0 && <b className="badge">{n}</b>}

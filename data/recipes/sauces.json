@@ -1,0 +1,3789 @@
+[
+ {
+  "id": "creamy-garlic-sauce",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Сливочно-чесночный соус",
+   "uk": "Вершково-часниковий соус"
+  },
+  "description": {
+   "ru": "Нежный соус из сливок с чесноком и пармезаном",
+   "uk": "Ніжний соус із вершків з часником і пармезаном"
+  },
+  "activeMinutes": 10,
+  "totalMinutes": 10,
+  "difficulty": 1,
+  "servings": 5,
+  "equipment": [],
+  "emoji": "🧄",
+  "pairsWith": [
+   "pasta",
+   "chicken",
+   "potato",
+   "veg",
+   "seafood"
+  ],
+  "noCook": false,
+  "yieldGrams": 230,
+  "ingredients": [
+   {
+    "product": "cooking_cream",
+    "amount": 200,
+    "unit": "ml"
+   },
+   {
+    "product": "butter",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 10,
+    "unit": "g",
+    "measure": {
+     "qty": 2,
+     "unit": "clove"
+    }
+   },
+   {
+    "product": "parmesan",
+    "amount": 25,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "product": "pepper",
+    "amount": 0.5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Растопите масло в сотейнике, обжарьте измельчённый чеснок 1 минуту, не давая ему потемнеть.",
+     "uk": "Розтопіть масло в сотейнику, обсмажте подрібнений часник 1 хвилину, не даючи йому потемніти."
+    }
+   },
+   {
+    "text": {
+     "ru": "Влейте сливки, доведите до лёгкого кипения и варите 4–5 минут, пока соус не загустеет.",
+     "uk": "Влийте вершки, доведіть до легкого кипіння й варіть 4–5 хвилин, доки соус не загусне."
+    },
+    "timerMinutes": 5
+   },
+   {
+    "text": {
+     "ru": "Снимите с огня, вмешайте тёртый пармезан, посолите и поперчите.",
+     "uk": "Зніміть з вогню, вмішайте тертий пармезан, посоліть і поперчіть."
+    }
+   }
+  ]
+ },
+ {
+  "id": "creamy-mushroom-sauce",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Грибной сливочный соус",
+   "uk": "Грибний вершковий соус"
+  },
+  "description": {
+   "ru": "Шампиньоны с луком в сливках — к мясу, картошке и гречке",
+   "uk": "Печериці з цибулею у вершках — до м’яса, картоплі й гречки"
+  },
+  "activeMinutes": 15,
+  "totalMinutes": 20,
+  "difficulty": 1,
+  "servings": 9,
+  "equipment": [],
+  "emoji": "🍄",
+  "pairsWith": [
+   "meat",
+   "chicken",
+   "potato",
+   "pasta",
+   "grains",
+   "dumplings"
+  ],
+  "noCook": false,
+  "yieldGrams": 400,
+  "ingredients": [
+   {
+    "product": "mushrooms",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "product": "onion",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "product": "butter",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "cooking_cream",
+    "amount": 200,
+    "unit": "ml"
+   },
+   {
+    "product": "salt",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "product": "pepper",
+    "amount": 0.5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Мелко нарежьте лук и шампиньоны.",
+     "uk": "Дрібно наріжте цибулю та печериці."
+    }
+   },
+   {
+    "text": {
+     "ru": "Обжарьте лук на сливочном масле 3 минуты, добавьте грибы и жарьте, пока не уйдёт жидкость, 7–8 минут.",
+     "uk": "Обсмажте цибулю на вершковому маслі 3 хвилини, додайте гриби й смажте, доки не випарується рідина, 7–8 хвилин."
+    },
+    "timerMinutes": 8
+   },
+   {
+    "text": {
+     "ru": "Влейте сливки, посолите, поперчите и прогрейте 3–4 минуты до густоты.",
+     "uk": "Влийте вершки, посоліть, поперчіть і прогрійте 3–4 хвилини до густоти."
+    },
+    "timerMinutes": 4
+   }
+  ]
+ },
+ {
+  "id": "creamy-dill-sauce",
+  "cuisine": "russian",
+  "type": "sauce",
+  "name": {
+   "ru": "Сливочный соус с укропом",
+   "uk": "Вершковий соус із кропом"
+  },
+  "description": {
+   "ru": "Лёгкий сливочный соус с лимоном для рыбы",
+   "uk": "Легкий вершковий соус із лимоном для риби"
+  },
+  "activeMinutes": 8,
+  "totalMinutes": 8,
+  "difficulty": 1,
+  "servings": 3,
+  "equipment": [],
+  "emoji": "🐟",
+  "pairsWith": [
+   "fish",
+   "seafood",
+   "potato"
+  ],
+  "noCook": false,
+  "yieldGrams": 150,
+  "ingredients": [
+   {
+    "product": "cream",
+    "amount": 150,
+    "unit": "ml"
+   },
+   {
+    "product": "butter",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "dill",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "product": "pepper",
+    "amount": 0.3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Доведите сливки со сливочным маслом до кипения и уварите на слабом огне 4 минуты.",
+     "uk": "Доведіть вершки з вершковим маслом до кипіння й уваріть на слабкому вогні 4 хвилини."
+    },
+    "timerMinutes": 4
+   },
+   {
+    "text": {
+     "ru": "Снимите с огня, добавьте рубленый укроп и лимонный сок, посолите и поперчите.",
+     "uk": "Зніміть з вогню, додайте рубаний кріп і лимонний сік, посоліть і поперчіть."
+    }
+   }
+  ]
+ },
+ {
+  "id": "cream-mustard-sauce",
+  "cuisine": "german",
+  "type": "sauce",
+  "name": {
+   "ru": "Горчично-сливочный соус",
+   "uk": "Гірчично-вершковий соус"
+  },
+  "description": {
+   "ru": "Сливки, горчица и капля мёда — к свинине, курице и картошке",
+   "uk": "Вершки, гірчиця й крапля меду — до свинини, курки та картоплі"
+  },
+  "activeMinutes": 7,
+  "totalMinutes": 7,
+  "difficulty": 1,
+  "servings": 5,
+  "equipment": [],
+  "emoji": "🟡",
+  "pairsWith": [
+   "meat",
+   "chicken",
+   "potato",
+   "eggs"
+  ],
+  "noCook": false,
+  "yieldGrams": 220,
+  "ingredients": [
+   {
+    "product": "cooking_cream",
+    "amount": 200,
+    "unit": "ml"
+   },
+   {
+    "product": "mustard",
+    "amount": 33,
+    "unit": "g"
+   },
+   {
+    "product": "honey",
+    "amount": 7,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "product": "pepper",
+    "amount": 0.5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Смешайте в сотейнике сливки, горчицу и мёд.",
+     "uk": "Змішайте в сотейнику вершки, гірчицю та мед."
+    }
+   },
+   {
+    "text": {
+     "ru": "Прогрейте на среднем огне, помешивая, 4–5 минут до лёгкой густоты, посолите и поперчите.",
+     "uk": "Прогрійте на середньому вогні, помішуючи, 4–5 хвилин до легкої густоти, посоліть і поперчіть."
+    },
+    "timerMinutes": 5
+   }
+  ]
+ },
+ {
+  "id": "pepper-cream-sauce",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Перечный соус к стейку",
+   "uk": "Перцевий соус до стейка"
+  },
+  "description": {
+   "ru": "Сливочный соус с раздавленным перцем горошком",
+   "uk": "Вершковий соус із роздушеним перцем горошком"
+  },
+  "activeMinutes": 12,
+  "totalMinutes": 15,
+  "difficulty": 1,
+  "servings": 5,
+  "equipment": [],
+  "emoji": "🥩",
+  "pairsWith": [
+   "meat",
+   "chicken",
+   "potato"
+  ],
+  "noCook": false,
+  "yieldGrams": 240,
+  "ingredients": [
+   {
+    "product": "butter",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "shallot",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "product": "peppercorns",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "beef_broth",
+    "amount": 100,
+    "unit": "ml"
+   },
+   {
+    "product": "cooking_cream",
+    "amount": 150,
+    "unit": "ml"
+   },
+   {
+    "product": "cognac",
+    "amount": 15,
+    "unit": "ml",
+    "optional": true
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Грубо раздавите перец горошком, мелко нарежьте шалот.",
+     "uk": "Грубо роздушіть перець горошком, дрібно наріжте шалот."
+    }
+   },
+   {
+    "text": {
+     "ru": "Обжарьте шалот с перцем на масле 2 минуты, по желанию влейте коньяк и дайте ему выпариться.",
+     "uk": "Обсмажте шалот із перцем на маслі 2 хвилини, за бажанням влийте коньяк і дайте йому випаруватися."
+    }
+   },
+   {
+    "text": {
+     "ru": "Влейте бульон, уварите вдвое, добавьте сливки и варите ещё 4 минуты, посолите.",
+     "uk": "Влийте бульйон, уваріть удвічі, додайте вершки й варіть ще 4 хвилини, посоліть."
+    },
+    "timerMinutes": 4
+   }
+  ]
+ },
+ {
+  "id": "bechamel-sauce",
+  "cuisine": "italian",
+  "type": "sauce",
+  "name": {
+   "ru": "Соус бешамель",
+   "uk": "Соус бешамель"
+  },
+  "description": {
+   "ru": "Классический белый соус на молоке с мускатным орехом",
+   "uk": "Класичний білий соус на молоці з мускатним горіхом"
+  },
+  "activeMinutes": 12,
+  "totalMinutes": 12,
+  "difficulty": 2,
+  "servings": 10,
+  "equipment": [],
+  "emoji": "🥛",
+  "pairsWith": [
+   "pasta",
+   "veg",
+   "potato",
+   "chicken"
+  ],
+  "noCook": false,
+  "yieldGrams": 430,
+  "ingredients": [
+   {
+    "product": "butter",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "product": "flour",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "product": "milk",
+    "amount": 400,
+    "unit": "ml"
+   },
+   {
+    "product": "nutmeg",
+    "amount": 0.3,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Растопите масло, всыпьте муку и прогрейте, помешивая, 1–2 минуты.",
+     "uk": "Розтопіть масло, всипте борошно й прогрійте, помішуючи, 1–2 хвилини."
+    }
+   },
+   {
+    "text": {
+     "ru": "Тонкой струйкой влейте холодное молоко, постоянно мешая венчиком, чтобы не было комков.",
+     "uk": "Тонким струменем влийте холодне молоко, постійно помішуючи вінчиком, щоб не було грудочок."
+    }
+   },
+   {
+    "text": {
+     "ru": "Варите на слабом огне 6–7 минут до густоты сметаны, добавьте мускатный орех и соль.",
+     "uk": "Варіть на слабкому вогні 6–7 хвилин до густоти сметани, додайте мускатний горіх і сіль."
+    },
+    "timerMinutes": 7
+   }
+  ]
+ },
+ {
+  "id": "herb-sour-cream-sauce",
+  "cuisine": "german",
+  "type": "sauce",
+  "name": {
+   "ru": "Сметанный соус с зеленью",
+   "uk": "Сметанний соус із зеленню"
+  },
+  "description": {
+   "ru": "Сметана со шнитт-луком и петрушкой — к картошке и рыбе",
+   "uk": "Сметана зі шніт-цибулею та петрушкою — до картоплі й риби"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 5,
+  "equipment": [],
+  "emoji": "🌿",
+  "pairsWith": [
+   "potato",
+   "fish",
+   "veg",
+   "meat",
+   "eggs"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "sour_cream",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "product": "chives",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "parsley",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "product": "pepper",
+    "amount": 0.3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Мелко нарежьте шнитт-лук и петрушку.",
+     "uk": "Дрібно наріжте шніт-цибулю та петрушку."
+    }
+   },
+   {
+    "text": {
+     "ru": "Смешайте сметану с зеленью и лимонным соком, посолите и поперчите.",
+     "uk": "Змішайте сметану із зеленню та лимонним соком, посоліть і поперчіть."
+    }
+   }
+  ]
+ },
+ {
+  "id": "quick-tomato-sauce",
+  "cuisine": "italian",
+  "type": "sauce",
+  "name": {
+   "ru": "Быстрый томатный соус",
+   "uk": "Швидкий томатний соус"
+  },
+  "description": {
+   "ru": "Пассата с чесноком и базиликом за 15 минут",
+   "uk": "Пасата з часником і базиліком за 15 хвилин"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 15,
+  "difficulty": 1,
+  "servings": 10,
+  "equipment": [],
+  "emoji": "🍅",
+  "pairsWith": [
+   "pasta",
+   "meat",
+   "chicken",
+   "rice",
+   "dumplings",
+   "eggs"
+  ],
+  "noCook": false,
+  "yieldGrams": 470,
+  "ingredients": [
+   {
+    "product": "passata",
+    "amount": 500,
+    "unit": "ml"
+   },
+   {
+    "product": "olive_oil",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 10,
+    "unit": "g",
+    "measure": {
+     "qty": 2,
+     "unit": "clove"
+    }
+   },
+   {
+    "product": "dried_basil",
+    "amount": 1,
+    "unit": "g"
+   },
+   {
+    "product": "sugar",
+    "amount": 4,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 4,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Прогрейте оливковое масло, обжарьте нарезанный чеснок 30 секунд.",
+     "uk": "Прогрійте оливкову олію, обсмажте нарізаний часник 30 секунд."
+    }
+   },
+   {
+    "text": {
+     "ru": "Влейте пассату, добавьте базилик, сахар и соль, варите без крышки 10 минут.",
+     "uk": "Влийте пасату, додайте базилік, цукор і сіль, варіть без кришки 10 хвилин."
+    },
+    "timerMinutes": 10
+   }
+  ]
+ },
+ {
+  "id": "bbq-sauce-home",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Домашний соус барбекю",
+   "uk": "Домашній соус барбекю"
+  },
+  "description": {
+   "ru": "Кетчуп, мёд и копчёная паприка — без варки",
+   "uk": "Кетчуп, мед і копчена паприка — без варіння"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 5,
+  "equipment": [],
+  "emoji": "🔥",
+  "pairsWith": [
+   "meat",
+   "chicken",
+   "potato"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "ketchup",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "product": "honey",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "product": "worcestershire",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "vinegar",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "smoked_paprika",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "product": "garlic_powder",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "product": "pepper",
+    "amount": 0.5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Смешайте кетчуп, мёд, вустерский соус и уксус.",
+     "uk": "Змішайте кетчуп, мед, вустерський соус і оцет."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте копчёную паприку, чесночный порошок и перец, хорошо перемешайте.",
+     "uk": "Додайте копчену паприку, часниковий порошок і перець, добре перемішайте."
+    }
+   }
+  ]
+ },
+ {
+  "id": "salsa-fresca",
+  "cuisine": "mexican",
+  "type": "sauce",
+  "name": {
+   "ru": "Сальса из свежих помидоров",
+   "uk": "Сальса зі свіжих помідорів"
+  },
+  "description": {
+   "ru": "Помидоры, красный лук, халапеньо и лайм",
+   "uk": "Помідори, червона цибуля, халапеньо й лайм"
+  },
+  "activeMinutes": 10,
+  "totalMinutes": 10,
+  "difficulty": 1,
+  "servings": 9,
+  "equipment": [],
+  "emoji": "🌶️",
+  "pairsWith": [
+   "meat",
+   "chicken",
+   "fish",
+   "eggs",
+   "rice",
+   "bread"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "tomato",
+    "amount": 300,
+    "unit": "g"
+   },
+   {
+    "product": "red_onion",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "product": "jalapeno",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "cilantro",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "lime_juice",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Мелко нарежьте помидоры, красный лук и халапеньо, порубите кинзу.",
+     "uk": "Дрібно наріжте помідори, червону цибулю та халапеньо, порубайте кінзу."
+    }
+   },
+   {
+    "text": {
+     "ru": "Смешайте всё с соком лайма и солью.",
+     "uk": "Змішайте все із соком лайма та сіллю."
+    }
+   }
+  ]
+ },
+ {
+  "id": "tomato-cream-sauce",
+  "cuisine": "italian",
+  "type": "sauce",
+  "name": {
+   "ru": "Томатно-сливочный соус",
+   "uk": "Томатно-вершковий соус"
+  },
+  "description": {
+   "ru": "Мягкий розовый соус для пасты, курицы и пельменей",
+   "uk": "М’який рожевий соус для пасти, курки та пельменів"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 12,
+  "difficulty": 1,
+  "servings": 9,
+  "equipment": [],
+  "emoji": "🍅",
+  "pairsWith": [
+   "pasta",
+   "chicken",
+   "dumplings",
+   "rice"
+  ],
+  "noCook": false,
+  "yieldGrams": 400,
+  "ingredients": [
+   {
+    "product": "passata",
+    "amount": 300,
+    "unit": "ml"
+   },
+   {
+    "product": "cooking_cream",
+    "amount": 100,
+    "unit": "ml"
+   },
+   {
+    "product": "butter",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 5,
+    "unit": "g",
+    "measure": {
+     "qty": 1,
+     "unit": "clove"
+    }
+   },
+   {
+    "product": "dried_basil",
+    "amount": 1,
+    "unit": "g"
+   },
+   {
+    "product": "sugar",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Растопите масло, обжарьте чеснок 30 секунд, влейте пассату и варите 5 минут.",
+     "uk": "Розтопіть масло, обсмажте часник 30 секунд, влийте пасату й варіть 5 хвилин."
+    },
+    "timerMinutes": 5
+   },
+   {
+    "text": {
+     "ru": "Добавьте сливки, базилик, сахар и соль, прогрейте ещё 3 минуты.",
+     "uk": "Додайте вершки, базилік, цукор і сіль, прогрійте ще 3 хвилини."
+    },
+    "timerMinutes": 3
+   }
+  ]
+ },
+ {
+  "id": "sundried-tomato-sauce",
+  "cuisine": "italian",
+  "type": "sauce",
+  "name": {
+   "ru": "Соус из вяленых томатов",
+   "uk": "Соус із в’ялених томатів"
+  },
+  "description": {
+   "ru": "Густой соус из блендера — к пасте, хлебу и курице",
+   "uk": "Густий соус із блендера — до пасти, хліба й курки"
+  },
+  "activeMinutes": 7,
+  "totalMinutes": 7,
+  "difficulty": 1,
+  "servings": 4,
+  "equipment": [],
+  "emoji": "🫙",
+  "pairsWith": [
+   "pasta",
+   "bread",
+   "chicken",
+   "veg"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "sundried_tomato",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "product": "olive_oil",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "product": "parmesan",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "basil",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "water",
+    "amount": 40,
+    "unit": "ml"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Сложите вяленые томаты, базилик, чеснок и пармезан в блендер.",
+     "uk": "Покладіть в’ялені томати, базилік, часник і пармезан у блендер."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте оливковое масло, лимонный сок и воду и измельчите до пасты.",
+     "uk": "Додайте оливкову олію, лимонний сік і воду та подрібніть до пасти."
+    }
+   }
+  ]
+ },
+ {
+  "id": "yogurt-garlic-sauce",
+  "cuisine": "mideast",
+  "type": "sauce",
+  "name": {
+   "ru": "Йогуртовый соус с чесноком",
+   "uk": "Йогуртовий соус із часником"
+  },
+  "description": {
+   "ru": "Греческий йогурт, чеснок и укроп — к мясу и овощам",
+   "uk": "Грецький йогурт, часник і кріп — до м’яса та овочів"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 5,
+  "equipment": [],
+  "emoji": "🧄",
+  "pairsWith": [
+   "meat",
+   "chicken",
+   "veg",
+   "potato",
+   "bread"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "greek_yogurt",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 6,
+    "unit": "g"
+   },
+   {
+    "product": "dill",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Пропустите чеснок через пресс, мелко порубите укроп.",
+     "uk": "Пропустіть часник через прес, дрібно порубайте кріп."
+    }
+   },
+   {
+    "text": {
+     "ru": "Смешайте с йогуртом и лимонным соком, посолите.",
+     "uk": "Змішайте з йогуртом і лимонним соком, посоліть."
+    }
+   }
+  ]
+ },
+ {
+  "id": "yogurt-cucumber-mint",
+  "cuisine": "indian",
+  "type": "sauce",
+  "name": {
+   "ru": "Йогуртовый соус с огурцом и мятой",
+   "uk": "Йогуртовий соус з огірком і м’ятою"
+  },
+  "description": {
+   "ru": "Освежающий соус к острому, рису и мясу",
+   "uk": "Освіжальний соус до гострого, рису й м’яса"
+  },
+  "activeMinutes": 7,
+  "totalMinutes": 7,
+  "difficulty": 1,
+  "servings": 7,
+  "equipment": [],
+  "emoji": "🥒",
+  "pairsWith": [
+   "meat",
+   "chicken",
+   "rice",
+   "veg",
+   "bread"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "yogurt",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "product": "cucumber",
+    "amount": 120,
+    "unit": "g"
+   },
+   {
+    "product": "mint",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "product": "cumin",
+    "amount": 0.5,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Натрите огурец на крупной тёрке и отожмите лишний сок.",
+     "uk": "Натріть огірок на великій тертці й відіжміть зайвий сік."
+    }
+   },
+   {
+    "text": {
+     "ru": "Смешайте с йогуртом, рубленой мятой, чесноком и зирой, посолите.",
+     "uk": "Змішайте з йогуртом, рубаною м’ятою, часником і зирою, посоліть."
+    }
+   }
+  ]
+ },
+ {
+  "id": "yogurt-tahini-sauce",
+  "cuisine": "mideast",
+  "type": "sauce",
+  "name": {
+   "ru": "Йогуртово-тахинный соус",
+   "uk": "Йогуртово-тахінний соус"
+  },
+  "description": {
+   "ru": "Ореховый вкус кунжута с лимоном — к овощам и булгуру",
+   "uk": "Горіховий смак кунжуту з лимоном — до овочів і булгуру"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 4,
+  "equipment": [],
+  "emoji": "🥣",
+  "pairsWith": [
+   "veg",
+   "chicken",
+   "meat",
+   "grains",
+   "bread"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "greek_yogurt",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "product": "tahini",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "product": "cumin",
+    "amount": 0.5,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Взбейте тахини с лимонным соком до светлой пасты.",
+     "uk": "Збийте тахіні з лимонним соком до світлої пасти."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте йогурт, тёртый чеснок, зиру и соль, перемешайте до гладкости.",
+     "uk": "Додайте йогурт, тертий часник, зиру та сіль, перемішайте до гладкості."
+    }
+   }
+  ]
+ },
+ {
+  "id": "ranch-sauce",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Соус ранч",
+   "uk": "Соус ранч"
+  },
+  "description": {
+   "ru": "Сметана, майонез, кефир и травы — к курице и картошке",
+   "uk": "Сметана, майонез, кефір і трави — до курки та картоплі"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 5,
+  "equipment": [],
+  "emoji": "🥗",
+  "pairsWith": [
+   "chicken",
+   "potato",
+   "veg"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "mayonnaise",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "product": "sour_cream",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "product": "kefir",
+    "amount": 60,
+    "unit": "ml"
+   },
+   {
+    "product": "dill",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "chives",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "garlic_powder",
+    "amount": 1,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 1,
+    "unit": "g"
+   },
+   {
+    "product": "pepper",
+    "amount": 0.3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Смешайте майонез, сметану и кефир до однородности.",
+     "uk": "Змішайте майонез, сметану та кефір до однорідності."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте мелко нарезанные укроп и шнитт-лук, чесночный порошок, соль и перец.",
+     "uk": "Додайте дрібно нарізані кріп і шніт-цибулю, часниковий порошок, сіль і перець."
+    }
+   }
+  ]
+ },
+ {
+  "id": "herb-quark-sauce",
+  "cuisine": "german",
+  "type": "sauce",
+  "name": {
+   "ru": "Творожный соус с травами",
+   "uk": "Сирний соус із травами"
+  },
+  "description": {
+   "ru": "Немецкий Kräuterquark — к картошке в мундире и хлебу",
+   "uk": "Німецький Kräuterquark — до картоплі в мундирі та хліба"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 7,
+  "equipment": [],
+  "emoji": "🌱",
+  "pairsWith": [
+   "potato",
+   "bread",
+   "veg",
+   "eggs"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "quark",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "product": "milk",
+    "amount": 40,
+    "unit": "ml"
+   },
+   {
+    "product": "chives",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "parsley",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "product": "pepper",
+    "amount": 0.3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Разотрите творог с молоком до кремовой консистенции.",
+     "uk": "Розітріть сир із молоком до кремової консистенції."
+    }
+   },
+   {
+    "text": {
+     "ru": "Вмешайте рубленую зелень и чеснок, посолите и поперчите.",
+     "uk": "Вмішайте рубану зелень і часник, посоліть і поперчіть."
+    }
+   }
+  ]
+ },
+ {
+  "id": "spicy-mayo",
+  "cuisine": "japanese",
+  "type": "sauce",
+  "name": {
+   "ru": "Острый майонез",
+   "uk": "Гострий майонез"
+  },
+  "description": {
+   "ru": "Майонез с острым соусом и лаймом — к рыбе, рису и картошке",
+   "uk": "Майонез із гострим соусом і лаймом — до риби, рису й картоплі"
+  },
+  "activeMinutes": 3,
+  "totalMinutes": 3,
+  "difficulty": 1,
+  "servings": 3,
+  "equipment": [],
+  "emoji": "🌶️",
+  "pairsWith": [
+   "fish",
+   "seafood",
+   "rice",
+   "potato",
+   "chicken"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "mayonnaise",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "product": "hot_sauce",
+    "amount": 25,
+    "unit": "g"
+   },
+   {
+    "product": "lime_juice",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "sesame_oil",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Смешайте майонез с острым соусом — начните с половины и добавляйте по вкусу.",
+     "uk": "Змішайте майонез із гострим соусом — почніть із половини й додавайте до смаку."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте сок лайма и кунжутное масло, перемешайте до однородного цвета.",
+     "uk": "Додайте сік лайма та кунжутну олію, перемішайте до однорідного кольору."
+    }
+   }
+  ]
+ },
+ {
+  "id": "harissa-yogurt",
+  "cuisine": "mideast",
+  "type": "sauce",
+  "name": {
+   "ru": "Йогуртовый соус с хариссой",
+   "uk": "Йогуртовий соус із харисою"
+  },
+  "description": {
+   "ru": "Острый и прохладный одновременно — к мясу и кускусу",
+   "uk": "Гострий і прохолодний водночас — до м’яса та кускусу"
+  },
+  "activeMinutes": 3,
+  "totalMinutes": 3,
+  "difficulty": 1,
+  "servings": 4,
+  "equipment": [],
+  "emoji": "🔥",
+  "pairsWith": [
+   "meat",
+   "chicken",
+   "veg",
+   "grains"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "greek_yogurt",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "product": "harissa",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "mint",
+    "amount": 3,
+    "unit": "g",
+    "optional": true
+   },
+   {
+    "product": "salt",
+    "amount": 1,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Смешайте йогурт с хариссой — начните с половины и добавляйте по вкусу.",
+     "uk": "Змішайте йогурт із харисою — почніть із половини й додавайте до смаку."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте лимонный сок, соль и по желанию рубленую мяту.",
+     "uk": "Додайте лимонний сік, сіль і за бажанням рубану м’яту."
+    }
+   }
+  ]
+ },
+ {
+  "id": "chimichurri",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Чимичурри",
+   "uk": "Чимічурі"
+  },
+  "description": {
+   "ru": "Аргентинский соус из петрушки, чеснока и масла",
+   "uk": "Аргентинський соус із петрушки, часнику й олії"
+  },
+  "activeMinutes": 10,
+  "totalMinutes": 10,
+  "difficulty": 1,
+  "servings": 3,
+  "equipment": [],
+  "emoji": "🌿",
+  "pairsWith": [
+   "meat",
+   "chicken",
+   "fish",
+   "potato",
+   "veg"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "parsley",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "product": "olive_oil",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "product": "vinegar",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "oregano",
+    "amount": 1,
+    "unit": "g"
+   },
+   {
+    "product": "chili_flakes",
+    "amount": 1,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Очень мелко порубите петрушку и чеснок.",
+     "uk": "Дуже дрібно порубайте петрушку та часник."
+    }
+   },
+   {
+    "text": {
+     "ru": "Смешайте с маслом, уксусом, орегано, хлопьями чили и солью.",
+     "uk": "Змішайте з олією, оцтом, орегано, пластівцями чилі та сіллю."
+    }
+   }
+  ]
+ },
+ {
+  "id": "pepper-adjika",
+  "cuisine": "georgian",
+  "type": "sauce",
+  "name": {
+   "ru": "Быстрая аджика из печёного перца",
+   "uk": "Швидка аджика з печеного перцю"
+  },
+  "description": {
+   "ru": "Острый соус из блендера — к шашлыку, курице и картошке",
+   "uk": "Гострий соус із блендера — до шашлику, курки та картоплі"
+  },
+  "activeMinutes": 7,
+  "totalMinutes": 7,
+  "difficulty": 1,
+  "servings": 5,
+  "equipment": [],
+  "emoji": "🌶️",
+  "pairsWith": [
+   "meat",
+   "chicken",
+   "potato",
+   "bread"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "roasted_peppers",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "product": "tomato_paste",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 10,
+    "unit": "g",
+    "measure": {
+     "qty": 2,
+     "unit": "clove"
+    }
+   },
+   {
+    "product": "chili",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "cilantro",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "coriander",
+    "amount": 0.5,
+    "unit": "g"
+   },
+   {
+    "product": "vinegar",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Сложите печёный перец, томатную пасту, чеснок и чили в блендер.",
+     "uk": "Покладіть печений перець, томатну пасту, часник і чилі в блендер."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте кинзу, кориандр, уксус и соль, измельчите до соуса.",
+     "uk": "Додайте кінзу, коріандр, оцет і сіль, подрібніть до соусу."
+    }
+   }
+  ]
+ },
+ {
+  "id": "teriyaki-home",
+  "cuisine": "japanese",
+  "type": "sauce",
+  "name": {
+   "ru": "Домашний соус терияки",
+   "uk": "Домашній соус теріякі"
+  },
+  "description": {
+   "ru": "Глянцевый сладко-солёный соус за 8 минут",
+   "uk": "Глянцевий солодко-солоний соус за 8 хвилин"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 8,
+  "difficulty": 1,
+  "servings": 4,
+  "equipment": [],
+  "emoji": "🍯",
+  "pairsWith": [
+   "chicken",
+   "fish",
+   "rice",
+   "noodles",
+   "veg",
+   "meat"
+  ],
+  "noCook": false,
+  "yieldGrams": 170,
+  "ingredients": [
+   {
+    "product": "soy_sauce",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "product": "mirin",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "product": "honey",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "ginger",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 5,
+    "unit": "g",
+    "measure": {
+     "qty": 1,
+     "unit": "clove"
+    }
+   },
+   {
+    "product": "starch",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "water",
+    "amount": 60,
+    "unit": "ml"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Смешайте соевый соус, мирин, мёд, тёртые имбирь и чеснок, доведите до кипения.",
+     "uk": "Змішайте соєвий соус, мірин, мед, тертий імбир і часник, доведіть до кипіння."
+    }
+   },
+   {
+    "text": {
+     "ru": "Разведите крахмал в воде, влейте в соус и варите, помешивая, 1–2 минуты до глянца.",
+     "uk": "Розведіть крохмаль у воді, влийте в соус і варіть, помішуючи, 1–2 хвилини до глянцю."
+    },
+    "timerMinutes": 2
+   }
+  ]
+ },
+ {
+  "id": "peanut-sauce",
+  "cuisine": "thai",
+  "type": "sauce",
+  "name": {
+   "ru": "Арахисовый соус",
+   "uk": "Арахісовий соус"
+  },
+  "description": {
+   "ru": "Сливочный, сладко-острый — к лапше, курице и овощам",
+   "uk": "Вершковий, солодко-гострий — до локшини, курки й овочів"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 4,
+  "equipment": [],
+  "emoji": "🥜",
+  "pairsWith": [
+   "noodles",
+   "chicken",
+   "rice",
+   "veg"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "peanut_butter",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "product": "soy_sauce",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "lime_juice",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "honey",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "sambal_oelek",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "product": "water",
+    "amount": 50,
+    "unit": "ml"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Размешайте арахисовую пасту с тёплой водой до гладкости.",
+     "uk": "Розмішайте арахісову пасту з теплою водою до гладкості."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте соевый соус, сок лайма, мёд, самбал и тёртый чеснок, перемешайте.",
+     "uk": "Додайте соєвий соус, сік лайма, мед, самбал і тертий часник, перемішайте."
+    }
+   }
+  ]
+ },
+ {
+  "id": "soy-ginger-dip",
+  "cuisine": "chinese",
+  "type": "sauce",
+  "name": {
+   "ru": "Соево-имбирный соус для макания",
+   "uk": "Соєво-імбирний соус для вмочання"
+  },
+  "description": {
+   "ru": "К пельменям, гёдза, рису и лапше",
+   "uk": "До пельменів, ґьодза, рису й локшини"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 2,
+  "equipment": [],
+  "emoji": "🥟",
+  "pairsWith": [
+   "dumplings",
+   "rice",
+   "noodles",
+   "fish",
+   "veg"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "soy_sauce",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "product": "rice_vinegar",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "ginger",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "green_onion",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "sesame_oil",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "sugar",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Натрите имбирь, мелко нарежьте зелёный лук.",
+     "uk": "Натріть імбир, дрібно наріжте зелену цибулю."
+    }
+   },
+   {
+    "text": {
+     "ru": "Смешайте соевый соус, рисовый уксус, сахар и кунжутное масло, добавьте имбирь и лук.",
+     "uk": "Змішайте соєвий соус, рисовий оцет, цукор і кунжутну олію, додайте імбир і цибулю."
+    }
+   }
+  ]
+ },
+ {
+  "id": "sweet-chili-lime-dip",
+  "cuisine": "thai",
+  "type": "sauce",
+  "name": {
+   "ru": "Сладкий чили с лаймом",
+   "uk": "Солодкий чилі з лаймом"
+  },
+  "description": {
+   "ru": "Готовый соус чили, освежённый лаймом и кинзой",
+   "uk": "Готовий соус чилі, освіжений лаймом і кінзою"
+  },
+  "activeMinutes": 3,
+  "totalMinutes": 3,
+  "difficulty": 1,
+  "servings": 3,
+  "equipment": [],
+  "emoji": "🌶️",
+  "pairsWith": [
+   "chicken",
+   "fish",
+   "seafood",
+   "rice",
+   "veg"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "sweet_chili",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "product": "lime_juice",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "fish_sauce",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "cilantro",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Смешайте сладкий соус чили с соком лайма и рыбным соусом.",
+     "uk": "Змішайте солодкий соус чилі із соком лайма та рибним соусом."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте рубленую кинзу и перемешайте.",
+     "uk": "Додайте рубану кінзу й перемішайте."
+    }
+   }
+  ]
+ },
+ {
+  "id": "sesame-miso-sauce",
+  "cuisine": "japanese",
+  "type": "sauce",
+  "name": {
+   "ru": "Кунжутный соус с мисо",
+   "uk": "Кунжутний соус із місо"
+  },
+  "description": {
+   "ru": "Ореховый умами-соус к овощам, лапше и рису",
+   "uk": "Горіховий умамі-соус до овочів, локшини й рису"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 3,
+  "equipment": [],
+  "emoji": "🥢",
+  "pairsWith": [
+   "veg",
+   "noodles",
+   "rice",
+   "fish",
+   "grains"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "miso",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "product": "tahini",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "product": "rice_vinegar",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "honey",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "water",
+    "amount": 40,
+    "unit": "ml"
+   },
+   {
+    "product": "sesame",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Разотрите мисо с тахини и мёдом.",
+     "uk": "Розітріть місо з тахіні та медом."
+    }
+   },
+   {
+    "text": {
+     "ru": "Понемногу добавьте рисовый уксус и воду до консистенции сливок, посыпьте кунжутом.",
+     "uk": "Потроху додайте рисовий оцет і воду до консистенції вершків, посипте кунжутом."
+    }
+   }
+  ]
+ },
+ {
+  "id": "gochujang-sauce",
+  "cuisine": "korean",
+  "type": "sauce",
+  "name": {
+   "ru": "Соус с кочхуджаном",
+   "uk": "Соус із кочхуджаном"
+  },
+  "description": {
+   "ru": "Сладко-острый корейский соус к рису, мясу и яйцу",
+   "uk": "Солодко-гострий корейський соус до рису, м’яса та яйця"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 2,
+  "equipment": [],
+  "emoji": "🌶️",
+  "pairsWith": [
+   "rice",
+   "meat",
+   "chicken",
+   "noodles",
+   "eggs"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "gochujang",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "product": "honey",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "soy_sauce",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "rice_vinegar",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "sesame_oil",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "product": "sesame",
+    "amount": 3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Смешайте кочхуджан с мёдом и соевым соусом.",
+     "uk": "Змішайте кочхуджан із медом і соєвим соусом."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте уксус, кунжутное масло, тёртый чеснок и кунжут, при желании разбавьте ложкой воды.",
+     "uk": "Додайте оцет, кунжутну олію, тертий часник і кунжут, за бажанням розбавте ложкою води."
+    }
+   }
+  ]
+ },
+ {
+  "id": "nuoc-cham",
+  "cuisine": "thai",
+  "type": "sauce",
+  "name": {
+   "ru": "Соус нуок чам",
+   "uk": "Соус нуок чам"
+  },
+  "description": {
+   "ru": "Вьетнамский кисло-сладкий соус с рыбным соусом и лаймом",
+   "uk": "В’єтнамський кисло-солодкий соус із рибним соусом і лаймом"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 3,
+  "equipment": [],
+  "emoji": "🍋",
+  "pairsWith": [
+   "rice",
+   "noodles",
+   "fish",
+   "seafood",
+   "veg"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "fish_sauce",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "product": "lime_juice",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "product": "sugar",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "water",
+    "amount": 60,
+    "unit": "ml"
+   },
+   {
+    "product": "garlic",
+    "amount": 5,
+    "unit": "g",
+    "measure": {
+     "qty": 1,
+     "unit": "clove"
+    }
+   },
+   {
+    "product": "chili",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Растворите сахар в тёплой воде.",
+     "uk": "Розчиніть цукор у теплій воді."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте рыбный соус, сок лайма, мелко нарезанные чеснок и чили.",
+     "uk": "Додайте рибний соус, сік лайма, дрібно нарізані часник і чилі."
+    }
+   }
+  ]
+ },
+ {
+  "id": "coconut-curry-sauce",
+  "cuisine": "thai",
+  "type": "sauce",
+  "name": {
+   "ru": "Кокосовый соус карри",
+   "uk": "Кокосовий соус карі"
+  },
+  "description": {
+   "ru": "Кокосовое молоко с пастой карри — полить рис или курицу",
+   "uk": "Кокосове молоко з пастою карі — полити рис або курку"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 10,
+  "difficulty": 1,
+  "servings": 5,
+  "equipment": [],
+  "emoji": "🥥",
+  "pairsWith": [
+   "rice",
+   "chicken",
+   "seafood",
+   "veg",
+   "noodles",
+   "fish"
+  ],
+  "noCook": false,
+  "yieldGrams": 230,
+  "ingredients": [
+   {
+    "product": "coconut_milk",
+    "amount": 200,
+    "unit": "ml"
+   },
+   {
+    "product": "curry_paste",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "lime_juice",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "sugar",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "soy_sauce",
+    "amount": 10,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Прогрейте в сотейнике пасту карри с 2–3 ложками кокосового молока 1 минуту.",
+     "uk": "Прогрійте в сотейнику пасту карі з 2–3 ложками кокосового молока 1 хвилину."
+    }
+   },
+   {
+    "text": {
+     "ru": "Влейте остальное молоко, добавьте сахар и соевый соус, варите 5 минут, в конце добавьте сок лайма.",
+     "uk": "Влийте решту молока, додайте цукор і соєвий соус, варіть 5 хвилин, наприкінці додайте сік лайма."
+    },
+    "timerMinutes": 5
+   }
+  ]
+ },
+ {
+  "id": "garlic-dill-sauce",
+  "cuisine": "russian",
+  "type": "sauce",
+  "name": {
+   "ru": "Чесночный соус с укропом",
+   "uk": "Часниковий соус із кропом"
+  },
+  "description": {
+   "ru": "К пельменям, картошке и курице",
+   "uk": "До пельменів, картоплі й курки"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 5,
+  "equipment": [],
+  "emoji": "🥟",
+  "pairsWith": [
+   "dumplings",
+   "potato",
+   "chicken",
+   "bread",
+   "meat"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "sour_cream",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "product": "mayonnaise",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "product": "dill",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 1,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Пропустите чеснок через пресс, мелко порубите укроп.",
+     "uk": "Пропустіть часник через прес, дрібно порубайте кріп."
+    }
+   },
+   {
+    "text": {
+     "ru": "Смешайте сметану с майонезом, добавьте чеснок и укроп, посолите.",
+     "uk": "Змішайте сметану з майонезом, додайте часник і кріп, посоліть."
+    }
+   }
+  ]
+ },
+ {
+  "id": "garlic-herb-butter",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Чесночное масло с зеленью",
+   "uk": "Часникове масло із зеленню"
+  },
+  "description": {
+   "ru": "Положить на горячий стейк, картошку или хлеб",
+   "uk": "Покласти на гарячий стейк, картоплю або хліб"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 10,
+  "difficulty": 1,
+  "servings": 3,
+  "equipment": [],
+  "emoji": "🧈",
+  "pairsWith": [
+   "bread",
+   "meat",
+   "fish",
+   "potato",
+   "seafood",
+   "veg"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "butter",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 10,
+    "unit": "g",
+    "measure": {
+     "qty": 2,
+     "unit": "clove"
+    }
+   },
+   {
+    "product": "parsley",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 1,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Размягчите масло при комнатной температуре или 10 секунд в микроволновке.",
+     "uk": "Розм’якшіть масло за кімнатної температури або 10 секунд у мікрохвильовці."
+    }
+   },
+   {
+    "text": {
+     "ru": "Разомните его вилкой с тёртым чесноком, рубленой петрушкой, лимонным соком и солью.",
+     "uk": "Розімніть його виделкою з тертим часником, рубаною петрушкою, лимонним соком і сіллю."
+    }
+   }
+  ]
+ },
+ {
+  "id": "honey-garlic-sauce",
+  "cuisine": "chinese",
+  "type": "sauce",
+  "name": {
+   "ru": "Медово-чесночный соус",
+   "uk": "Медово-часниковий соус"
+  },
+  "description": {
+   "ru": "Липкий сладкий соус к курице, креветкам и рису",
+   "uk": "Липкий солодкий соус до курки, креветок і рису"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 7,
+  "difficulty": 1,
+  "servings": 3,
+  "equipment": [],
+  "emoji": "🍯",
+  "pairsWith": [
+   "chicken",
+   "meat",
+   "seafood",
+   "rice",
+   "noodles"
+  ],
+  "noCook": false,
+  "yieldGrams": 140,
+  "ingredients": [
+   {
+    "product": "butter",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 12,
+    "unit": "g"
+   },
+   {
+    "product": "honey",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "product": "soy_sauce",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "product": "water",
+    "amount": 40,
+    "unit": "ml"
+   },
+   {
+    "product": "starch",
+    "amount": 4,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Растопите масло и обжарьте рубленый чеснок 1 минуту.",
+     "uk": "Розтопіть масло й обсмажте рубаний часник 1 хвилину."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте мёд, соевый соус и воду с разведённым крахмалом, варите 2 минуты до густоты.",
+     "uk": "Додайте мед, соєвий соус і воду з розведеним крохмалем, варіть 2 хвилини до густоти."
+    },
+    "timerMinutes": 2
+   }
+  ]
+ },
+ {
+  "id": "porcini-sour-cream",
+  "cuisine": "russian",
+  "type": "sauce",
+  "name": {
+   "ru": "Соус из сушёных грибов со сметаной",
+   "uk": "Соус із сушених грибів зі сметаною"
+  },
+  "description": {
+   "ru": "Ароматный грибной соус к картошке, гречке и мясу",
+   "uk": "Ароматний грибний соус до картоплі, гречки й м’яса"
+  },
+  "activeMinutes": 15,
+  "totalMinutes": 35,
+  "difficulty": 1,
+  "servings": 8,
+  "equipment": [],
+  "emoji": "🍄",
+  "pairsWith": [
+   "potato",
+   "meat",
+   "grains",
+   "dumplings",
+   "chicken"
+  ],
+  "noCook": false,
+  "yieldGrams": 380,
+  "ingredients": [
+   {
+    "product": "dried_mushrooms",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "water",
+    "amount": 250,
+    "unit": "ml"
+   },
+   {
+    "product": "onion",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "product": "butter",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "flour",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "sour_cream",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "product": "pepper",
+    "amount": 0.3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Залейте сушёные грибы горячей водой на 20 минут, затем нарежьте, воду сохраните.",
+     "uk": "Залийте сушені гриби гарячою водою на 20 хвилин, потім наріжте, воду збережіть."
+    },
+    "timerMinutes": 20
+   },
+   {
+    "text": {
+     "ru": "Обжарьте нарезанный лук на масле 3 минуты, добавьте грибы и муку, перемешайте.",
+     "uk": "Обсмажте нарізану цибулю на маслі 3 хвилини, додайте гриби й борошно, перемішайте."
+    }
+   },
+   {
+    "text": {
+     "ru": "Влейте грибной отвар, варите 5 минут, вмешайте сметану и прогрейте, не кипятя, посолите.",
+     "uk": "Влийте грибний відвар, варіть 5 хвилин, вмішайте сметану й прогрійте, не кип’ятячи, посоліть."
+    },
+    "timerMinutes": 5
+   }
+  ]
+ },
+ {
+  "id": "mushroom-gravy",
+  "cuisine": "russian",
+  "type": "sauce",
+  "name": {
+   "ru": "Грибная подлива",
+   "uk": "Грибна підлива"
+  },
+  "description": {
+   "ru": "Постная подлива из шампиньонов — к гречке и пюре",
+   "uk": "Пісна підлива з печериць — до гречки та пюре"
+  },
+  "activeMinutes": 15,
+  "totalMinutes": 20,
+  "difficulty": 1,
+  "servings": 10,
+  "equipment": [],
+  "emoji": "🍄",
+  "pairsWith": [
+   "grains",
+   "potato",
+   "meat",
+   "rice"
+  ],
+  "noCook": false,
+  "yieldGrams": 450,
+  "ingredients": [
+   {
+    "product": "mushrooms",
+    "amount": 250,
+    "unit": "g"
+   },
+   {
+    "product": "onion",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "product": "veg_oil",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "flour",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "veg_broth",
+    "amount": 250,
+    "unit": "ml"
+   },
+   {
+    "product": "soy_sauce",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "product": "pepper",
+    "amount": 0.3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Нарежьте лук и грибы, обжарьте на масле до румяности, 8 минут.",
+     "uk": "Наріжте цибулю та гриби, обсмажте на олії до рум’яності, 8 хвилин."
+    },
+    "timerMinutes": 8
+   },
+   {
+    "text": {
+     "ru": "Посыпьте мукой, перемешайте, влейте бульон и соевый соус.",
+     "uk": "Посипте борошном, перемішайте, влийте бульйон і соєвий соус."
+    }
+   },
+   {
+    "text": {
+     "ru": "Варите, помешивая, 5 минут до густоты, посолите и поперчите.",
+     "uk": "Варіть, помішуючи, 5 хвилин до густоти, посоліть і поперчіть."
+    },
+    "timerMinutes": 5
+   }
+  ]
+ },
+ {
+  "id": "cheese-sauce",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Сырный соус",
+   "uk": "Сирний соус"
+  },
+  "description": {
+   "ru": "Тянущийся соус с чеддером — к пасте, картошке и брокколи",
+   "uk": "Тягучий соус із чедером — до пасти, картоплі й броколі"
+  },
+  "activeMinutes": 10,
+  "totalMinutes": 10,
+  "difficulty": 2,
+  "servings": 8,
+  "equipment": [],
+  "emoji": "🧀",
+  "pairsWith": [
+   "pasta",
+   "potato",
+   "veg",
+   "bread"
+  ],
+  "noCook": false,
+  "yieldGrams": 380,
+  "ingredients": [
+   {
+    "product": "butter",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "flour",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "milk",
+    "amount": 250,
+    "unit": "ml"
+   },
+   {
+    "product": "cheddar",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "product": "mustard",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 1,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Растопите масло, вмешайте муку и прогрейте 1 минуту.",
+     "uk": "Розтопіть масло, вмішайте борошно й прогрійте 1 хвилину."
+    }
+   },
+   {
+    "text": {
+     "ru": "Влейте молоко, помешивая венчиком, и варите 3–4 минуты до загустения.",
+     "uk": "Влийте молоко, помішуючи вінчиком, і варіть 3–4 хвилини до загуснення."
+    },
+    "timerMinutes": 4
+   },
+   {
+    "text": {
+     "ru": "Снимите с огня, вмешайте тёртый чеддер и горчицу до гладкости, посолите.",
+     "uk": "Зніміть з вогню, вмішайте тертий чедер і гірчицю до гладкості, посоліть."
+    }
+   }
+  ]
+ },
+ {
+  "id": "blue-cheese-sauce",
+  "cuisine": "italian",
+  "type": "sauce",
+  "name": {
+   "ru": "Соус с голубым сыром",
+   "uk": "Соус із блакитним сиром"
+  },
+  "description": {
+   "ru": "Сливки и горгонзола — к пасте, стейку и картошке",
+   "uk": "Вершки й горгонзола — до пасти, стейка та картоплі"
+  },
+  "activeMinutes": 7,
+  "totalMinutes": 7,
+  "difficulty": 1,
+  "servings": 5,
+  "equipment": [],
+  "emoji": "🧀",
+  "pairsWith": [
+   "pasta",
+   "meat",
+   "potato",
+   "veg"
+  ],
+  "noCook": false,
+  "yieldGrams": 220,
+  "ingredients": [
+   {
+    "product": "cooking_cream",
+    "amount": 150,
+    "unit": "ml"
+   },
+   {
+    "product": "blue_cheese",
+    "amount": 70,
+    "unit": "g"
+   },
+   {
+    "product": "butter",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "pepper",
+    "amount": 0.3,
+    "unit": "g"
+   },
+   {
+    "product": "walnuts",
+    "amount": 15,
+    "unit": "g",
+    "optional": true
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Прогрейте сливки с маслом до лёгкого кипения.",
+     "uk": "Прогрійте вершки з маслом до легкого кипіння."
+    }
+   },
+   {
+    "text": {
+     "ru": "Раскрошите сыр и растопите его в сливках на слабом огне за 3 минуты, поперчите, по желанию посыпьте орехами.",
+     "uk": "Розкришіть сир і розтопіть його у вершках на слабкому вогні за 3 хвилини, поперчіть, за бажанням посипте горіхами."
+    },
+    "timerMinutes": 3
+   }
+  ]
+ },
+ {
+  "id": "caesar-sauce",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Соус цезарь",
+   "uk": "Соус цезар"
+  },
+  "description": {
+   "ru": "С анчоусами и пармезаном — к курице, салату и гренкам",
+   "uk": "З анчоусами й пармезаном — до курки, салату та грінок"
+  },
+  "activeMinutes": 7,
+  "totalMinutes": 7,
+  "difficulty": 1,
+  "servings": 3,
+  "equipment": [],
+  "emoji": "🥗",
+  "pairsWith": [
+   "chicken",
+   "veg",
+   "bread",
+   "eggs"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "mayonnaise",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "product": "parmesan",
+    "amount": 25,
+    "unit": "g"
+   },
+   {
+    "product": "anchovy",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "mustard",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "worcestershire",
+    "amount": 3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Разомните анчоусы с чесноком в пасту.",
+     "uk": "Розімніть анчоуси з часником у пасту."
+    }
+   },
+   {
+    "text": {
+     "ru": "Смешайте с майонезом, горчицей, лимонным соком, вустерским соусом и тёртым пармезаном.",
+     "uk": "Змішайте з майонезом, гірчицею, лимонним соком, вустерським соусом і тертим пармезаном."
+    }
+   }
+  ]
+ },
+ {
+  "id": "feta-yogurt-dip",
+  "cuisine": "mediterranean",
+  "type": "sauce",
+  "name": {
+   "ru": "Соус из феты с йогуртом",
+   "uk": "Соус із фети з йогуртом"
+  },
+  "description": {
+   "ru": "Солоноватый кремовый соус к овощам, хлебу и мясу",
+   "uk": "Солонуватий кремовий соус до овочів, хліба й м’яса"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 5,
+  "equipment": [],
+  "emoji": "🧀",
+  "pairsWith": [
+   "veg",
+   "bread",
+   "meat",
+   "potato"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "feta",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "product": "greek_yogurt",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "product": "olive_oil",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "dill",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Разомните фету вилкой.",
+     "uk": "Розімніть фету виделкою."
+    }
+   },
+   {
+    "text": {
+     "ru": "Взбейте её с йогуртом, маслом и лимонным соком, добавьте рубленый укроп.",
+     "uk": "Збийте її з йогуртом, олією та лимонним соком, додайте рубаний кріп."
+    }
+   }
+  ]
+ },
+ {
+  "id": "sweet-sour-sauce",
+  "cuisine": "chinese",
+  "type": "sauce",
+  "name": {
+   "ru": "Кисло-сладкий соус",
+   "uk": "Кисло-солодкий соус"
+  },
+  "description": {
+   "ru": "Глянцевый соус к курице, свинине и рису",
+   "uk": "Глянцевий соус до курки, свинини та рису"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 8,
+  "difficulty": 1,
+  "servings": 6,
+  "equipment": [],
+  "emoji": "🍍",
+  "pairsWith": [
+   "chicken",
+   "meat",
+   "rice",
+   "noodles",
+   "fish",
+   "veg"
+  ],
+  "noCook": false,
+  "yieldGrams": 250,
+  "ingredients": [
+   {
+    "product": "ketchup",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "product": "rice_vinegar",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "product": "sugar",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "product": "soy_sauce",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "orange_juice",
+    "amount": 80,
+    "unit": "ml"
+   },
+   {
+    "product": "starch",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "product": "water",
+    "amount": 40,
+    "unit": "ml"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Смешайте в сотейнике кетчуп, уксус, сахар, соевый соус и апельсиновый сок, доведите до кипения.",
+     "uk": "Змішайте в сотейнику кетчуп, оцет, цукор, соєвий соус і апельсиновий сік, доведіть до кипіння."
+    }
+   },
+   {
+    "text": {
+     "ru": "Влейте крахмал, разведённый в воде, и варите, помешивая, 1–2 минуты до густоты.",
+     "uk": "Влийте крохмаль, розведений у воді, і варіть, помішуючи, 1–2 хвилини до густоти."
+    },
+    "timerMinutes": 2
+   }
+  ]
+ },
+ {
+  "id": "honey-mustard",
+  "cuisine": "german",
+  "type": "sauce",
+  "name": {
+   "ru": "Медово-горчичный соус",
+   "uk": "Медово-гірчичний соус"
+  },
+  "description": {
+   "ru": "К курице, свинине, картошке и овощам",
+   "uk": "До курки, свинини, картоплі й овочів"
+  },
+  "activeMinutes": 3,
+  "totalMinutes": 3,
+  "difficulty": 1,
+  "servings": 3,
+  "equipment": [],
+  "emoji": "🍯",
+  "pairsWith": [
+   "chicken",
+   "meat",
+   "potato",
+   "veg",
+   "fish"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "mustard",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "product": "honey",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "product": "mayonnaise",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Смешайте горчицу с мёдом до однородности.",
+     "uk": "Змішайте гірчицю з медом до однорідності."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте майонез и лимонный сок, перемешайте.",
+     "uk": "Додайте майонез і лимонний сік, перемішайте."
+    }
+   }
+  ]
+ },
+ {
+  "id": "cranberry-sauce",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Клюквенный соус",
+   "uk": "Журавлинний соус"
+  },
+  "description": {
+   "ru": "Кисло-сладкий ягодный соус к мясу и птице",
+   "uk": "Кисло-солодкий ягідний соус до м’яса та птиці"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 15,
+  "difficulty": 1,
+  "servings": 7,
+  "equipment": [],
+  "emoji": "🍒",
+  "pairsWith": [
+   "meat",
+   "chicken"
+  ],
+  "noCook": false,
+  "yieldGrams": 300,
+  "ingredients": [
+   {
+    "product": "cranberry",
+    "amount": 200,
+    "unit": "g"
+   },
+   {
+    "product": "sugar",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "product": "orange_juice",
+    "amount": 60,
+    "unit": "ml"
+   },
+   {
+    "product": "water",
+    "amount": 50,
+    "unit": "ml"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Сложите клюкву, сахар, сок и воду в сотейник и доведите до кипения.",
+     "uk": "Покладіть журавлину, цукор, сік і воду в сотейник і доведіть до кипіння."
+    }
+   },
+   {
+    "text": {
+     "ru": "Варите 8–10 минут, пока ягоды не полопаются и соус не загустеет. Остудите.",
+     "uk": "Варіть 8–10 хвилин, доки ягоди не полопаються і соус не загусне. Остудіть."
+    },
+    "timerMinutes": 10
+   }
+  ]
+ },
+ {
+  "id": "plum-sauce",
+  "cuisine": "georgian",
+  "type": "sauce",
+  "name": {
+   "ru": "Сливовый соус в стиле ткемали",
+   "uk": "Сливовий соус у стилі ткемалі"
+  },
+  "description": {
+   "ru": "Кисловатый соус из слив с чесноком и кинзой",
+   "uk": "Кислуватий соус зі слив із часником і кінзою"
+  },
+  "activeMinutes": 15,
+  "totalMinutes": 30,
+  "difficulty": 1,
+  "servings": 8,
+  "equipment": [],
+  "emoji": "🟣",
+  "pairsWith": [
+   "meat",
+   "chicken",
+   "potato",
+   "grains",
+   "rice"
+  ],
+  "noCook": false,
+  "yieldGrams": 380,
+  "ingredients": [
+   {
+    "product": "plum",
+    "amount": 400,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 10,
+    "unit": "g",
+    "measure": {
+     "qty": 2,
+     "unit": "clove"
+    }
+   },
+   {
+    "product": "cilantro",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "dill",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "chili",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "product": "sugar",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "coriander",
+    "amount": 1,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Удалите косточки из слив, добавьте 3–4 ложки воды и варите 15 минут до мягкости.",
+     "uk": "Видаліть кісточки зі слив, додайте 3–4 ложки води й варіть 15 хвилин до м’якості."
+    },
+    "timerMinutes": 15
+   },
+   {
+    "text": {
+     "ru": "Протрите сливы через сито или пробейте блендером.",
+     "uk": "Протріть сливи через сито або збийте блендером."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте рубленые чеснок, кинзу, укроп и чили, сахар, соль и кориандр, проварите 5 минут.",
+     "uk": "Додайте рубані часник, кінзу, кріп і чилі, цукор, сіль і коріандр, проваріть 5 хвилин."
+    },
+    "timerMinutes": 5
+   }
+  ]
+ },
+ {
+  "id": "apple-horseradish",
+  "cuisine": "german",
+  "type": "sauce",
+  "name": {
+   "ru": "Яблочный хрен",
+   "uk": "Яблучний хрін"
+  },
+  "description": {
+   "ru": "Немецкий Apfelmeerrettich — к мясу, рыбе и картошке",
+   "uk": "Німецький Apfelmeerrettich — до м’яса, риби та картоплі"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 6,
+  "equipment": [],
+  "emoji": "🍏",
+  "pairsWith": [
+   "meat",
+   "fish",
+   "potato",
+   "bread"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "apple",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "product": "horseradish",
+    "amount": 40,
+    "unit": "g"
+   },
+   {
+    "product": "sour_cream",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "sugar",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 1,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Натрите яблоко на мелкой тёрке и сразу сбрызните лимонным соком.",
+     "uk": "Натріть яблуко на дрібній тертці й одразу збризніть лимонним соком."
+    }
+   },
+   {
+    "text": {
+     "ru": "Смешайте с хреном, сметаной, сахаром и солью.",
+     "uk": "Змішайте з хроном, сметаною, цукром і сіллю."
+    }
+   }
+  ]
+ },
+ {
+  "id": "green-sauce",
+  "cuisine": "german",
+  "type": "sauce",
+  "name": {
+   "ru": "Франкфуртский зелёный соус",
+   "uk": "Франкфуртський зелений соус"
+  },
+  "description": {
+   "ru": "Семь трав, сметана и яйцо — к картошке и яйцам",
+   "uk": "Сім трав, сметана й яйце — до картоплі та яєць"
+  },
+  "activeMinutes": 15,
+  "totalMinutes": 20,
+  "difficulty": 1,
+  "servings": 10,
+  "equipment": [],
+  "emoji": "🌿",
+  "pairsWith": [
+   "potato",
+   "eggs",
+   "meat",
+   "fish"
+  ],
+  "noCook": false,
+  "ingredients": [
+   {
+    "product": "green_sauce_herbs",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "product": "sour_cream",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "product": "yogurt",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "product": "egg",
+    "amount": 110,
+    "unit": "g",
+    "measure": {
+     "qty": 2,
+     "unit": "pc"
+    }
+   },
+   {
+    "product": "mustard",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   },
+   {
+    "product": "pepper",
+    "amount": 0.3,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Сварите яйца вкрутую, 10 минут, остудите и мелко порубите.",
+     "uk": "Зваріть яйця круто, 10 хвилин, остудіть і дрібно порубайте."
+    },
+    "timerMinutes": 10
+   },
+   {
+    "text": {
+     "ru": "Очень мелко порубите травы или измельчите их блендером со сметаной.",
+     "uk": "Дуже дрібно порубайте трави або подрібніть їх блендером зі сметаною."
+    }
+   },
+   {
+    "text": {
+     "ru": "Смешайте травы, сметану, йогурт, яйца и горчицу, посолите и поперчите.",
+     "uk": "Змішайте трави, сметану, йогурт, яйця та гірчицю, посоліть і поперчіть."
+    }
+   }
+  ]
+ },
+ {
+  "id": "tartar-sauce",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Соус тартар",
+   "uk": "Соус тартар"
+  },
+  "description": {
+   "ru": "Майонез с огурчиками и каперсами — к рыбе и картошке фри",
+   "uk": "Майонез з огірочками й каперсами — до риби та картоплі фрі"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 4,
+  "equipment": [],
+  "emoji": "🐟",
+  "pairsWith": [
+   "fish",
+   "seafood",
+   "potato",
+   "meat"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "mayonnaise",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "product": "pickles",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "product": "capers",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "dill",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Мелко нарежьте маринованные огурцы, каперсы и укроп.",
+     "uk": "Дрібно наріжте мариновані огірки, каперси та кріп."
+    }
+   },
+   {
+    "text": {
+     "ru": "Смешайте с майонезом и лимонным соком.",
+     "uk": "Змішайте з майонезом і лимонним соком."
+    }
+   }
+  ]
+ },
+ {
+  "id": "pesto-sauce",
+  "cuisine": "italian",
+  "type": "sauce",
+  "name": {
+   "ru": "Соус песто",
+   "uk": "Соус песто"
+  },
+  "description": {
+   "ru": "Базилик, кедровые орехи и пармезан — из блендера",
+   "uk": "Базилік, кедрові горіхи й пармезан — із блендера"
+  },
+  "activeMinutes": 7,
+  "totalMinutes": 7,
+  "difficulty": 1,
+  "servings": 4,
+  "equipment": [],
+  "emoji": "🌿",
+  "pairsWith": [
+   "pasta",
+   "bread",
+   "chicken",
+   "veg",
+   "potato",
+   "fish"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "basil",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "product": "pine_nuts",
+    "amount": 25,
+    "unit": "g"
+   },
+   {
+    "product": "parmesan",
+    "amount": 30,
+    "unit": "g"
+   },
+   {
+    "product": "olive_oil",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 4,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 1,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Сложите базилик, кедровые орехи, чеснок и пармезан в блендер.",
+     "uk": "Покладіть базилік, кедрові горіхи, часник і пармезан у блендер."
+    }
+   },
+   {
+    "text": {
+     "ru": "Влейте оливковое масло, добавьте соль и измельчите до пасты.",
+     "uk": "Влийте оливкову олію, додайте сіль і подрібніть до пасти."
+    }
+   }
+  ]
+ },
+ {
+  "id": "avocado-lime-sauce",
+  "cuisine": "mexican",
+  "type": "sauce",
+  "name": {
+   "ru": "Сливочный соус из авокадо",
+   "uk": "Вершковий соус з авокадо"
+  },
+  "description": {
+   "ru": "Авокадо с йогуртом и лаймом — к курице, рыбе и рису",
+   "uk": "Авокадо з йогуртом і лаймом — до курки, риби та рису"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 6,
+  "equipment": [],
+  "emoji": "🥑",
+  "pairsWith": [
+   "chicken",
+   "fish",
+   "rice",
+   "veg",
+   "eggs",
+   "bread",
+   "meat"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "avocado",
+    "amount": 150,
+    "unit": "g"
+   },
+   {
+    "product": "greek_yogurt",
+    "amount": 80,
+    "unit": "g"
+   },
+   {
+    "product": "lime_juice",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 3,
+    "unit": "g"
+   },
+   {
+    "product": "cilantro",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Разомните мякоть авокадо вилкой или блендером.",
+     "uk": "Розімніть м’якуш авокадо виделкою або блендером."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте йогурт, сок лайма, тёртый чеснок, кинзу и соль, перемешайте до гладкости.",
+     "uk": "Додайте йогурт, сік лайма, тертий часник, кінзу та сіль, перемішайте до гладкості."
+    }
+   }
+  ]
+ },
+ {
+  "id": "walnut-garlic-sauce",
+  "cuisine": "georgian",
+  "type": "sauce",
+  "name": {
+   "ru": "Ореховый соус с чесноком",
+   "uk": "Горіховий соус із часником"
+  },
+  "description": {
+   "ru": "Грецкие орехи с кинзой — к курице, овощам и рыбе",
+   "uk": "Волоські горіхи з кінзою — до курки, овочів і риби"
+  },
+  "activeMinutes": 7,
+  "totalMinutes": 7,
+  "difficulty": 1,
+  "servings": 6,
+  "equipment": [],
+  "emoji": "🌰",
+  "pairsWith": [
+   "chicken",
+   "veg",
+   "meat",
+   "fish"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "walnuts",
+    "amount": 100,
+    "unit": "g"
+   },
+   {
+    "product": "garlic",
+    "amount": 8,
+    "unit": "g"
+   },
+   {
+    "product": "cilantro",
+    "amount": 15,
+    "unit": "g"
+   },
+   {
+    "product": "water",
+    "amount": 120,
+    "unit": "ml"
+   },
+   {
+    "product": "vinegar",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "coriander",
+    "amount": 1,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 2,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Измельчите орехи с чесноком в блендере в мелкую крошку.",
+     "uk": "Подрібніть горіхи з часником у блендері на дрібну крихту."
+    }
+   },
+   {
+    "text": {
+     "ru": "Добавьте кинзу, кориандр, соль и уксус и, вливая воду, взбейте до густоты сметаны.",
+     "uk": "Додайте кінзу, коріандр, сіль і оцет і, вливаючи воду, збийте до густоти сметани."
+    }
+   }
+  ]
+ },
+ {
+  "id": "lemon-butter-sauce",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Лимонно-масляный соус",
+   "uk": "Лимонно-масляний соус"
+  },
+  "description": {
+   "ru": "Топлёное масло с лимоном и каперсами — к рыбе",
+   "uk": "Топлене масло з лимоном і каперсами — до риби"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 2,
+  "equipment": [],
+  "emoji": "🍋",
+  "pairsWith": [
+   "fish",
+   "seafood",
+   "veg",
+   "potato",
+   "pasta"
+  ],
+  "noCook": false,
+  "ingredients": [
+   {
+    "product": "butter",
+    "amount": 60,
+    "unit": "g"
+   },
+   {
+    "product": "lemon_juice",
+    "amount": 25,
+    "unit": "g"
+   },
+   {
+    "product": "capers",
+    "amount": 10,
+    "unit": "g"
+   },
+   {
+    "product": "parsley",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "salt",
+    "amount": 0.5,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Растопите масло на слабом огне до лёгкого орехового аромата, 2–3 минуты.",
+     "uk": "Розтопіть масло на слабкому вогні до легкого горіхового аромату, 2–3 хвилини."
+    },
+    "timerMinutes": 3
+   },
+   {
+    "text": {
+     "ru": "Снимите с огня, добавьте лимонный сок, каперсы и рубленую петрушку, посолите.",
+     "uk": "Зніміть з вогню, додайте лимонний сік, каперси й рубану петрушку, посоліть."
+    }
+   }
+  ]
+ },
+ {
+  "id": "mustard-dill-sauce",
+  "cuisine": "international",
+  "type": "sauce",
+  "name": {
+   "ru": "Горчично-укропный соус к лососю",
+   "uk": "Гірчично-кропний соус до лосося"
+  },
+  "description": {
+   "ru": "Сладкая горчица с укропом — к рыбе, яйцам и картошке",
+   "uk": "Солодка гірчиця з кропом — до риби, яєць і картоплі"
+  },
+  "activeMinutes": 5,
+  "totalMinutes": 5,
+  "difficulty": 1,
+  "servings": 2,
+  "equipment": [],
+  "emoji": "🐟",
+  "pairsWith": [
+   "fish",
+   "potato",
+   "eggs",
+   "bread"
+  ],
+  "noCook": true,
+  "ingredients": [
+   {
+    "product": "sweet_mustard",
+    "amount": 50,
+    "unit": "g"
+   },
+   {
+    "product": "mustard",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "sugar",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "vinegar",
+    "amount": 5,
+    "unit": "g"
+   },
+   {
+    "product": "veg_oil",
+    "amount": 20,
+    "unit": "g"
+   },
+   {
+    "product": "dill",
+    "amount": 10,
+    "unit": "g"
+   }
+  ],
+  "steps": [
+   {
+    "text": {
+     "ru": "Смешайте сладкую и обычную горчицу с сахаром и уксусом.",
+     "uk": "Змішайте солодку та звичайну гірчицю з цукром і оцтом."
+    }
+   },
+   {
+    "text": {
+     "ru": "Тонкой струйкой вмешайте масло, добавьте мелко порубленный укроп.",
+     "uk": "Тонким струменем вмішайте олію, додайте дрібно порубаний кріп."
+    }
+   }
+  ]
+ }
+]

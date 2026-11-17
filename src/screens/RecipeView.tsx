@@ -7,7 +7,8 @@ import { back, go } from '../router';
 import { addToShopping, hideRecipe, toggleFavorite, togglePantry, unhideRecipe, useStore } from '../store';
 import { formatLeft, startTimer, stopTimer, timerKey, useTimers } from '../timers';
 import type { PhotoCredit, Recipe } from '../types';
-import { Icon, Photo, minutes, productName, useAlways } from '../ui';
+import { suggestSauces } from '../engine/sauces';
+import { Icon, Photo, RecipeCard, minutes, productName, useAlways } from '../ui';
 import { AddToPlanButton } from './Plan';
 
 // Выбранное число порций помним, пока открыто приложение, — оно нужно и в режиме «готовлю».
@@ -69,6 +70,25 @@ export function IngredientList({ r, servings }: { r: Recipe; servings: number })
   );
 }
 
+/** «Какой соус подойдёт»: 2–3 соуса к блюду. Не показывается, если блюдо уже с соусом или подбор пустой. */
+function SauceSuggestions({ r }: { r: Recipe }) {
+  const { sauces, productMap } = useDb();
+  const s = useStore();
+  const always = useAlways();
+  const list = useMemo(
+    () => suggestSauces(r, sauces, { prefs: s.prefs, hidden: new Set(s.hidden), pantry: new Set(s.pantry), products: productMap, always }),
+    [r, sauces, s.prefs, s.hidden, s.pantry, productMap, always],
+  );
+  if (!list.length) return null;
+  return (
+    <section className="block sauce-suggest">
+      <h2>{t('sauces.suggestTitle')}</h2>
+      <p className="hint">{t('sauces.suggestHint')}</p>
+      <div className="rows">{list.map((x) => <RecipeCard key={x.id} r={x} variant="row" />)}</div>
+    </section>
+  );
+}
+
 export function RecipeView({ id }: { id: string }) {
   const { byId } = useDb();
   const s = useStore();
@@ -76,6 +96,7 @@ export function RecipeView({ id }: { id: string }) {
   const [servings, setServingsState] = useState(r ? servingsFor(r) : 2);
   const [credit, setCredit] = useState<PhotoCredit | null>(null);
   const always = useAlways();
+  const sauce = r?.type === 'sauce';
 
   useEffect(() => {
     let alive = true;
@@ -140,8 +161,16 @@ export function RecipeView({ id }: { id: string }) {
           <div><b>{Math.round(r.protein)} {t('units.g')}</b><span>{t('recipe.protein')}</span></div>
           <div><b>{Math.round(r.fat)} {t('units.g')}</b><span>{t('recipe.fat')}</span></div>
           <div><b>{Math.round(r.carbs)} {t('units.g')}</b><span>{t('recipe.carbs')}</span></div>
-          <p>{t('recipe.approxNote')}{s.kcalGoal > 0 && ` ${t('recipe.goalShare', { n: Math.round((r.kcal / s.kcalGoal) * 100) })}`}</p>
+          <p>{sauce ? t('sauces.approxNote', { g: r.portion ?? 45 }) : t('recipe.approxNote')}{s.kcalGoal > 0 && ` ${t('recipe.goalShare', { n: Math.round((r.kcal / s.kcalGoal) * 100) })}`}</p>
         </section>
+
+        {sauce && (
+          <div className="pairs-with">
+            <span className="muted">{t('sauces.pairsWith')}:</span>
+            {r.nocook && <span className="tag nocook">{t('sauces.noCook')}</span>}
+            {(r.pairs ?? []).map((p) => <span key={p} className="tag">{t(`pairs.${p}`)}</span>)}
+          </div>
+        )}
 
         {r.diets.length > 0 && <div className="tags">{r.diets.map((d) => <span key={d} className="tag">{t(`diets.${d}`)}</span>)}</div>}
 
@@ -180,6 +209,8 @@ export function RecipeView({ id }: { id: string }) {
             ))}
           </ol>
         </section>
+
+        {!sauce && <SauceSuggestions r={r} />}
 
         {credit && (
           <p className="credit">

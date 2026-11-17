@@ -102,6 +102,12 @@ export function Today() {
         <NoResults pool={recipes} />
       )}
 
+      <a className="sauce-cta" href="#/sauces">
+        <span className="sauce-cta-emoji" aria-hidden="true">🥣</span>
+        <span className="grow"><b>{t('sauces.ctaTitle')}</b><small>{t('sauces.ctaText')}</small></span>
+        <Icon name="chevron" size={18} />
+      </a>
+
       {sheet && <FilterSheet count={pool.length} onClose={() => setSheet(false)} />}
     </div>
   );
